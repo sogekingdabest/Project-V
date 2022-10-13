@@ -13,22 +13,27 @@ class VandalSpider(scrapy.Spider):
 
     def parse(self, response):
         news = response.xpath('//div[contains(@class,"caja620")]/a/@href').getall()
-        print("debugElement news: ", news)
+        # print("debugElement news: ", news)
         filename = f' {self.num} vandal.html'
         with open(filename, 'wb') as f:
             f.write(response.body)
 
         next_page = response.xpath('//div[contains(@class,"tn14b")]/a/@href').getall()
+        
+        f = open("logs.txt", 'a')
+
         for i in range(0, len(next_page)):
             next_page[i] = 'https://vandal.elespanol.com'+next_page[i]
-        print("soy nextpage: ", next_page)
+            f.write(next_page[i], "\n")
+
+        # print("soy nextpage: ", next_page)
         yield from response.follow_all(next_page, callback=self.parse)
         yield from response.follow_all(news, self.parseArticle)
 
     def parseArticle(self, response):
         jsonText = response.xpath('//div[contains(@id,"globalwrap")]/script/text()').get()
         # print("debugElementArticle ", jsonText)
-        jsonData = json.loads(jsonText)
+        jsonData = json.loads(jsonText, strict=False)
         
         yield {
                 'description': jsonData["description"],
