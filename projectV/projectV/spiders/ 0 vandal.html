@@ -1,0 +1,1382 @@
+<!DOCTYPE html><html lang="es"><head>
+<!--[if lt IE 9]>
+<script src="https://www.vandalimg.com/rim/html5shiv.min.js"></script>
+<![endif]-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link rel="preload" as="script" href="https://www.vandalimg.com/krogan/funciones_krogan24.js">
+<link rel="preconnect" href="https://www.vandalimg.com">
+<link rel="preconnect" href="https://media.vandal.net">
+<link rel="preconnect" href="https://sb.scorecardresearch.com">
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="distribution" content="global" /><meta http-equiv="content-language" content="es-es" /><meta property="fb:pages" content="19836639906" /><meta property="fb:app_id" content="112581395442165" /><link rel="apple-touch-icon" sizes="57x57" href="https://www.vandalimg.com/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.vandalimg.com/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.vandalimg.com/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.vandalimg.com/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.vandalimg.com/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.vandalimg.com/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.vandalimg.com/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.vandalimg.com/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.vandalimg.com/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://www.vandalimg.com/favicon-32x32.png" sizes="32x32 16x16">
+<link rel="manifest" href="https://www.vandalimg.com/manifest.json">
+<link rel="mask-icon" href="https://www.vandalimg.com/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="https://www.vandalimg.com/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name='ir-site-verification-token' value='-1298206065' />
+<link rel="alternate" type="application/rss+xml" title="Noticias Vandal" href="https://vandal.elespanol.com/xml.cgi" />
+<style type="text/css">
+#globalwrap{margin:auto auto;max-width:990px;background-color:#284b5b}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}a:link,a:visited{color:#30b0e5}.color97{color:#107c10}.color89{color:#0070D1}.color83{color:#e60012}.color43{color:#2d9baf}.color23{color:#3e9ea2}.color41{color:#1e438f}.color0{color:#052d46}.color13{color:#338550}.color29{color:#9b2e2e}.color53{color:#595959}.color59{color:#797979}.color47{color:#864a29}.color37{color:#8aa332}.color61{color:#295870}.color67{color:#d78a03}.color71{color:#005b4c}.color73{color:#002c88}.color79{color:#007e00}#cabecera_wrap{position:fixed;z-index:998;width:100%;max-width:990px;top:0;left:0;right:0;margin-left:auto;margin-right:auto;max-height:88px}#cabeceramenu{background:#fff;max-width:990px;margin:auto}#cabecera1{width:100%;height:50px;clear:both;z-index:10000;position:relative}@media(max-width:767px){#cabecera1{border-bottom:1px solid #30b0e5}}.cabconborde{border-bottom:1px solid #30b0e5}.margen_menu_responsive{margin:0 .6em}@media(max-width:480px){.margen_menu_responsive{margin:0 0}}#cabecera1_izq{float:left;text-align:left}#cabecera1_cen{position:absolute;left:0;right:0;width:174px;margin:0 auto;padding:11px 0;text-align:center}@media(max-width:320px){#cabecera1_cen{width:140px;padding:13px 0}}#cabecera1_der{float:right;text-align:right}#vm_wrapper{float:right}#vm_der{width:44px;height:50px;margin-right:3px;margin-top:0}#vm_der{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAyCAYAAAAnWDnqAAAHu0lEQVR42uWZCZSOZRTHZzHTLMZoDGIGMcaIbC2WFml0GKmMkWihhaTJEpGSGCUZKpUipdIkbY6cxlJURDiOaLdFqY6UsbaITL7+N7/3nKevmXzf+MI5fWd+592f9//c5z73ufedsLAAf+H6E43EQDFOtBIpIirsZPxJ2GtiHmIXiL7iLHG2iDhZREaKZmKmeF98Ir4V74kt4iYxRGwXg0StEy34TrFYzBW/i1/ET+KguF+sg6fEcjHpRAs2y34tfOI3s2IJ96wQX4oDYu2JFjwbscYfWLOu+ax4WnwhWoiRYpf4WVxxosRexdAfgNpiimgvYkQbkSxGiE6iprhbLBSnHm+xp9jwiqXikDjMZDNLfy82i8sQbv47WtTn2RoWRY634HoIXSP2IdREZjABh4k64hkEm0vkEauTRJqocjwFPyJeFnsdHzYrdxNficnE3+2EtyfFWOf5S0X34ynYhn0ni8VBR7Rxm+jKvoW6QjFNXCBOF+VFFyZluSDeGSuqisrhfx0GJ9jHEH/OYuEK3oE/H6ZjH7K49HCebyteMuEBvm+U6Cc64l4VghF7Gn67yLFkaViYu4MOJPu186K5UADvGyyeFTeKh0WuTeZgBNfAevcRVwsR90MJgm8Wj4pzxAC/dl4JZOLpniLcz9r7yCZ8sO5wKg8XkjMsZrgOO1Y1v54qZokHea6L00YWMbnvUd7Vgbh9iUWgY5l0PsJafZKeWzhn/jxfrCd0WRRpLs6z2O10uD3DO/Mo76llrheKKLGOpdZEPSDewq/HiDmiQKQSg2OICklkdzbhqhOvnw/gXTPsPlbOjDKtkkQI86cB4nLEfiwyyYlvJYdogLgoRqMNfh3L85/a8wGksA1Ff8RvCqSjf/uVi4ysHRcbuznsiCWzcY/5iLLk/Qz/CECuMZFV0Kw/3LFgShkWruUBVzPxcXEx2Z06fardHyPCw/uQWk4XTQl3UUzEcIJ9BBPNYvK9uEhjXm7XhrNKWgTqQR6ScBTRj9toBdzLpk2ajM7p3Nmn3Ul68FcxXlxJQmRCR9Jwd0QNo2OXliIgwRmlLeQmtpJmlnK/1YxfBDMyER2ysg5VTk7eSzweyiR7lTziCW/4nIXCIknTf7FaFNscUtNEhn9kCfemiz1B+XLFxMQO9TMyzMqWD/dm8uUibhTWshFoTGSxZCi2DJPcrP2QdcAvln8QdFtnNmxY2KplSxOdiwWvpProSEZnZf9YrlkSH++89Px/EVnR2U+l1BrDJJ1EznJRWcJyvETvSE1J2Rp2xH8LWP2ux2cHkktMYWLVdYTYahmPj1ckhCVyrT/fOZo5teF0cos3vRW0TL966empbTMzixLKl98fdsSSMyk8zf9WYd27rPJwxFqCv9JbsrXtKW4QvVhsFhNzG3C9I/WixfZqx7z61U1Lax72z+TnA7ZbzSp+Q27J0z1kYs3IPWwhyaejXhsx3G8hMzrUif3iUtLMZQjK9JJvcuV+iNxDuWWfDLYxB3yMTmvCpOUgkaEW3JkX7XRc4XO2VmH05r5ufh2yyuQbxK92Mr8VTnisGPJPXgR/r2TK58vQJU4m561u3zlii5hM+U47w5zrs/Fpi+09Qy04iuX3MMPszfhi8YaTG+eSLHmiviL0jfaGXdvXubaNPMQiyIpQCw4n9voIb9mcL+BcNC+vAOs4X4zVLWpU4ploRsV8fSPn2v0XFfVELLzbqmSn6FxNbM1xP1eRP3ifuqawtJdzrlsM/4P9cv+VYK/+ynBKdB8fuC9w6zKGeqDjz+vdIpPMrZj9Rv7FbCgET2OILdPq6lkGC19cyjM9EWyj0tbvmq2C+0mG4sS1oRY8i+Fd7SU6CN7F1/k0NwHCwt4XpCXeyubXprlJFvv5oRJqoq7DSpZDPGbinKH0UZNdbeUT51vSwWKu7ytpcaCj/flqZNEkPRSCB/GZajD/KrjWJhdMpVyvwf89lrHqjSEtfZeEZkYJ7VbiO/N46sQUyqOEYxWcRcIzQWygkrZs7HYKzzySG/tQuJGFYAYjsYPi9a4S2k0jVFpx0A73WOhmfcci2lLFanzOSiIux5HAn4sL2H6S840ilco6ubSlF6vWo3pOD0m29r/91a6ZGiteEAUiJlSNpohqoqY1yjbeuV6Be4wKnKstqjvXqjv3p4po9muxTaLdCGube5Kc9ycHI/hp0V1cIeqKTaKFc93EzeGFds9wUUM8LzqJeeJy8RL37xZt2J8murL/lggXSzDMGjr8qhgajOCJIsc5Xi+aOMdxYr5zXMS2ksgWi0R54TOLihnWKe4ZIfayP160F89xbB0ejMsMDEbwo6KDWZfjDX6CbQgL2U/EUq9xnCPeZlj3igsRPZfrbcVas7IYK/ralmtjGN2Csgh+yHpcimCz8Gein2jJRCoSj2Mxu5Yn6ohuzIdV+GuWaCjeE+OwaB7tjhLTyyo42zkuSfA8v2eqimIst8g5fwPWXongjpyfL2aKXuYanJsg8ssieJLojOWqiC1YpR7WShALuLeZ6Mn+UgQv4dgm1K3sm7jWTMpI0UWsE+c67vKOyOTeAUzA5oEIvk/k2svsAZsU4nqGMJpzExjuHEakD4Ky6LBZs4nTGWtvKD5rESFKTObaEHGN6M3xWM9VzK1cbX8CbzRZxf07DfoAAAAASUVORK5CYII=)}#menu_izq{display:block;height:50px;width:42px;float:left;background-position:center center;background-repeat:no-repeat;cursor:pointer}#menu_izq{background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_2_1_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 844.7 477.3' style='enable-background:new 0 0 844.7 477.3;' xml:space='preserve'%3E%3Crect x='1' y='0' width='844' height='56'/%3E%3Crect x='1' y='210.5' width='844' height='56'/%3E%3Crect x='1' y='421' width='844' height='56'/%3E%3C/svg%3E%0A");background-size:30px 20px}#icono_compartir{display:block;height:50px;width:42px;float:left;background-position:center center;background-repeat:no-repeat;cursor:pointer}#icono_compartir{background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Capa_3' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 800 800' style='enable-background:new 0 0 800 800;' xml:space='preserve'%3E%3Ccircle cx='659' cy='137.5' r='130.5'/%3E%3Ccircle cx='659' cy='658.5' r='130.5'/%3E%3Ccircle cx='134.5' cy='398' r='130.5'/%3E%3Crect x='166.7' y='236.5' transform='matrix(0.866 -0.5 0.5 0.866 -72.6002 240.8632)' width='493' height='38.8'/%3E%3Crect x='377.8' y='287.5' transform='matrix(0.5 -0.866 0.866 0.5 -263.8844 611.006)' width='38.8' height='493'/%3E%3C/svg%3E%0A");background-size:30px 20px}#buscador_der{margin-right:3px;float:right}#buscarenviar{display:none}#buscadordesktop{position:relative}@media(max-width:767px){#buscadordesktop{position:fixed;top:50px;left:15px;z-index:8000}#buscarenviar{display:inline-block;margin-top:1px;margin-left:0}}#lupa_buscador{display:block;height:50px;width:36px;float:right;background-position:center center;background-repeat:no-repeat}#lupa_buscador{background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Capa_2_1_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 692 840' style='enable-background:new 0 0 692 840;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M317.5,625.5c-82,0-159.1-31.9-217.1-89.9S10.5,400.5,10.5,318.5s31.9-159.1,89.9-217.1s135.1-89.9,217.1-89.9 s159.1,31.9,217.1,89.9s89.9,135.1,89.9,217.1s-31.9,159.1-89.9,217.1S399.5,625.5,317.5,625.5z M317.5,71.5 c-136.2,0-247,110.8-247,247s110.8,247,247,247s247-110.8,247-247S453.7,71.5,317.5,71.5z'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M652,834c-9,0-18-4.1-23.9-11.8l-188-246c-10.1-13.2-7.5-32,5.6-42.1c13.2-10.1,32-7.5,42.1,5.6l188,246 c10.1,13.2,7.5,32-5.6,42.1C664.8,832,658.4,834,652,834z'/%3E%3C/g%3E%3C/svg%3E");background-size:28px 28px}#buscar{font-size:1em;border:2px solid #353535;border-radius:8px;padding:.322em;margin-right:.9em;width:170px;font-family:Arial;height:20px;line-height:20px;vertical-align:middle}#buscar:focus{border-color:#30b0e5;outline:0}#usuario_izq{float:left;margin-left:2px}#icono_usuario{float:left;display:block;height:50px;min-width:36px;cursor:pointer;position:relative;background-position:left center;background-repeat:no-repeat}#icono_usuario{background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 840 842' style='enable-background:new 0 0 840 842;' xml:space='preserve'%3E%3Cg id='Capa_3'%3E%3Ccircle cx='421.5' cy='215.5' r='208.5'/%3E%3C/g%3E%3Cg id='Capa_4'%3E%3Cpath d='M831,837c-20.3-208.3-195.9-371-409.5-371S32.3,628.7,12,837H831z'/%3E%3C/g%3E%3C/svg%3E%0A");background-size:33px 28px}#info_usuario1{margin-left:48px;float:left;height:50px;line-height:50px;padding-right:5px}#info_usuario1 a:hover{color:#fff}#avatar_usuario{width:36px;height:36px;margin-top:7px;margin-right:5px;border-radius:4px}@media (max-width:767px){#info_usuario1{display:none}}#buscarenviar,.registro,.sesion{color:#fff;background:#30b0e5;font-weight:700;padding:.45em;font-size:1em;margin-left:1.2em;margin-top:.65em;border-radius:4px;border:0;text-transform:uppercase}.sesion,.sesion a,.sesion a:hover{color:#30b0e5;background:#fff}.registro a,.registro a:hover{color:#fff;background:#30b0e5}#cabecera2{width:100%;height:38px;clear:both;position:relative;background:#fff}@media (max-width:979px){#cabecera2{display:none}}#menuplataformas ul{list-style:none;margin:0 0 0 .45em;padding:0;position:relative}#menuplataformas li{float:left;line-height:38px;margin:2px .25em 2px 0;height:34px;border-radius:4px}#menuplataformas li a{color:#353535;display:block;text-decoration:none;height:22px;line-height:22px;padding:6px 5px;font-weight:700;border-radius:4px}#menuplataformas li:hover{background-color:#30b0e5}#menuplataformas #pestanavandalsports:hover{background-color:#ee4323}#menuplataformas #pestanavandalware:hover{background-color:#0ec802}#menuplataformas #pestanavandalrandom:hover{background-color:#6f34e5}#menuplataformas li a:hover{color:#fff!important;background-color:#30b0e5}#menuplataformas #pestanavandalsports a:hover{color:#fff!important;background-color:#ee4323}#menuplataformas #pestanavandalware a:hover{color:#fff!important;background-color:#0ec802}#menuplataformas #pestanavandalrandom a:hover{color:#fff!important;background-color:#6f34e5}#menuplataformas li ul{background:#30b0e5;display:none;height:auto;position:absolute;margin-top:-5px;margin-left:0;z-index:200;padding:5px 0;border-top-right-radius:4px;border-bottom-right-radius:4px;border-bottom-left-radius:4px}#menuplataformas li:hover ul{display:block}#menuplataformas li li{padding:0;width:100px;height:auto;margin:0;line-height:100%;display:block;border-radius:0}#menuplataformas .ancho120{width:120px!important}#menuplataformas .ancho180{width:180px!important}#menuplataformas li li a{display:block;padding-left:.5em;text-align:left;border-radius:0;margin-top:0;padding:2px 8px}#menuplataformas li ul a:hover{color:#fff}.pestana h1{margin:0;font-weight:inherit;font-size:inherit;line-height:inherit;display:inherit}.notificacion_avisos{position:absolute;background-color:#30b0e5;display:none;font-size:.8em;width:1.5em;height:1.5em;text-align:center;color:#fff;padding:.15em;border-radius:50%;line-height:1.5em;z-index:300;left:24px;top:3px}.zona_busqueda{z-index:201}.sugerencias_wrapper{width:100%;position:relative}#sugerencias{display:none;position:absolute;background-color:#fff;margin-top:-.46em;border-left:2px solid #30b0e5;border-right:2px solid #30b0e5;border-bottom:2px solid #30b0e5;border-bottom-right-radius:8px;border-bottom-left-radius:8px;padding-bottom:.5em;text-align:left;z-index:200;width:179px}.unasugerencia{padding:.8em .322em .2em .322em}#icono_compartir:hover,#icono_usuario:hover,#lupa_buscador:hover,#menu_izq:hover{background-color:#30b0e5}#icono_usuario:hover{color:#fff}@media (min-width:980px){#publi_wrapper1{width:990px}}#hueco_cabecera{height:88px;width:100%;max-width:990px;margin:0 auto}#publi_wrapper1{width:100%;margin:auto auto;max-width:990px}@media (max-width:979px){#hueco_cabecera{height:82px}}@media (min-width:980px){#publi_wrapper2{width:990px}}#publi_wrapper2{position:relative;margin:auto auto;max-width:990px;width:auto}#publi400{min-height:1em;max-width:990px;max-height:360px}#publi_Right1 img{max-height:100%;height:auto!important}.publi400skin_728{position:absolute;width:73.53%!important;height:auto!important;max-height:90px!important;right:0;bottom:0}.publi400skin{position:absolute;width:auto;height:auto!important;right:0;top:0}.publi_wrapper2_skin{padding-bottom:25.25%;min-height:0}.publi_wrapper2_skin_200{padding-bottom:18.8%;min-height:0}.publi_wrapper2_skin_360{padding-bottom:36.36%;min-height:0}@media (max-width:979px){.publi_wrapper2_skin_360{padding-bottom:0!important;height:360px!important}}@media (max-width:980px){.bodyskinresponsive{background-size:80% auto}}#publi_Top{min-height:20px}.automargen{margin-left:auto;margin-right:auto;text-align:center}@media (min-width:980px){#publi400{width:auto}}.publi_derecha_responsive{max-width:300px;width:30.7%;margin-left:3%;margin-bottom:1.5em;height:auto}.tituloreportaje{max-width:620px;background:0 0;text-align:center}.tituloreportaje h1{margin:0}.tituloseccion{border-top:4px solid #30b0e5;min-height:4em}.tituloseccion h1{font-size:2em;color:#555}@media (max-width:767px){.tituloseccion h1{font-size:1.6em;font-family:Arial}}.videosinnada{margin:0;padding:0;width:100%;height:auto}.h2{font-size:1.6em;color:#555}@media (max-width:767px){.h2{margin-bottom:.5em;font-family:Arial}}.extratitulojuego{float:left;font-size:1.1em;margin-left:1em;margin-top:1.3em}@media (max-width:767px){.extratitulojuego{float:none;clear:both;margin-top:0;margin-left:0;margin-bottom:.5em}}.subtitulo h2{font-size:1.6em;color:#555}@media (max-width:767px){.subtitulo h2{font-family:Arial}}.subtitulo h3{font-size:1.6em;color:#555;margin-bottom:0}@media (max-width:767px){.subtitulo h3{font-family:Arial}}.textart .titulotruco h2,.textart .titulotruco h3{font-size:1.6em;text-transform:uppercase;color:#555;margin-top:.8em;margin-bottom:.4em}@media (max-width:767px){.textart .titulotruco h2,.textart .titulotruco h3{font-family:Arial}}.textart p{margin-bottom:20px}.textart ul{margin-bottom:20px}.noticia h4{font-size:1.6em;color:#555;margin-top:.8em;margin-bottom:.8em}.noticia .bloquepildoras{margin-top:.2em}@media (max-width:767px){.imagennoticia{text-align:center}}.hrsep{color:#e7e7e7;width:50%;margin-left:auto;margin-right:auto;margin-top:5px;margin-bottom:0;border-top:1px solid #e7e7e7;opacity:.5}.cuadropuntuaciones{background-color:transparent;margin-top:1.5em;position:relative;width:100%;max-width:610px;display:inline-block}.cuadropuntuaciones_col1{float:left;width:40%}.cuadropuntuaciones_col2{width:20%;float:left;margin-bottom:1.5em}.cuadropuntuaciones_col3{float:right;width:39%}.contenedorcirculonota1{width:90px}@media (max-width:767px){.paddingmovil{padding-left:.6em;padding-right:.6em}}.caja300{background:#fff;border:0;margin-bottom:30px;width:100%;overflow:hidden;width:300px;height:320px}.caja300:after{content:"";clear:both}.caja300:hover{background-color:#f5f5f5;border-radius:5px;text-decoration:none}.caja300 img{width:100%;max-width:300px;max-height:160px}.caja300 .imagen_portada_mobile{display:none}.caja300 .titulocaja{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;margin-top:.3em;margin-bottom:.3em;font-size:1.5em}.caja300 .titulocaja2{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;margin-top:9.1px;margin-bottom:3.5px;font-size:1.5em;padding-left:7px}.caja300 .subtitulocaja{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#999;font-weight:300;font-size:1em}.caja300 .fechacaja{float:right}.caja300 .desccaja{font-family:Arial;color:#000;margin-top:.3em;font-size:.9em;line-height:1.2em}.caja300 .restocaja{padding-top:.2em;padding-left:.5em;padding-right:.5em;padding-bottom:.5em}.caja300 a:hover{text-decoration:none}.caja300 .imagencaja{position:relative}.caja300 video{width:300px;height:160px}.caja300 .tiempo_video{position:absolute;bottom:5px;right:5px;color:#fff;background:#000;opacity:.8;padding:3px 5px;border-radius:5px;font-size:.8em;font-weight:700}@media (max-width:979px){.caja300{width:auto}.caja300 .fechacaja{float:none;clear:both;margin-top:.3em}.caja300 video{display:none}}@media (max-width:767px){.caja300 .botonplay{top:0;bottom:0;left:0;right:0}.caja300{width:auto;margin-bottom:1em;overflow:hidden;height:auto}.caja300 .imagencaja{width:35%;max-width:120px;height:auto;float:left}.caja300 .imagen_desktop{display:none}.caja300 .imagen_portada_mobile,.caja300 .imagen_unificada{display:block;max-width:100%;max-height:90px;width:100%}.caja300 .restocaja{margin-left:3%;width:62%;float:left;padding:0}.caja300 .titulocaja{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;margin-bottom:0;margin-top:0;font-size:1.2em}.caja300 .titulocaja2{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;margin-bottom:0;margin-top:0;font-size:1.2em;margin-left:3%;width:62%;float:left;padding:0}.caja300 .platscaja{display:none}.caja300 .subtitulocaja{font-family:Arial;color:#999;font-size:.9em}.caja300 .fechacaja{float:right;margin-top:0}}.caja300publi{height:auto;margin-bottom:100px}@media (max-width:767px){.caja300publi{margin-bottom:1em;overflow:hidden;height:auto;min-height:initial}}.botones_centro{clear:both;margin-left:auto;margin-right:auto;display:inline-block;text-align:center;text-transform:uppercase}.boton_interaccion{float:left;border-radius:1.5em;border:4px solid #e7e7e7;color:#fff;font-weight:700;margin-left:.3em;margin-right:.3em;margin-bottom:.3em;background-color:#00b7ef;text-align:center}.boton_interaccion:hover{background-color:#00b7ef;border:4px solid #00b7ef}.boton_interaccion a:link,.boton_interaccion a:visited{padding:.6em;display:block;color:#fff}.boton_interaccion a:hover{color:#fff;text-decoration:none}@media (max-width:767px){.botones_centro{font-size:1em}.boton_interaccion a:link,.boton_interaccion a:visited{padding:.6em}}@media (min-width:768px){.botones_centro{font-size:1.1em}}.bloquepildoras{clear:both;margin-top:1em;margin-left:auto;margin-right:auto;display:inline-block;text-align:center}.pildora{float:left;border-radius:.8em;color:#7c7c7c;margin-right:.6em;background-color:#efefef;text-align:center;margin-bottom:.4em}.pildora:hover{background-color:#00b7ef}.pildora a:link,.pildora a:visited{padding:.6em;display:block;color:#7c7c7c}.pildora a:hover{color:#fff;text-decoration:none}.pildora_seleccionada{background-color:#00b7ef}.pildora_seleccionada a:link,.pildora_seleccionada a:visited{color:#fff}.pildora .falsolink{padding:.6em;display:block;color:#7c7c7c}.falsolink{cursor:pointer}.pildora .falsolink:hover{color:#fff;text-decoration:none}.pildora_seleccionada .falsolink{color:#fff}@media (max-width:767px){.bloquepildoras{font-size:.9em;overflow-y:hidden;overflow-x:scroll;white-space:nowrap;max-width:100%}.pildora{float:none;display:inline-block}.pildora a:link,.pildora a:visited{padding:.6em}.pildora .falsolink{padding:.6em}}@media (min-width:768px){.bloquepildoras{font-size:1.1em}}
+#footer{border-top:#02b5f7 solid 4px;margin:auto auto;max-width:990px;font-family:Arial,"Roboto Condensed",sans-serif;text-align:left}@media (max-width:767px){#footer{font-family:Arial}}#footer .azulfooter{font-size:1em;color:#30b0e5;text-align:left;margin-left:.35em}.textofooter{font-size:.83em;color:#fff;margin-top:.6em;border-top:1px solid #9d9d9d;padding-top:.4em;padding-bottom:1em;text-align:left}.textofooter a:link,.textofooter a:visited{color:#fff}@media (max-width:767px){.textofooter{line-height:24px}}.footer1{background-color:#3e3e3e}.footer2{background-color:#1e1e1e}@media (max-width:767px){.footer1{padding-left:1em;padding-right:1em}.footer2{padding:1em}}.footer3{background-color:#000}body{background-attachment:scroll;background-color:#284b5b;padding:0;font-family:Arial}.grisfondo{background-color:#eee}.froboto{font-family:Arial,'Helvetica Neue',Helvetica,sans-serif}#buscar,.froboto_real,.zona_busqueda{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.froboto_condensed{font-family:'Arial Narrow',Arial,"Roboto Condensed",sans-serif;font-stretch:condensed}.froboto_light{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300}.textart{font-size:1.2em;line-height:1.5em}.titulo2{font-size:1.5em;font-weight:300;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#30b0e5;margin:1em 0 1em .4em;line-height:1.1em}.titulo3{font-size:1.2em;color:#284b5b}.cita{clear:both;text-align:center;font-size:1.5em;padding:1.5em 2em;font-family:Arial;color:#284b5b;margin:1em 2em 1em 2em;line-height:1.1em;border-top:1px solid #08c;border-bottom:1px solid #08c;box-shadow:0 -1px #eee;border-radius:20%}@media (max-width:767px){.cita{font-size:1.2em;padding:1em 1.5em;margin:1em 1em 1em 1em}}.imagen550{margin-top:1em;margin-bottom:1em}.titulo18{font-size:1.5em;line-height:1.6em}.t13{font-size:1.3em;line-height:1.3em}.t12{font-size:1.2em;line-height:1.2em}.t11{font-size:1.1em}.t1{font-size:1em}.t09{font-size:.9em}.t08{font-size:.8em}.t075{font-size:.75em}.t07{font-size:.7em}.t06{font-size:.6em}.t2{font-size:2em}.t4{font-size:4em}.cblanco{color:#fff}.acenter{text-align:center}.p05{padding:.5em}.p1{padding:1em}.p2{padding:2em}.p08{padding:.8em}.p06{padding:.6em}.pt1{padding-top:1em}.pt2{padding-top:2em}.pt08{padding-top:.8em}.pt05{padding-top:.5em}.pb08{padding-bottom:.8em}.pb1{padding-bottom:1em}.pb05{padding-bottom:.5em}.pt005{padding-top:.05em}.pl05{padding-left:.5em}.pl1{padding-left:1em}.pr1{padding-right:1em}.mauto{margin:auto auto}.mt02{margin-top:.2em}.mt03{margin-top:.3em}.mt033{margin-top:.33em}.mt04{margin-top:.4em}.mt05{margin-top:.5em}.mt07{margin-top:.7em}.mt1{margin-top:1em}.mt13{margin-top:1.3em}.mt15{margin-top:1.5em}.mt15resp{margin-top:1.5em}@media(max-width:767px){.mt15resp{margin-top:1em}}.mt2{margin-top:2em}.mt3{margin-top:3em}.mt4{margin-top:4em}.mr05{margin-right:.5em}.ml1{margin-left:1em}.ml12{margin-left:1.2em}.ml15{margin-left:1.5em}.ml2{margin-left:2em}.mr1{margin-right:1em}.mr15{margin-right:1.5em}.mr2{margin-right:2em}.mb05{margin-bottom:.5em}.mb1{margin-bottom:1em}.mb15{margin-bottom:1.5em}.mb2{margin-bottom:2em}.bta4{border-top:4px solid #30b0e5}.bb1{border-bottom:1px solid #eee}.bba4{border-bottom:4px solid #30b0e5}.fblanco{background-color:#fff}@media (min-width:768px){.articulo{padding:.5em 0}}@media (max-width:767px) and (min-width:501px){.articulo{padding:.4em 1.2em}}@media (max-width:500px){.articulo{padding:.26em .8em}}.articulo{background:#fff}.articulofrontal h1{margin-bottom:1em;color:#252d33;font-size:2.8em;line-height:130%;font-weight:400;text-align:center;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight: 700;}.articulofrontal h2{color:#252d33;font-size:2.8em;line-height:120%;font-weight:400;text-align:center}@media (max-width:767px) and (min-width:501px){.articulofrontal h1{font-size:2em}.articulofrontal h2{font-size:2em}}@media (max-width:500px){.articulofrontal h1{font-size:2em}.articulofrontal h2{font-size:1.6em}}.articulofrontal .autorarticulo{text-align:center;color:#9f9f9f;font-size:1.1em;margin-top:2em;margin-bottom:1.5em}.articulo_social{margin-top:1em;margin-bottom:.8em;height:70px;text-align:center;display:inline-block}.descart{color:#5a5a5a;font-size:1.3em;line-height:1.5em;text-align:center;font-family:Arial;color:#284b5b}.intro_noticia{padding-left:1em}@media (max-width:768px){.intro_noticia{padding-right:1em}}.parallaxbg{border-bottom:4px solid #30b0e5;border-top:1px solid #eee;max-width:990px;margin:auto auto;background-position:center center;background-size:100% auto}@media (min-width:768px) and (max-width:979px){.parallaxbg{background-size:auto 100%}}@media (min-width:768px){.parallaxbg{height:auto}}@media (max-width:767px){.parallaxbg{height:auto}}.sombreado{height:100%;text-shadow:#333 1px 1px}.sombreado a:link,.sombreado a:visited{color:#eef}.notacomunidad_wrap{padding-top:1.3em;text-align:center}.hrminicomunidad2{color:#e7e7e7;width:80px;margin-left:auto;margin-right:auto;margin-top:5px;margin-bottom:0;border-top:1px solid #e7e7e7;opacity:.5}.hrminicomunidad{color:#e7e7e7;width:80px;margin-left:auto;margin-right:auto;margin-top:12px;margin-bottom:0;border-top:1px solid #e7e7e7;opacity:.5}.notacomunidad{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:bolder;color:#00b7ef;font-size:2.4em;text-align:center;z-index:1500}.notacomunidad a:link,.notacomunidad a:visited{color:#00b7ef}.puntuarcomunidad{margin-top:.3em;font-size:.9em;color:#fff}.puntuarcomunidad select{width:55px;line-height:initial;height:auto;margin:0}.puntuarcomunidad form{margin:0}.votoscomunidad{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#fff;font-size:.8em;margin-top:5px}.migaja2{font-family:Arial;text-transform:uppercase;font-size:.8em;color:#333;padding-top:1em;padding-bottom:1em;text-align:left}@media (max-width:767px){.migaja2{font-family:Arial}}.migaja2 ol,.migaja2 ul{margin:0;padding:0;list-style-type:none;text-align:left}.migaja2 li{display:inline-block;line-height:1.2em;padding-right:6px}@media (max-width:767px){.migaja2 li{margin-bottom:.8em}}.migaja2 li:last-child{display:inline-block;line-height:1.2em}.migaja2 li:after{padding-left:4px;content:"/"}.migaja2 ol li:last-child:after{content:""}.migaja2 a{line-height:1.2em;color:#30b0e5}.seccionesjuego_wrapper{text-align:center;border-bottom:1px solid #efefef;max-height:48px;overflow-y:hidden;overflow-x:auto}.seccionesjuego{display:inline-block;margin:auto auto;margin-bottom:-6px;font-size:.85em;color:#999;text-align:center;font-family:Arial}.seccionesjuego .pest{padding:1em .6em;display:block;float:left}.seccionesjuego .pselec{font-weight:700;padding-top:1.15em;color:#000;padding-bottom:.85em}.seccionesjuego .falsolink,.seccionesjuego a:link,.seccionesjuego a:visited{color:#000}.seccionesjuego .falsolink:hover{text-decoration:underline}.seccionesjuego h2{font-size:1em;line-height:20px;font-weight:bolder;margin:0;color:#000}@media (max-width:979px){.seccionesjuego_wrapper{max-height:47px}.seccionesjuego{margin-bottom:-5px;font-size:.95em}.seccionesjuego .pest_nolink{display:none!important}}@media (max-width:767px){.seccionesjuego_wrapper{max-height:initial}.seccionesjuego{font-size:1em;margin:.2em auto;display:block}.seccionesjuego .pest{width:27%;padding:.4em 3%}.seccionesjuego .pest:nth-child(3n+1){clear:both}.seccionesjuego .pselec{background-color:#efefef;border-radius:4px;font-weight:700;background-image:initial}}.titulojuego{font-size:4em;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:105%;color:#fff;font-weight:300;max-width:90%;margin:auto auto;text-align:center}@media (max-width:767px){.titulojuego{font-family:Arial}}.titulofichajuego{font-size:1.05em;font-weight:700;color:#fff}#menuusuariomovil{font-family:"Roboto Condensed",Helvetica,sans-serif}.dentrocirculo{font-stretch:normal}.bloqueminipildoras,.bloquepaginacion,.bloquepildoras,.botones_centro,.cuadropuntuaciones,.fichajuego,.h2,.noticia h4,.subtitulo h2,.subtitulo h3,.textart .titulotruco h3,.tituloseccion h1,.usuario_registrado,.videoincrustado .subzonavideos,.videoincrustado .zonaresoluciones{font-family:'Arial Narrow',Arial,"Roboto Condensed",sans-serif;font-stretch:condensed}.h2,.noticia h4,.seccionesjuego,.subtitulo h2,.subtitulo h3,.titulofichajuego,.tituloseccion h1{text-transform:uppercase}.titulofichajuego{font-family:Arial}.fichajuego{color:#fff;font-size:1.05em;padding-top:1em;padding-bottom:.5em;border-top:1px solid #fff;width:auto;max-width:400px;margin-left:auto;margin-right:auto;overflow:hidden}@media (max-width:767px){.fichajuego{font-family:Arial}}@media (max-width:767px){.fichajuego{border:0;padding-top:0;line-height:25px}.fichatecnica{display:none!important}}.titulojuego a:link,.titulojuego a:visited{color:#fff}@media (min-width:768px) and (max-width:979px){.titulojuego{font-size:3em}}@media (max-width:767px) and (min-width:481px){.titulojuego{font-size:2.5em}}@media (max-width:480px){.titulojuego{font-size:1.8em}}.plataformajuego_frontal{width:80px;height:80px;background-size:100%;display:block;margin-left:auto;margin-right:auto}@media (max-width:767px){.plataformajuego_frontal{width:50px;height:50px}}.anchor:before{display:block;content:"";height:90px;margin:-90px 0 0}@media (max-width:767px){.anchor:before{display:block;content:"";height:60px;margin:-60px 0 0}}.pegi{height:73px;width:60px;background-size:100% auto;background-position:center center;background-repeat:no-repeat}@media (max-width:767px){.pegi{height:49px;width:40px}}.divcontieneimagen{width:100%;padding-bottom:56%;background-size:100% auto}.fleft{float:left}.fright{float:right}.clearer{clear:both}.cleft{clear:left}.mb_5{margin-bottom:-5px}.ml0{margin-left:0}.nd{display:none}.w33{width:33%;display:inline-block}.tcenter{text-align:center}.tleft{text-align:left}.tright{text-align:right}.relative{position:relative}.absolute{position:absolute}.linktotal{display:block;width:100%;height:100%}.linktotal2{display:block}.dblock{display:block}.iblock{display:inline-block}#puntodefuga{float:left;display:block;width:1px;height:1px}.share_mini{background-image:url(https://www.vandalimg.com/rim/iconos_sociales_sprite_30.png);width:30px;height:30px;background-repeat:no-repeat}.share_mini:hover{opacity:.8;cursor:pointer}.share_mini_fb{background-position:-31px 0}.share_mini_twitter{background-position:0 0}.share_mini_gplus{background-position:-62px 0}.share_mini_whatsapp{background-position:-93px 0}.share_movil{width:50px;height:50px;background-repeat:no-repeat;border-radius:50%}.share_movil:hover{opacity:.8;cursor:pointer}.share_movil_fb{background-position:17px 10px;background-color:#0052a3}.share_movil_twitter{background-position:11px 14px;background-color:#00b7ef}.share_movil_gplus{background-position:7px 12px;background-color:#ed4040}.share_movil_whatsapp{background-position:10px 10px;background-color:#69bd5a}.publi_derecha_responsive_portada{max-width:300px;max-height:600px;width:30.7%;margin-left:1em;height:auto}.videoyoutube_limitador{max-width:640px;margin:0 auto}.videoyoutube_limitador_320{max-width:320px;margin:0 auto}.videoyoutube{width:100%;padding-top:56.25%;position:relative}.textart .videoyoutube{margin-bottom:20px}.videoyoutube iframe{width:100%;height:100%;position:absolute;top:0;left:0}.videoyoutube div{width:100%;height:100%;position:absolute;top:0;left:0}.reproductor_2018{background-position:center center;background-repeat:no-repeat;background-size:100%}.boton_play2018{width:100%;height:100%;cursor:pointer;background-image:url(https://www.vandalimg.com/rim/play_80.png);background-position:center center;background-repeat:no-repeat;opacity:.7}.boton_play2018:hover{opacity:1;cursor:pointer}.resaltado{font-weight:700;color:#30b0e5}
+#cookies-policy .close{color:#000}.video_overdrive{height:235px!important;margin-bottom:0}@media (max-width:767px){.video_overdrive{width:auto;margin-bottom:1em;overflow:hidden;height:auto!important}.video_overdrive .desccaja{display:block}}audio,canvas,video{display:inline-block}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}a:active,a:hover{outline:0}img{max-width:100%;width:auto;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic}button,input,select,textarea{margin:0;font-size:100%;vertical-align:middle}button,input{line-height:normal}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button,input[type=button],input[type=checkbox],input[type=radio],input[type=reset],input[type=submit],select{cursor:pointer}textarea{overflow:auto;vertical-align:top}body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:20px;color:#333}a{text-decoration:none}a:focus,a:hover{color:#284b5b;text-decoration:underline}.row{margin-left:-20px}.row:after,.row:before{display:table;content:"";line-height:0}.row:after{clear:both}[class*=span]{float:left;min-height:1px;margin-left:20px}.container{width:940px;}.span12{width:940px}.span11{width:860px}.span10{width:780px}.span9{width:700px}.span8{width:620px}.span7{width:540px}.span6{width:460px}.span5{width:380px}.span4{width:300px}.span3{width:220px}.span2{width:140px}.span1{width:60px}.offset12{margin-left:980px}.offset11{margin-left:900px}.offset10{margin-left:820px}.offset9{margin-left:740px}.offset8{margin-left:660px}.offset7{margin-left:580px}.offset6{margin-left:500px}.offset5{margin-left:420px}.offset4{margin-left:340px}.offset3{margin-left:260px}.offset2{margin-left:180px}.offset1{margin-left:100px}.container{margin-right:auto;margin-left:auto;background-color: transparent !important;}.container:after,.container:before{display:table;content:"";line-height:0}.container:after{clear:both}p{margin:0 0 10px}strong{font-weight:700}em{font-style:italic}h1,h2,h3,h4,h5{margin:10px 0;font-family:inherit;font-weight:700;line-height:20px;color:inherit;text-rendering:optimizeLegibility}h1,h2,h3{line-height:40px}h1{font-size:38.5px}h2{font-size:31.5px}h3{font-size:24.5px}h4{font-size:17.5px}h5{font-size:14px}ul{padding:0;margin:0 0 10px 25px}ul ul{margin-bottom:0}li{line-height:1.5em;margin-bottom:.35em}.listadoble{columns:2;-webkit-columns:2;-moz-columns:2}@media (max-width:767px){.listadoble{columns:1;-webkit-columns:1;-moz-columns:1}}.listasinestilo{margin:0;list-style:none}hr{margin:20px 0;border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}table{max-width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0}.tablasinmargen{margin-left:-.8em}.f15px{font-size:15px}.table{width:100%;margin-bottom:20px;background:#fff}.table td,.table th{padding:8px;line-height:20px;text-align:left;vertical-align:top;border-top:1px solid #ddd}.table th{font-weight:700}.table thead th{vertical-align:bottom}.table tbody+tbody{border-top:2px solid #ddd}.table .table{background-color:#fff}.table-striped tbody>tr:nth-child(odd)>td,.table-striped tbody>tr:nth-child(odd)>th{background-color:#f9f9f9}button,input,select,textarea{font-size:14px;font-weight:400;line-height:20px}select,textarea{display:inline-block;height:20px;padding:4px 6px;font-size:14px;line-height:20px;color:#555;border-radius:4px;vertical-align:middle}input,textarea{width:206px}textarea{height:auto}input[type=text],textarea{background-color:#fff}input[type=checkbox],input[type=radio]{margin:4px 0 0;line-height:normal}input[type=button],input[type=checkbox],input[type=file],input[type=image],input[type=radio],input[type=reset],input[type=submit]{width:auto}input[type=file],select{height:30px;line-height:30px}select{width:220px;border:1px solid #ccc;background-color:#fff}.hide{display:none}.show{display:block}.fade{opacity:0;transition:opacity .15s linear}.fade.in{opacity:1}.hidden{display:none;visibility:hidden}.visible-phone{display:none!important}.visible-tablet{display:none!important}.hidden-desktop{display:none!important}.visible-desktop{display:inherit!important}@media (min-width:768px) and (max-width:979px){.hidden-desktop{display:inherit!important}.visible-desktop{display:none!important}.visible-tablet{display:inherit!important}.hidden-tablet{display:none!important}}@media (max-width:767px){.hidden-desktop{display:inherit!important}.visible-desktop{display:none!important}.visible-phone{display:inherit!important}.hidden-phone{display:none!important}}@media (max-width:767px){.container{width:auto}.row{margin-left:0}[class*=span]{float:none;display:block;width:100%;margin-left:0;box-sizing:border-box}}@media (min-width:768px) and (max-width:979px){.container{width:724px}.span12{width:724px}.span11{width:662px}.span10{width:600px}.span9{width:538px}.span8{width:476px}.span7{width:414px}.span6{width:352px}.span5{width:290px}.span4{width:228px}.span3{width:166px}.span2{width:104px}.span1{width:42px}.offset12{margin-left:764px}.offset11{margin-left:702px}.offset10{margin-left:640px}.offset9{margin-left:578px}.offset8{margin-left:516px}.offset7{margin-left:454px}.offset6{margin-left:392px}.offset5{margin-left:330px}.offset4{margin-left:268px}.offset3{margin-left:206px}.offset2{margin-left:144px}.offset1{margin-left:82px}input,textarea{margin-left:0}}@media (max-width:979px){body{padding-top:0}}@font-face{font-family:'Roboto Condensed';font-style:normal;font-weight:400;src:url(https://themes.googleusercontent.com/static/fonts/robotocondensed/v9/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff) format('woff');font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:url(https://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');font-display:swap}@font-face{font-family:Neuton;font-style:italic;font-weight:400;src:local('Neuton Italic'),local('Neuton-Italic'),url(https://fonts.gstatic.com/s/neuton/v7/MZZLPHJyYM2BWjeqYVWFb_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2'),url(https://fonts.gstatic.com/s/neuton/v7/6jMDFzuE3S_SN8y5pCCVKvesZW2xOQ-xsNqO47m55DA.woff) format('woff');font-display:swap}#div-gpt-ad-352218914245092295-1{line-height:14px;max-width:100%;max-height:360px;margin-left:auto;margin-right:auto}#div-gpt-ad-352218914245092295-1 img{max-height:20px}#div-gpt-ad-352218914245092295-1 div{text-align:center;margin:auto auto}#div-gpt-ad-352218914245092295-2,#div-gpt-ad-352218914245092295-3{text-align:center;margin:auto}#div-gpt-ad-352218914245092295-1,#div-gpt-ad-352218914245092295-2,#div-gpt-ad-352218914245092295-3,#div-gpt-ad-352218914245092295-4,#div-gpt-ad-352218914245092295-5,#div-gpt-ad-352218914245092295-6{overflow:hidden}@media (max-width:979px){.publi_derecha_responsive_portada{position:relative}.publi_wrapper2_skin{padding-bottom:0;height:250px}#hacehuecotop{display:none;z-index:-1;width:100%;padding-top:0!important;height:100px}.hacehueco_100{height:100px!important}.hacehueco_50{height:50px!important}.hacehueco_360{height:360px!important}#div-gpt-ad-352218914245092295-1 embed{width:100%!important;height:100%!important}#div-gpt-ad-352218914245092295-1 img{max-height:250px}#div-gpt-ad-352218914245092295-1 iframe{width:100%!important;height:100%!important}#div-gpt-ad-352218914245092295-1 div{width:100%!important;height:100%!important}#div-gpt-ad-352218914245092295-1 span{width:100%!important;height:100%!important}#bannerarriba object{width:100%!important;height:100%!important}.publi400skin{width:100%;height:100%!important}#bannerarriba{position:relative}#div-gpt-ad-352218914245092295-1{position:absolute;text-align:center;z-index:1;top:0;left:0;right:0;margin:auto;width:100%;height:100%;overflow:hidden}#div-gpt-ad-352218914245092295-6{z-index:1;width:100%;height:100%;overflow:hidden}}.adform-adbox-hidden{width:0!important;overflow:hidden!important}#div-gpt-ad-352218914245092295-6 div{z-index:950!important}#div-gpt-ad-352218914245092295-6 iframe{z-index:950!important}@media (min-width:980px){.margen250{margin-top:14px}}.videoauto iframe{width:100%;height:108%;position:absolute;top:0;left:0;z-index:20}.sombreado{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVR42mNQU1PzRcYMpAsAAJKLC/FY4x3HAAAAAElFTkSuQmCC)}@media(min-width:768px){#whatsapp_movil{display:none}}@media(max-width:767px){#whatsapp_movil{position:fixed;bottom:10px;right:70px}}#subir_arriba{position:fixed;bottom:15px;right:15px;border-radius:50%;background-color:#30b0e5;text-align:center}#subir_arriba .flecha{width:40px;height:40px;padding:10px}@media(max-width:767px){#subir_arriba{bottom:10px;right:10px}#subir_arriba .flecha{width:30px;height:30px;padding:10px}}#subir_arriba a{display:block;width:100%;height:100%}.subir_arriba_invisible{display:none}.subir_arriba_visible{display:block}.imagen_footer{width:173px;height:92px}@media (min-width:768px) and (max-width:979px){#buscar{width:100px}}.bodysticky{border-bottom:104px solid transparent}.stickycontainer{padding-top:4px;width:100%!important;background:#fff;position:fixed!important;bottom:0!important;left:0;z-index:970;max-height:104px!important;height:104px;box-sizing:border-box;opacity:1!important;background-image:none!important;background-color:#fff;box-shadow:0 0 5px 0 rgba(0,0,0,.2)!important;margin-bottom:0!important;align-items:center;display:flex;justify-content:center;overflow:visible!important;transform:translateZ(0)!important}.stickyanuncio{position:relative;width:320px;height:100px}.stickycerrar{position:absolute;width:28px;height:28px;top:-28px;right:0;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='13' viewBox='341 8 13 13' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%234F4F4F' d='M354 9.31L352.69 8l-5.19 5.19L342.31 8 341 9.31l5.19 5.19-5.19 5.19 1.31 1.31 5.19-5.19 5.19 5.19 1.31-1.31-5.19-5.19z' fill-rule='evenodd'/%3E%3C/svg%3E");background-size:13px 13px;background-position:9px;background-color:#fff;background-repeat:no-repeat;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:12px 0 0 0;cursor:pointer}.stickyvisible{visibility:visible!important}.tablaancha{overflow-x:auto}.tablaancha::-webkit-scrollbar{height:6px;width:6px;background:#284b5b}.tablaancha::-webkit-scrollbar-thumb{background-color:#30b0e5}.capitalizar{text-transform:capitalize}#temasdeldia{z-index:20000}#temasdeldia a{font-family:Arial;font-size:12px;color:#333;font-weight:400}#temasdeldia .temasdeldia_caben ul{list-style:none;margin:0}#temasdeldia .temasdeldia_caben ul li{float:left;display:inline-block;margin:0}@media(min-width:768px){#temasdeldia{position:absolute;max-width:280px;width:280px;height:50px;left:105px;top:0}#temasdeldia .temasdeldia_caben{position:absolute;max-width:220px;max-height:50px;overflow:hidden}#temasdeldia .temasdeldia_nocaben{position:absolute;top:9px;right:0;width:43px;text-align:center;margin-left:5px;padding-left:5px;padding-right:5px;border-radius:5px;height:21.6px;padding-top:5px;padding-bottom:5px;background:#f5f5f5}#temasdeldia .temasdeldia_nocaben .temasdeldia_dropdown{height:22px}#temasdeldia .temasdeldia_nocaben #temasdeldia_nocaben_container{position:absolute;text-align:left;background:#f5f5f5;padding-top:8px;top:25px;left:0;border-top-left-radius:0;border-top-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;width:658px}#temasdeldia .temasdeldia_caben ul:before{content:"#";float:left;display:block;font-size:14px;font-weight:700;margin-right:10px;height:50px;line-height:50px}#temasdeldia .temasdeldia_caben ul li{margin-right:10px;text-decoration:underline;margin-top:3px;margin-bottom:0;height:22px;line-height:22px}#temasdeldia .temasdeldia_caben ul:after{content:"";display:block;clear:both}#temasdeldia .temasdeldia_nocaben ul{list-style:none;margin:0;background:#f5f5f5;padding-bottom:2px;border-radius:5px;float:left}#temasdeldia .temasdeldia_nocaben ul li{margin-left:0;background:#f5f5f5;width:200px;padding:4px 10px}#temasdeldia_dropdown_desplegar{line-height:1.5em;text-decoration:underline}}@media(max-width:767px){#temasdeldia{height:30px;background:#f5f5f5;text-align:center;border-bottom:1px solid #30b0e5}#temasdeldia .temasdeldia_caben ul{clear:both;margin-left:auto;margin-right:auto;display:inline-block;text-align:center;overflow-y:hidden;overflow-x:scroll;white-space:nowrap;max-width:100%}#temasdeldia .temasdeldia_caben ul:before{content:"#";float:none;display:inline-block;line-height:30px;height:30px;font-size:14px;font-weight:700;margin-left:7px;margin-right:10px}#temasdeldia .temasdeldia_caben ul li{margin-right:10px;float:none;display:inline-block;line-height:30px;height:30px;text-decoration:underline}#temasdeldia .temasdeldia_caben ul:after{content:"";display:block;clear:both}#temasdeldia .temasdeldia_nocaben{display:none}}.afterclearer:after{content:"";display:block;clear:both}
+@media (min-width:768px){
+#publi400 {
+	overflow:hidden;
+	max-height:360px;
+}
+#bannerarriba,#publifooter {
+	min-height:250px;
+	min-width:990px;
+	overflow:hidden;
+}
+#publi_intext1,#publi_intext2 {
+	min-height:451px;
+	overflow:hidden;
+}
+}
+.videoauto{margin-left:auto;margin-right:auto;margin-bottom:30px;height:360px;max-width:640px;width:100%;position:relative}
+#div-gpt-ad-1581411551473-0,#div-gpt-ad-1586434333906-0,#div-gpt-ad-1581411579931-0,#div-gpt-ad-1581411620687-0,#div-gpt-ad-1581411675021-0,#div-gpt-ad-1586434360202-0 {
+	min-width:300px;
+	min-height:600px;
+}
+#div-gpt-ad-1581411551473-0-id,#div-gpt-ad-1586434333906-0-id,#div-gpt-ad-1581411579931-0-id,#div-gpt-ad-1581411620687-0-id,#div-gpt-ad-1581411675021-0-id,#div-gpt-ad-1586434360202-0-id {
+	min-width:300px;
+	min-height:600px;
+	text-align:center;
+}
+#div-gpt-ad-1586434376383-0-id {
+	text-align:center;
+}
+#div-gpt-ad-1586434376383-0-id div,#div-gpt-ad-1581411551473-0-id div,#div-gpt-ad-1586434333906-0-id div,#div-gpt-ad-1581411579931-0-id div,#div-gpt-ad-1581411620687-0-id div,#div-gpt-ad-1581411675021-0-id div,#div-gpt-ad-1586434360202-0-id div {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+@media (max-width:767px){
+.videoauto {
+	height:0;
+	padding-bottom:56.25%;
+}
+#bannerarriba,#publifooter {
+	height:100px;
+	width:320px;
+	overflow:hidden;
+	margin-left: auto;
+    margin-right: auto;
+}
+#publi_intext1,#publi_intext2 {
+	min-height:290px;
+	overflow:hidden;
+}
+#placeholderheadermovil {
+width:100%;
+background:#f3f3f3;
+height:128px;
+margin-bottom:2em;
+}
+.publi_nmr,#placeholderpubli1movil,#placeholderpubli2movil,#placeholderpubli3movil,#placeholderpubli4movil {
+width:100%;
+background:#f3f3f3;
+height:628px;
+margin-bottom:2em;
+}
+#placeholderheadermovil:before,#placeholderpubli1movil:before,#placeholderpubli2movil:before,#placeholderpubli3movil:before,#placeholderpubli4movil:before{content:"El artículo continúa tras la publicidad";font-size:12px;width:300px;text-align:center;display:block;background:#f3f3f3;margin-left:auto;margin-right:auto;height:28px;line-height:26px}}#placeholderpubli1movil{margin-top:1.5em}#placeholderpubli2movil{margin-top:2em}#placeholderpubli3movil{margin-top:2em}.anuncio-fixed{position:sticky;position:-webkit-sticky;position:-moz-sticky;position:-ms-sticky;position:-o-sticky;top:60px}@media (max-width:768px){#carril_derecho{height:auto!important}#carril_derecho2{height:auto!important}#carril_derecho3{height:auto!important}.anuncio-fixed{position:static;top:0}}@media (min-width:769px){#carril_derecho{min-height:600px}#carril_derecho2{min-height:600px}#carril_derecho3{min-height:600px}}
+
+.nopubli #placeholderheadermovil,.nopubli #placeholderpubli1movil,.nopubli #placeholderpubli2movil,.nopubli #placeholderpubli3movil,.nopubli #placeholderpubli4movil {
+	display:none;
+}
+
+.imgabsoluta {
+	position:absolute;top:0;left:0;width:100%;height:100%;
+}
+.siguenos_footer {
+	width:64px;height:64px;
+}
+.viqeo-slot {
+	margin-bottom:20px;
+}
+.listado_loultimo {
+	list-style-type: none;
+	margin-left: 0px;
+}
+@media (min-width:768px) {
+#temasdeldia .listado_loultimo a {
+	font-size:14px;
+	font-weight:bold;
+}
+#temasdeldia .temasdeldia_nocaben ul.listado_loultimo li {
+	width:400px;
+}
+#temasdeldia .temasdeldia_nocaben ul.listado_loultimo{
+	width:430px;
+}
+.timestamp_loultimo {
+	font-size:11px;
+}
+}
+</style><!--header-end-->
+<style type="text/css">
+@media (max-width:767px) {
+	#menukrogan {margin-top:82px !important;}
+	#buscadordesktop {top:82px;}
+}
+#google_ads_iframe_20301922\/Vandal\/v_vandal_mpu_1_0__container__ {
+	min-width:300px;
+	min-height:250px;
+}
+#google_ads_iframe_20301922\/Vandal\/v_vandal_mpu_1_0 {
+	min-width:300px;
+	min-height:250px;
+}
+#google_ads_iframe_20301922\/Vandal\/v_vandal_mpu_2_0__container__ {
+	min-width:300px;
+	min-height:250px;
+}
+#google_ads_iframe_20301922\/Vandal\/v_vandal_mpu_2_0 {
+	min-width:300px;
+	min-height:250px;
+}
+#google_ads_iframe_20301922\/Vandal\/v_vandal_mpu_3_0__container__ {
+	min-width:300px;
+	min-height:250px;
+}
+#google_ads_iframe_20301922\/Vandal\/v_vandal_mpu_3_0 {
+	min-width:300px;
+	min-height:250px;
+}
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>&Uacute;ltimas noticias de videojuegos y todas las novedades - Pag. 16 - Vandal</title>
+<meta name="title" content="&Uacute;ltimas noticias de videojuegos y todas las novedades - Pag. 16 - Vandal" /><meta name="keywords" content="noticias, videojuegos, noticias de videojuegos, uacuteltimas, pag, 16, vandal, vandal, videojuegos, online, ps4, xbox one" /><meta name="description" content="Noticias de juegos. Descubre las &uacute;ltimas noticias y novedades de videojuegos. Inf&oacute;rmate en Vandal.net para estar siempre al d&iacute;a. &Uacute;ltimas noticias. P&aacute;gina 16." /><link rel="amphtml" href="https://vandal.elespanol.com/noticias-amp/videojuegos/inicio/480" /><meta name="robots" content="all" /><link rel="canonical" href="https://vandal.elespanol.com/noticias/videojuegos/inicio/480" /><link rel="next" href="https://vandal.elespanol.com/noticias/videojuegos/inicio/510" /><link rel="prev" href="https://vandal.elespanol.com/noticias/videojuegos/inicio/450" />
+<style type="text/css">
+.bloqueminipildoras{clear:both;margin-top:.6em;margin-left:auto;margin-right:auto;display:inline-block;text-align:center}.minipildora{float:left;border-radius:50%;color:#7c7c7c;margin-right:.2em;background-color:#efefef;text-align:center;margin-bottom:.3em}.minipildora:hover,.minipildora_seleccionada{background-color:#00b7ef}.minipildora a:link,.minipildora a:visited{padding:.35em .25em;width:1.2em;height:1.2em;line-height:1.2em;display:block;color:#7c7c7c}.minipildora a:hover{color:#fff;text-decoration:none}.minipildora_seleccionada a:link,.minipildora_seleccionada a:visited{color:#fff}@media (max-width:767px){.bloqueminipildoras{font-size:.9em;overflow-x:scroll;overflow-y:hidden;white-space:nowrap;max-width:100%}.minipildora a:link,.minipildora a:visited{padding:.35em .25em;width:1.1em;height:1.1em;line-height:1.1em}.minipildora{float:none;display:inline-block}}@media (min-width:768px){.bloqueminipildoras{font-size:1em}}
+</style>
+<script type="text/javascript">
+function getDocHeight(){return Math.max(document.body.scrollHeight || 0,document.documentElement.scrollHeight || 0,document.body.offsetHeight || 0,document.documentElement.offsetHeight || 0,document.body.clientHeight || 0,document.documentElement.clientHeight || 0);}
+
+var _comscore = _comscore || [];
+
+window.didomiOnReady = window.didomiOnReady || [];
+window.didomiOnReady.push(function(){
+	if(window.Didomi.notice.isVisible()){
+		var throttle, _hasAcceptted;
+		_comscore.push({ c1: "2", c2: "19999699"});
+	}
+	else{
+		if(window.Didomi.getUserConsentStatusForVendor(77)){
+			_comscore.push({ c1: "2", c2: "19999699", cs_ucfr:1});
+		}
+		else{
+			_comscore.push({ c1: "2", c2: "19999699", cs_ucfr:0});
+		}
+	}
+	console.log(_comscore);
+	(function() {
+	var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/cs/19999699/beacon.js";
+	el.parentNode.insertBefore(s, el);
+	})();
+});
+
+
+var eventosCallback=new Array();var eventosLoad=new Array();var eventosScrollLoad=new Array();var eventosReady=new Array();var eventosScroll2=new Array();var eventosInteractivos=new Array();
+
+</script>
+<meta name="ahrefs-site-verification" content="11e5b9237d7f2ffdeae19d3e93d689ccf30e42e0ce390b6e9002600141117b2f">
+</head><body id="body">
+<!-- Begin comScore Tag -->
+<noscript>
+<img src="https://sb.scorecardresearch.com/p?c1=2&c2=19999699&cv=2.0&cj=1&cs_ucfr=" />
+</noscript>
+<!-- End comScore Tag -->	
+
+<script type="text/javascript">
+var billboard_sticky=0;
+var llave_init=0;
+var llave_funciones=0;
+var llave_load=0;
+var llave_interaccion=0;
+var llave_dfp=0;
+</script>
+<script>
+eventosInteractivos.push(function() {
+cargarscript("https://www.googletagmanager.com/gtag/js?id=UA-1050760-1");
+});
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "UA-1050760-1");
+gtag("config", "UA-58108281-1");
+
+</script>
+<div id="cabecera_wrap">
+<div id="temasdeldia">
+<div class="temasdeldia_caben"><ul id="temasdeldia_caben_lista"><li><a href="https://vandal.elespanol.com/noticia/1350756953/juegos-gratis-del-fin-de-semana-f1-22-superhot-wrc-10-fia-world-rally-championship-y-mas/" title="Juegos gratis" target="_blank">Juegos gratis</a></li><li><a href="https://vandal.elespanol.com/noticia/1350756961/estos-son-los-exclusivos-de-google-stadia-que-podrian-desaparecer-tras-el-cese-del-servicio/" title="Stadia" target="_blank">Stadia</a></li><li><a href="https://vandal.elespanol.com/noticia/1350756947/free-fire-codigos-de-hoy-viernes-30-de-septiembre-de-2022-recompensas-gratis/" title="Free Fire" target="_blank">Free Fire</a></li><li><a href="https://vandal.elespanol.com/noticia/1350756948/wordle-en-espanol-tildes-y-cientifico-hoy-30-de-septiembre-pistas-y-solucion-a-la-palabra-oculta/" title="Wordle hoy" target="_blank">Wordle hoy</a></li><li><a href="https://vandal.elespanol.com/reportaje/random-relleno-de-naruto-shippuden-todos-los-capitulos-y-cuales-evitar-a-toda-costa" title="Relleno Naruto" target="_blank">Relleno Naruto</a></li><li><a href="https://vandal.elespanol.com/reportaje/en-que-orden-leer-los-libros-de-the-witcher-toda-la-saga" title="Libros The Witcher" target="_blank">Libros The Witcher</a></li><li><a href="https://vandal.elespanol.com/reportaje/orden-de-las-peliculas-de-marvel-ucm-cronologia-y-estreno-2020" title="Orden Marvel" target="_blank">Orden Marvel</a></li><li><a href="https://vandal.elespanol.com/guias/guia-minecraft-los-mejores-trucos-y-consejos-2018/alquimia-pociones" title="Pociones Minecraft" target="_blank">Pociones Minecraft</a></li><li><a href="https://vandal.elespanol.com/reportaje/tabla-de-tipos-de-pokemon-fortalezas-y-debilidades-en-todos-los-juegos" title="Tabla tipos Pokémon" target="_blank">Tabla tipos Pokémon</a></li><li><a href="https://vandal.elespanol.com/trucos/pc/grand-theft-auto-san-andreas/3903" title="Trucos GTA San Andreas" target="_blank">Trucos GTA San Andreas</a></li><li><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/giovanni-y-lideres-del-team-go-rocket" title="Giovanni" target="_blank">Giovanni</a></li><li><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/lideres-del-team-go-rocket" title="Team GO Rocket" target="_blank">Team GO Rocket</a></li><li><a href="https://vandal.elespanol.com/guias/guia-genshin-impact-trucos-consejos-y-secretos/codigos-y-recompensas-gratis" title="Códigos Genshin Impact" target="_blank">Códigos Genshin Impact</a></li><li><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/truco-eevee" title="Eevee Pokémon GO" target="_blank">Eevee Pokémon GO</a></li><li><a href="https://vandal.elespanol.com/trucos/ps4/grand-theft-auto-v/24761" title="Trucos GTA 5" target="_blank">Trucos GTA 5</a></li></ul></div>
+<div class="temasdeldia_nocaben"><div class="temasdeldia_dropdown"><a href="javascript:void(0);" id="temasdeldia_dropdown_desplegar">Más &darr;</a></div><div id="temasdeldia_nocaben_container" class="nd" data-abierto="0"><ul id="temasdeldia_nocaben_lista"></ul></div></div>
+</div><!--temasdeldia-->
+<div id="cabeceramenu"><div id="cabecera1" class="afterclearer"><div id="cabecera1_cen"><a href="https://vandal.elespanol.com" title="Vandal Videojuegos">
+<img width="174" height="28" src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 6000 965.1' style='enable-background:new 0 0 6000 965.1;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23292627;%7D .st1%7Bfill:%2334B0E5;%7D .st2%7Bopacity:0.9;fill:%23231F20;%7D .st3%7Bopacity:0.7;fill:%23231F20;%7D%0A%3C/style%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='guides'%3E%3C/g%3E%3Cg id='Layer_7'%3E%3Cg%3E%3Cpath class='st0' d='M5695.8,0v773H6000v192h-495.8V0H5695.8z'/%3E%3Cpath class='st0' d='M1524.7,965.1L1135.5,0h221.1l127.3,319.6l69.7,198.8l68.3-192.1L1750.5,0h221.1L1580,965.1H1524.7z'/%3E%3Cpath class='st0' d='M2297.2,0h44.6L2734,965.1h-215.7l-38.9-103.4h-317.6l-37.5,103.4h-217.1L2297.2,0z M2408.4,681.7 l-87.1-249.8l-89.8,249.8H2408.4z'/%3E%3Cpath class='st0' d='M4933.3,0h44.6l392.3,965.1h-215.7l-38.9-103.4H4798l-37.5,103.4h-217.1L4933.3,0z M5044.6,681.7l-87.1-249.8 l-89.8,249.8H5044.6z'/%3E%3Cpath class='st0' d='M3059.7,965.1h-191.6V0h67l467.6,544V0h192.9v965.1h-65.9l-470.1-527.2V965.1z'/%3E%3Cpath class='st0' d='M4004,965.1h-192.6V0H4004C4644.9,0,4644.9,965.1,4004,965.1z M4004,193v579.1l0,0 C4378.3,772.1,4378.3,193,4004,193L4004,193z'/%3E%3Cg%3E%3Cpath class='st1' d='M688.6,0c183.4,74.3,312.9,254.1,312.9,464.3c0,213-133.1,394.9-320.6,467.3 c-55.9,21.5-116.6,33.4-180.1,33.4c-63.5,0-124.4-11.9-180.2-33.4C133,859.2,0,677.3,0,464.3C0,254.1,129.4,74.3,313,0 l187.8,464.2L688.6,0z'/%3E%3C/g%3E%3Cpath class='st2' d='M313,0l187.8,464.2L313,928.4C129.5,854.2,0,674.4,0,464.3C0,254.1,129.5,74.3,313,0z'/%3E%3Cpath class='st3' d='M500.8,464.2l187.8,464.3c-2.5,1.1-5.1,2.1-7.7,3.1c-55.9,21.5-116.6,33.4-180.1,33.4 c-63.5,0-124.4-11.9-180.2-33.4c-2.6-1-5.1-2-7.6-3.1L500.8,464.2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A" alt="Vandal"></a></div><div id="cabecera1_izq"><div id="menu_izq" class="margen_menu_responsive" onclick="desplegarMenu(); return false;"></div>
+<div id="usuario_izq" class="afterclearer"><div id="icono_usuario"  onclick="desplegarMenuUsuario(); return false;"></div><div class="fleft hidden-phone" id="info_usuario"></div><div class="clearer"></div></div><div class="clearer"></div></div><!--cabecera1_izq-->
+<div id="cabecera1_der" class="afterclearer"><div id="vm_wrapper" class="margen_menu_responsive"><div id="vm_der"><a href="https://www.elespanol.com" class="linktotal" title="EL ESPAÑOL" target="_blank"></a></div><div class="clearer"></div></div><div id="buscador_der" class="afterclearer"><div id="lupa_buscador"><a href="javascript:void(0);" class="linktotal" title="Buscar" onclick="buscar_contexto(); return false;"></a></div><div class="hidden-phone fright mt07" id="buscadordesktop"><div class="zona_busqueda"><form action="https://vandal.elespanol.com/cgi-bin/buscar.pl" class="afterclearer"><div><input type="text" autocomplete="off" id="buscar" name="buscar" onkeyup="sugerencias_busqueda(event,this.value,'sugerencias','','buscar');"><button id="buscarenviar">BUSCAR</button></div></form></div><div class="sugerencias_wrapper"><div id="sugerencias" class="sugerencias"></div></div></div><!--hidden-phone de busqueda--></div></div></div>
+<div id="cabecera2"><nav id="menuplataformas">
+<ul>
+<!--laportadaenteraesporjava-->
+<li class="pestana pestanaindependiente" id="pestananoticias"><a id="link-noticias" href="https://vandal.elespanol.com/noticias/videojuegos" title="Noticias de videojuegos">Noticias</a></li>
+<li class="pestana pestanaindependiente" id="pestanaanalisis"><a id="link-analisis" href="https://vandal.elespanol.com/analisis/videojuegos" title="Análisis de videojuegos">Análisis</a></li>
+<li class="pestana pestanaindependiente" id="pestanaguias"><a id="link-guias" href="https://vandal.elespanol.com/guias/" title="Guías de videojuegos">Guías</a></li>
+<li class="pestana pestanadesplegable" id="pestanajuegos"><a id="link-juegos" href="https://vandal.elespanol.com/juegos/0/videojuegos"   title="Listado de videojuegos">Juegos</a>
+<ul id="links-seccion-juegos">
+<li class="cleft"><a href="/esperados/" title="Juegos más esperados" title="Juegos esperados">Esperados</a></li>
+<li class="ancho120"><a href="/populares/" title="Juegos más populares" title="Juegos populares">Populares</a></li>
+<li class="cleft"><a href="/lanzamientos/0/videojuegos" title="Próximos lanzamientos" title="Lanzamientos de juegos">Lanzamientos</a></li>
+<li class="ancho120"><a href="/rankings/videojuegos" title="Ránkings de videojuegos" title="Ránkings de juegos">Rankings</a></li>
+<li class="cleft"><a href="/requisitos/" title="Requisitos de videojuegos" title="Requisitos de juegos">Requisitos</a></li>
+</ul></li>
+<li class="pestana pestanaindependiente" id="pestanareportajes"><a id="link-reportajes" href="https://vandal.elespanol.com/reportajes/videojuegos" title="Reportajes de videojuegos">Reportajes</a></li>
+<li class="pestana pestanaindependiente" id="pestanaavances"><a id="link-avances" href="https://vandal.elespanol.com/avances/videojuegos" title="Avances de videojuegos">Avances</a></li>
+<li class="pestana pestanaindependiente" id="pestanatrucos"><a id="link-trucos" href="https://vandal.elespanol.com/trucos/videojuegos" title="Trucos de videojuegos">Trucos</a></li>
+<li class="pestana pestanadesplegable" id="pestanaforo2"><a id="link-foro" href="https://vandal.elespanol.com/foro/cgi-bin/foro.cgi" class="extenderforo" title="Foro Vandal">Foro</a><ul id="links-foro" class="ul-arriba"><li class="cleft ancho180"><a href="/foro/cgi-bin/foro.cgi?accion=vermensajesactivos">Temas activos</a></li><li class="cleft ancho180"><a href="/foro/cgi-bin/foro.cgi?accion=vermensajesnuevos">Temas nuevos</a></li></ul></li>
+<li class="pestana pestanaindependiente" id="pestanavandalrandom"><a id="link-vandalrandom" href="https://vandal.elespanol.com/random/" title="Vandal Random" target="_blank">Random</a></li>
+<li class="pestana pestanaindependiente" id="pestanavandalware"><a id="link-vandalware" href="https://vandal.elespanol.com/ware/" title="Vandal Ware" target="_blank">Hardware</a></li>
+<li class="pestana pestanaindependiente" id="pestanavandalsports"><a id="link-vandalsports" href="https://vandal.elespanol.com/esports/" title="Vandal Sports" target="_blank">eSports</a></li>
+<li class="pestana pestanadesplegable" id="pestanaplataformas"><a id="link-plataformas" href="#" >Plataformas</a>
+<ul id="links-plataformas">
+<li class="cleft"><a href="/pc/" title="PC">PC</a></li>
+<li class="ancho120"><a href="/playstation4/" title="PS4">PS4</a></li>
+<li class="cleft"><a href="/xboxone/" title="Xbox One">Xbox One</a></li>
+<li class="ancho120"><a href="/nintendoswitch/" title="Nintendo Switch">Switch</a></li>
+<li class="cleft"><a href="/playstation5/" title="PlayStation 5">PS5</a></li>
+<li class="ancho120"><a href="/xboxseriesx/" title="Xbox Series X/S">Xbox Series X/S</a></li>
+<li class="cleft"><a href="/android/" title="Android">Android</a></li>
+<li class="ancho120"><a href="/iphone/" title="iOS">iOS</a></li>
+<li class="cleft"><a href="/nintendo3ds/" title="Nintendo 3DS">3DS</a></li>
+<li class="ancho120"><a href="/psvita/" title="PSVITA">PSVITA</a></li>
+</ul></li>
+<li class="pestana pestanaindependiente" id="pestanaradio"><a id="link-vandalradio" href="https://vandal.elespanol.com/radio/" title="Vandal Radio">Podcast</a></li>
+<!--marcakrogan--></ul>
+</nav></div></div><!--cabeceramenu--></div><!--cabecera_wrap-->
+<script type="text/javascript">
+function windowwidth() {return window.innerWidth || document.documentElement.clientWidth;}
+function e_lem (c) {return document.getElementById(c);}
+function temasdeldia_desktop() {if(windowwidth()<768) {return;}var desde=4;var hijos=e_lem('temasdeldia_caben_lista').getElementsByTagName('li');var cuantos=hijos.length;for(i=cuantos-1;i>=0;i--) {if(i>=desde) {e_lem('temasdeldia_nocaben_lista').insertBefore(hijos[i],e_lem('temasdeldia_nocaben_lista').firstChild);}}e_lem('temasdeldia_dropdown_desplegar').onclick=function() {desplegar_temasdeldia(); };}
+function desplegar_temasdeldia() {if(e_lem('temasdeldia_nocaben_container').getAttribute('data-abierto')==0) {e_lem('temasdeldia_nocaben_container').className="";e_lem('temasdeldia_nocaben_container').setAttribute('data-abierto',1);}else {e_lem('temasdeldia_nocaben_container').className="nd";e_lem('temasdeldia_nocaben_container').setAttribute('data-abierto',0);}}
+temasdeldia_desktop();
+
+var re2=/VandalUsercache2=[^;]+/i,re3=/VandalUsercache3=[^;]+/i;
+if(document.cookie.match(/VandalUser=[^;]+/i))if(document.cookie.match(re3)){var cosas=unescape(document.cookie.match(re3)[0].split("=")[1]).split("&&");resultado='<div id="icono_usuario" onclick="desplegarMenuUsuario(); return false;">';resultado+='<div class="notificacion_avisos" id="notificaciones" data-total="'+cosas[7]+'" data-mensajes="'+cosas[3]+'" data-amigos="'+cosas[4]+'" data-avisos="'+cosas[5]+'" data-tuvandal="'+cosas[6]+'" ';resultado=0<cosas[7]?resultado+(' style="display: block;">'+
+cosas[7]+"</div>"):resultado+' style="display: none;"></div>';resultado+='<div id="info_usuario1"><div class="fleft">';resultado=""!=cosas[2]?resultado+('<img id="avatar_usuario" alt="'+cosas[0]+'" class="nd fleft" src="'+cosas[2]+'" style="display: inline;">'):resultado+('<img id="avatar_usuario" alt="'+cosas[0]+'" class="nd fleft">');resultado+='</div><div class="fleft" id="login_data" data-login="'+cosas[0]+'" data-numero="'+cosas[1]+'"><b>'+cosas[0]+'</b></div><div class="clearer"></div></div></div><div class="fleft hidden-phone afterclearer" id="info_usuario"><div id="icono_compartir" onclick="desplegarCompartir(); return false;"></div></div>';
+e_lem("usuario_izq").innerHTML=resultado;768<=windowwidth()&&e_lem("temasdeldia").remove()}else document.cookie.match(re2)?(768<=windowwidth()&&e_lem("temasdeldia").remove(),e_lem("usuario_izq").innerHTML=unescape(document.cookie.match(re2)[0].split("=")[1].replace(/noplick/g,"onclick"))):768<=windowwidth()&&e_lem("temasdeldia").remove();else e_lem("info_usuario").innerHTML="";
+
+/* PARTEMENU */
+var menunext=';ul*;li class="pestana plataformaseleccionada" id="pestanaportada"*;a id="link-seccion-0" href="https:||vandal.elespanol.com|" title="Vandal" class="extendible" data-plataforma="0"*PORTADA;|a*;ul id="links-seccion-0"*;li class="cleft"*;a href="|noticias|videojuegos" title="Noticias "*Noticias;|a*;|li*;li class="ancho120"*;a href="|analisis|videojuegos" title="Análisis "*Análisis;|a*;|li*;li class="cleft"*;a href="|guias|" title="Guías "*Guías;|a*;|li*;li class="ancho120"*;a href="|trucos|videojuegos" title="Trucos "*Trucos;|a*;|li*;li class="cleft"*;a href="|reportajes|videojuegos" title="Reportajes "*Reportajes;|a*;|li*;li class="ancho120"*;a href="|avances|videojuegos" title="Avances "*Avances;|a*;|li*;li class="cleft"*;a href="|juegos|0|videojuegos" title="Juegos "*Juegos;|a*;|li*;li class="ancho120"*;a href="|lanzamientos|0|videojuegos" title="Lanzamientos "*Lanzamientos;|a*;|li*;li class="cleft"*;a href="|rankings|videojuegos" title="Rankings "*Rankings;|a*;|li*;li class="ancho120"*;a href="|foro|cgi-bin|foro.cgi" title="Foro de videojuegos"*Foro;|a*;|li*;|ul*;|li*;li class="pestana pestanaindependiente" id="pestananoticias"*;a id="link-noticias" href="https:||vandal.elespanol.com|noticias|videojuegos" title="Noticias de videojuegos"*Noticias;|a*;|li*;li class="pestana pestanaindependiente" id="pestanaanalisis"*;a id="link-analisis" href="https:||vandal.elespanol.com|analisis|videojuegos" title="Análisis de videojuegos"*Análisis;|a*;|li*;li class="pestana pestanaindependiente" id="pestanaguias"*;a id="link-guias" href="https:||vandal.elespanol.com|guias|" title="Guías de videojuegos"*Guías;|a*;|li*;li class="pestana pestanadesplegable" id="pestanajuegos"*;a id="link-juegos" href="https:||vandal.elespanol.com|juegos|0|videojuegos"   title="Listado de videojuegos"*Juegos;|a*;ul id="links-seccion-juegos"*;li class="cleft"*;a href="|esperados|" title="Juegos más esperados" title="Juegos esperados"*Esperados;|a*;|li*;li class="ancho120"*;a href="|populares|" title="Juegos más populares" title="Juegos populares"*Populares;|a*;|li*;li class="cleft"*;a href="|lanzamientos|0|videojuegos" title="Próximos lanzamientos" title="Lanzamientos de juegos"*Lanzamientos;|a*;|li*;li class="ancho120"*;a href="|rankings|videojuegos" title="Ránkings de videojuegos" title="Ránkings de juegos"*Rankings;|a*;|li*;li class="cleft"*;a href="|requisitos|" title="Requisitos de videojuegos" title="Requisitos de juegos"*Requisitos;|a*;|li*;|ul*;|li*;li class="pestana pestanaindependiente" id="pestanareportajes"*;a id="link-reportajes" href="https:||vandal.elespanol.com|reportajes|videojuegos" title="Reportajes de videojuegos"*Reportajes;|a*;|li*;li class="pestana pestanaindependiente" id="pestanaavances"*;a id="link-avances" href="https:||vandal.elespanol.com|avances|videojuegos" title="Avances de videojuegos"*Avances;|a*;|li*;li class="pestana pestanaindependiente" id="pestanatrucos"*;a id="link-trucos" href="https:||vandal.elespanol.com|trucos|videojuegos" title="Trucos de videojuegos"*Trucos;|a*;|li*;li class="pestana pestanadesplegable" id="pestanaforo2"*;a id="link-foro" href="https:||vandal.elespanol.com|foro|cgi-bin|foro.cgi" class="extenderforo" title="Foro Vandal"*Foro;|a*;ul id="links-foro" class="ul-arriba"*;li class="cleft ancho180"*;a href="|foro|cgi-bin|foro.cgi?accion=vermensajesactivos"*Temas activos;|a*;|li*;li class="cleft ancho180"*;a href="|foro|cgi-bin|foro.cgi?accion=vermensajesnuevos"*Temas nuevos;|a*;|li*;|ul*;|li*;li class="pestana pestanaindependiente" id="pestanavandalrandom"*;a id="link-vandalrandom" href="https:||vandal.elespanol.com|random|" title="Vandal Random" target="_blank"*Random;|a*;|li*;li class="pestana pestanaindependiente" id="pestanavandalware"*;a id="link-vandalware" href="https:||vandal.elespanol.com|ware|" title="Vandal Ware" target="_blank"*Hardware;|a*;|li*;li class="pestana pestanaindependiente" id="pestanavandalsports"*;a id="link-vandalsports" href="https:||vandal.elespanol.com|esports|" title="Vandal Sports" target="_blank"*eSports;|a*;|li*;li class="pestana pestanadesplegable" id="pestanaplataformas"*;a id="link-plataformas" href="#" *Plataformas;|a*;ul id="links-plataformas"*;li class="cleft"*;a href="|pc|" title="PC"*PC;|a*;|li*;li class="ancho120"*;a href="|playstation4|" title="PS4"*PS4;|a*;|li*;li class="cleft"*;a href="|xboxone|" title="Xbox One"*Xbox One;|a*;|li*;li class="ancho120"*;a href="|nintendoswitch|" title="Nintendo Switch"*Switch;|a*;|li*;li class="cleft"*;a href="|playstation5|" title="PlayStation 5"*PS5;|a*;|li*;li class="ancho120"*;a href="|xboxseriesx|" title="Xbox Series X|S"*Xbox Series X;|a*;|li*;li class="cleft"*;a href="|android|" title="Android"*Android;|a*;|li*;li class="ancho120"*;a href="|iphone|" title="iOS"*iOS;|a*;|li*;li class="cleft"*;a href="|nintendo3ds|" title="Nintendo 3DS"*3DS;|a*;|li*;li class="ancho120"*;a href="|psvita|" title="PSVITA"*PSVITA;|a*;|li*;|ul*;|li*;li class="pestana pestanaindependiente" id="pestanaradio"*;a id="link-vandalradio" href="https:||vandal.elespanol.com|radio|" title="Vandal Radio"*Podcast;|a*;|li*;!--marcakrogan--*;|ul*';
+menunext=menunext.replace(/\*/g,">");
+menunext=menunext.replace(/\;/g,"<");
+menunext=menunext.replace(/\|/g,"/");
+var expr=/googlebot/gi;
+if(!expr.test(navigator.userAgent)) {
+	e_lem('menuplataformas').innerHTML=menunext;
+}
+function cargarscript (source,callback) {
+	var script = document.createElement('script');
+	var prior = document.getElementsByTagName('script')[0];
+	script.async=true;
+	script.onload = script.onreadystatechange = function( _, isAbort ) {
+		if(isAbort || !script.readyState || /loaded|complete/.test(script.readyState) ) {
+			script.onload = script.onreadystatechange = null;
+			script = undefined;
+			if(!isAbort) { if(callback) callback(); }
+		}
+	};
+	script.src = source;
+    prior.parentNode.insertBefore(script, prior);
+}
+</script>
+
+<script type="text/javascript">var adsConfig = { adunit: "noticias", keywords: { section: "noticias", subpage: "noticias", category: "noticias"}}</script>
+<script type='text/javascript'>
+var eventosMassarius=[];
+
+window.gdprAppliesGlobally=true;
+(function(){
+	function a(e){
+		if(!window.frames[e]){
+			if(document.body&&document.body.firstChild){
+				var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)
+			}
+			else{setTimeout(function(){a(e)},5)}
+		}
+	}
+	function e(n,r,o,c,s){
+		function e(e,t,n,a){
+			if(typeof n!=="function"){return}
+			if(!window[r]){
+				window[r]=[]
+			}
+			var i=false;
+			if(s){
+				i=s(e,t,n)
+			}
+			if(!i){
+				window[r].push({command:e,parameter:t,callback:n,version:a})
+			}
+		}
+		e.stub=true;
+		function t(a){
+			if(!window[n]||window[n].stub!==true){return}
+			if(!a.data){return}
+			var i=typeof a.data==="string";
+			var e;
+			try{e=i?JSON.parse(a.data):a.data}
+			catch(t){return}
+			if(e[o]){
+				var r=e[o];
+				window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)
+			}
+		}
+		if(typeof window[n]!=="function"){
+			window[n]=e;
+			if(window.addEventListener){
+				window.addEventListener("message",t,false)
+			}
+			else{window.attachEvent("onmessage",t)}
+		}
+	}
+	e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");
+})();
+
+	cargarscript("https://sdk.privacy-center.org/87d4945b-b50b-4bf1-8d48-a64b017eb6d9/loader.js?target="+document.location.hostname, function() {
+cargarscript("https://revenuemakerdata.com/prebid/vandal/config.js",function() {  cargarscript("https://revenuemakerdata.com/prebid/vandal/rmads.js", function () { posiciones_carga(); }) });
+	});
+
+function posiciones_carga() {
+	for (var i = 0; i < eventosMassarius.length; i++) {
+		eventosMassarius[i]();
+	}
+}
+var publis_anchos={};var publis_altos={};
+</script>
+<script>
+var llave_publicidad=1; 
+	
+function publi_top_movil_fix1 () {
+	if(typeof publi_top_movil_fix == "function") {
+		publi_top_movil_fix();
+	}
+	else {
+		setTimeout(function(){	publi_top_movil_fix1();},100);
+	}
+}
+</script><div id="hueco_cabecera"></div><div id="publi_wrapper1"><div id="publi_wrapper2"><div id="publi400"><div id="bannerarriba"><div id='containertop' class="tcenter"><div id="div-gpt-ad-1586434376383-0" data-revenuemaker-ads></div></div>
+<script type='text/javascript'>
+var ancho=window.innerWidth || document.documentElement.clientWidth;
+var nuevodiv=document.createElement('div');
+
+if(ancho>979) {
+
+}
+else {
+	billboard_sticky=1;
+	nuevodiv.id='div-sticky-mobile'; nuevodiv.setAttribute("data-revenuemaker-ads",true);
+	document.getElementById('containertop').appendChild(nuevodiv);
+	eventosMassarius.push(function() {
+	if(llave_init) {
+		creador_sticky();
+	}
+	else {
+		eventosReady.push(function() {creador_sticky();}); 
+	}
+	});
+}
+</script>
+<script>
+var eventosInteractivos_init=0;
+
+if(windowwidth()>900 || billboard_sticky==0) {
+	llave_interaccion=1;
+	eventosInteractivos_init=1;
+	if(eventosInteractivos!=null) {
+		for (i = 0; i < eventosInteractivos.length; i++) {
+			eventosInteractivos[i]();
+		}
+	}
+}
+</script>
+</div></div></div></div><div id="globalwrap"><div style="height:1px;margin-top:-1px;position:absolute"><iframe width="1" height="1" frameborder="0" class="lazy_portada" src="" data-src="//cdn.nexx360.io/load-cookie.html"></iframe><div style="height:1px;" id="skininfo"><div id='publi1x1' data-revenuemaker-ads></div></div></div><!--prueba-->
+<style type="text/css">
+
+.caja620 .subtitulocaja,.caja620 .titulocaja
+{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300}
+.caja620 a:hover,.caja620:hover{text-decoration:none}
+.caja620{background:#fff;border:0;margin-bottom:20px;overflow:hidden;width:620px;height:auto}
+.caja620:after{content:"";clear:both}
+.caja620:hover{background-color:#f5f5f5;border-radius:5px}
+.caja620 .imagencaja{max-width:24.2%;width:100%;float:left;position:relative}
+.caja620 img{width:100%;max-width:150px;max-height:100px}
+.caja620 .titulocaja{float:right;width:72.6%;margin-left:3.2%;margin-top:0;line-height:20px;margin-bottom:.3em;font-size:1.3em}
+.caja620 .subtitulocaja{color:#999;font-size:1em}
+.caja620 .fechacaja{float:right}
+.caja620 .desccaja{font-family:Arial;color:#000;margin-top:.3em;font-size:.95em;line-height:1.2em;text-overflow: ellipsis;overflow:hidden;}
+.caja620 .restocaja{float:left;width:72.6%;margin-left:3.2%}
+.caja620 video{width:220px;height:110px}
+.caja620 .imagen_portada_mobile{display:none}
+.icono_comentarios {
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAPCAYAAAALWoRrAAAA1ElEQVR42mNgQAOzZs1iAmJrIG4H4j1AfA+I3wHxfyh9DyreDlXHxIALACVZgDgLiO9DDSAW34fqY0E3UBGIT5JoGDoG6VeEGSgKxLcpNBCGQeaIgQydSyUDYXguyNAnVDb0CcjQr1Q29C3I0PVUNnQjyFANIP5EJQNBvtaBpQAbIH5DoYEvgNgePa2KA/EcIP5JomG/gHgmEEvgy1mSQJwHxNuA+BUOg0DiW6DqcBuGwwJQeP+FGrQXyhdmoAQADZgPNRDkPQ4GSgHQkDBoEDiSqhcAxTJ5LHMJokUAAAAASUVORK5CYII=);
+	background-repeat:no-repeat;
+	width:21px;
+	height: 16px;
+    margin-top: 2px;
+	background-size:contain;
+}
+@media (max-width:979px){
+	.caja620{width:auto}.caja620 video{display:none}
+}
+@media (max-width:767px){
+	.caja620 .botonplay{top:0;bottom:0;left:0;right:0}
+	.caja620 {margin-top:10px;width:auto;margin-bottom:25px;overflow:hidden;height:auto}
+	.caja620 .imagencaja{width:37%;max-width:initial;height:auto;float:left}
+	.caja620 .imagen_desktop{display:none}
+	.caja620 .imagen_portada_mobile{display:block}
+	.caja620 .platscaja{display:block}
+	.caja620 .restocaja{margin-left:3%;width:60%;float:left;padding:0}
+	.caja620 .titulocaja{width:100%; float:none;margin-bottom:13px; margin-left:0;margin-top:0;font-size:1.2em}
+	.caja620 .subtitulocaja{font-family:Arial;color:#999;font-size:.85em}
+	.caja620 .fechacaja{float:right;margin-top:0}
+	.caja620 .desccaja{font-size:.95em;}
+}
+@media (max-width:400px){
+	.caja620 .platscaja{display:none}
+	.caja620 .desccaja{font-size:.85em;}
+	.caja620 .fechacaja{height:16px;line-height:16px;}
+	.icono_comentarios {height:12px;}
+}
+.h3lanzamientos {
+	font-family:"Roboto Condensed",Helvetica,sans-serif;
+	font-size:1.4em;
+	text-transform:uppercase;
+	color:#fff;
+}
+
+.tituloseccion_columna {
+	border-top:4px solid #00BAEA;
+	height:4em;
+}
+@media (max-width:767px)  {
+	.tituloseccion_columna h3 {
+		font-size:1.2em;
+	}
+}
+.lanzamientos_game .tituloseccion_columna {
+	height:4em;
+	background-size: auto 100%;
+}
+
+.unlanzamiento {
+	margin-left:0.3em;
+	margin-right:0.3em;
+	margin-bottom:0.5em;
+	border-bottom:1px solid #eee;
+}
+
+.lanzamiento_fecha {
+	float:left;
+	margin-right:3%;
+	width:15%;
+	color:#999;
+}
+.lanzamiento_texto {
+	float:left;
+	margin-right:4%;
+	width:68%;
+}
+@media (max-width:767px) {
+	.lanzamiento_texto div {
+		margin-bottom:0.5em;
+	}
+}
+.lanzcomprar {
+	float:left;
+	width:10%;
+}
+.zona_esports {padding-bottom:.4em; border-bottom:3px solid #ee4323;margin-bottom:1.5em;}
+.zona_ware {padding-bottom:.4em; border-bottom:3px solid #0ec802;margin-bottom:1.5em;}
+.zona_random {padding-bottom:.4em; border-bottom:3px solid #6f34e5;margin-bottom:1.5em;}
+.cintillo_esports {background-repeat:repeat-x;background-position:center;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAIAAADdv/LVAAAADklEQVR42mN456zMAMUAGlUD/dj86/EAAAAASUVORK5CYII=');}
+.cintillo_ware {background-repeat:repeat-x;background-position:center;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAIAAADdv/LVAAAADklEQVR42mPgO8HEAMUAD2ACiYvY7dMAAAAASUVORK5CYII=');}
+.cintillo_random {background-repeat:repeat-x;background-position:center;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAIAAADdv/LVAAAADklEQVR42mPIN3nKAMUAGjoEmQaMqFEAAAAASUVORK5CYII=');}
+.sindicado_4 {width:100%;margin-top:1em;clear:both;}
+.sindicado_4 .contenedor_imagen {width:100%;height:auto;float:none;}
+.sindicado_4 .imagen_portada {width:100%;padding-top:56.334%;background-position: center top;background-size:100% auto;}
+.sindicado_4 .contenedor_texto {}
+.zona_esports .sindicado_4 .titulo_portada {font-family:"Roboto",sans-serif;margin-bottom:0;margin-top:0;font-size:1.1em;color:#ee4323;}
+.zona_esports .sindicado_4 a:link,.zona_esports .sindicado_4 a:visited {color:#ee4323;}
+.zona_esports .sindicado_4 .titulo_portada:hover{color:#ee4323;text-decoration:underline;}
+.zona_ware .sindicado_4 .titulo_portada {font-family:"Roboto",sans-serif;margin-bottom:0;margin-top:0;font-size:1.1em;color:#0ec802}
+.zona_ware .sindicado_4 a:link,.zona_ware .sindicado_4 a:visited {color:#0ec802}
+.zona_ware .sindicado_4 .titulo_portada:hover{color:#0ec802;text-decoration:underline;}
+.zona_random .sindicado_4 .titulo_portada {font-family:"Roboto",sans-serif;margin-bottom:0;margin-top:0;font-size:1.1em;color:#6f34e5}
+.zona_random .sindicado_4 a:link,.zona_random .sindicado_4 a:visited {color:#6f34e5}
+.zona_random .sindicado_4 .titulo_portada:hover{color:#6f34e5;text-decoration:underline;}
+.sindicado_4 .fecha_portada {display:none;}
+.modulo_sindicado {padding-bottom:1em;}
+
+</style>
+<div class="fblanco froboto_real">
+<div class="container paddingmovil"><div class="row"><div class="span8">
+<h1 class="h2 t2">Últimas noticias de Videojuegos</h1>
+<div class="container">
+<div class="row"><div class="span8"><!--skip-->
+<div class="migaja2"><ol itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/" title="Videojuegos"><span itemprop="name">Vandal</span></a><meta itemprop="position" content="1" /></li></ol></div><div><p>Aquí encontrarás <b>todas las noticias y las últimas novedades en videojuegos</b>. En Vandal recopilamos cada día y minuto a minuto <b>toda la actualidad del mundo de los videojuegos y sus diferentes plataformas</b> para que siempre estés al corriente de la última actualización o contenido relacionado con tus títulos preferidos<span class="hidden-phone">, de las fechas de lanzamiento de <a href="https://vandal.elespanol.com/esperados/">los juegos más esperados</a>, los anuncios más importantes, <a href="https://vandal.elespanol.com/reportajes/videojuegos">reportajes</a>, entrevistas, declaraciones, nuevas imágenes o tráileres y todas las curiosidades del mundillo para mantenerte informado y a la vez entretenido</span>.</p>
+</div><div class="mt1"><b>Filtros</b></div><style type="text/css">
+		
+.dropdown,.dropdown-content{cursor:pointer;background-color:#efefef;border-radius:.8em}.dropdown{position:relative;display:block;float:left;padding:1.8%;width:28%;margin-right:1.7%}.dropdown:before{content:'\25BC';position:relative;font-size:14px;float:right}.dropdown-content{display:none;position:absolute;top:48px;left:0;width:310.7583%;z-index:1;color:#7c7c7c}.lipildora:hover a,.ulpildoras .pildora_seleccionada a{color:#fff}.dropdown .c0{left:-105.5%}.dropdown .r0{right:0;left:inherit}.ulpildoras{padding-top:10px;margin:0;border-radius:.8em}.lipildora{list-style:none;float:left;width:31%;padding:1%;border-radius:.5em;text-align:center}.lipildora:nth-child(3n+1){clear:left}.ulpildoras .pildora_seleccionada{background-color:#00b7ef;color:#fff;border-radius:.5em}.lipildora:hover{background-color:#00b7ef}.lipildora a{text-decoration:none;color:#000;display:block;}@media(max-width:767px){.dropdown {font-size:.85em}.lipildora{width:29%;padding:2%}}
+.w620 {
+	max-width:620px;
+}
+
+		</style><div class="mt1 w620"><div class="dropdown" data-target="dropdown-plataforma">Todas<div class="dropdown-content " id="dropdown-plataforma"><ul class="ulpildoras"><li class="lipildora pildora_seleccionada"><a class="seleccionada" href="/noticias/videojuegos" title="Noticias de videojuegos">Todas</a></li><li class="lipildora"><a href="/noticias/pc" title="Noticias de PC">PC</a></li><li class="lipildora"><a href="/noticias/playstation-4" title="Noticias de PS4">PS4</a></li><li class="lipildora"><a href="/noticias/xbox-one" title="Noticias de XBOne">XBOne</a></li><li class="lipildora"><a href="/noticias/nintendo-switch" title="Noticias de Switch">Switch</a></li><li class="lipildora"><a href="/noticias/playstation-5" title="Noticias de PS5">PS5</a></li><li class="lipildora"><a href="/noticias/xbox-series-x" title="Noticias de XSX">XSX</a></li><li class="lipildora"><a href="/noticias/nintendo3ds" title="Noticias de 3DS">3DS</a></li><li class="lipildora"><a href="/noticias/nintendo-ds" title="Noticias de NDS">NDS</a></li><li class="lipildora"><a href="/noticias/playstation-3" title="Noticias de PS3">PS3</a></li><li class="lipildora"><a href="/noticias/xbox-360" title="Noticias de X360">X360</a></li><li class="lipildora"><a href="/noticias/android" title="Noticias de Android">Android</a></li><li class="lipildora"><a href="/noticias/iphone" title="Noticias de iPhone">iPhone</a></li><li class="lipildora"><a href="/noticias/wii" title="Noticias de WII">WII</a></li><li class="lipildora"><a href="/noticias/wiiu" title="Noticias de WiiU">WiiU</a></li><li class="lipildora"><a href="/noticias/psvita" title="Noticias de PSVITA">PSVITA</a></li><li class="lipildora"><a href="/noticias/psp" title="Noticias de PSP">PSP</a></li><li class="lipildora"><a href="/noticias/playstation-2" title="Noticias de PS2">PS2</a></li></ul></div></div><div class="dropdown" data-target="dropdown-genero">Videojuegos<div class="dropdown-content c0" id="dropdown-genero"><ul class="ulpildoras"><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/videojuegos" title="Noticias de Videojuegos">Videojuegos</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/sports" title="Noticias de eSports">eSports</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/hardware" title="Noticias de Hardware">Hardware</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/cine" title="Noticias de Cine">Cine</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/series" title="Noticias de Series">Series</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/frikadas" title="Noticias de Frikadas">Frikadas</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/viral" title="Noticias de Viral">Viral</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/tecnologia" title="Noticias de Tecnología">Tecnología</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/ciencia" title="Noticias de Ciencia">Ciencia</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/netflix" title="Noticias de Netflix">Netflix</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/hbo" title="Noticias de HBO">HBO</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/amazon-prime-video" title="Noticias de Amazon Prime Video">Prime Video</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/comics" title="Noticias de Cómics">Cómics</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/anime" title="Noticias de Anime y Manga">Anime y Manga</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/cosplay" title="Noticias de Cosplay">Cosplay</a></li><li class="lipildora"><a href="https://vandal.elespanol.com/noticias/archivo" title="Noticias de Archivo">Archivo</a></li></ul></div></div><div class="clearer"></div></div>
+<script type="text/javascript">
+var dropdown = document.getElementsByClassName("dropdown");
+var attribute;
+var dropdownseleccionado=null;;
+var mostrarDropdown = function() {
+	if(dropdownseleccionado && dropdownseleccionado != this) {
+		dropdownseleccionado.click();
+	}
+	attribute = this.getAttribute("data-target");
+    var x = document.getElementById(attribute);
+    if (x.style.display === "block") {
+        x.style.display = "none";
+		this.style.backgroundColor= "#efefef";
+		this.style.color="#333";
+		dropdownseleccionado=null;
+    } 
+	else {
+        x.style.display = "block";
+		this.style.color="#fff";
+		this.style.backgroundColor= "#00b7ef";
+		dropdownseleccionado=this;
+    }
+  
+};
+for (var i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener('click', mostrarDropdown, false);
+}
+</script>
+
+<div class="pt1"></div>
+</div><!--span8-->
+</div><!--row-->
+</div><!--container-->
+
+<div class="seccionesjuego_wrapper">
+<div class="seccionesjuego">
+<div class="pest pselec pestana_relacionado" id="noticias_0"><a href="javascript:void(0)" onclick="e('pestana_noticias').style.display='block';e('pestana_guias').style.display='none'; e('noticias_0').className='pest pselec pestana_relacionado'; e('noticias_1').className='pest pestana_relacionado'; return false;">Noticias</a></div>
+<div class="pest pestana_relacionado" id="noticias_1"><a href="javascript:void(0)" onclick="e('pestana_noticias').style.display='none';e('pestana_guias').style.display='block'; e('noticias_0').className='pest pestana_relacionado'; e('noticias_1').className='pest pselec pestana_relacionado'; return false;">Artículos de guías</a></div>
+<div class="clearer"></div>
+</div>
+</div><!--seccionesjuego_wrapper--><div id="pestana_noticias"><div class="row mt1">
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756503/pokemon-go-mejores-counters-para-vencer-a-celesteela-y-kartana-en-incursiones/" title="Pokémon GO: Mejores counters para vencer a Celesteela y Kartana en incursiones"><h2 class="titulocaja">Pokémon GO: Mejores counters para vencer a Celesteela y Kartana en incursiones</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291399743_1.jpg"  alt="Pokémon GO: Mejores counters contra Celesteela y Kartana (2022)" /></div></a><div class="restocaja">
+<!--Daniel González-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Daniel González</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">0</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1663052940">9:09 13/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Los jugadores de España y todo el mundo ya pueden conseguir a Celesteela y Kartana en incursiones de 5 estrellas desde el 13 de septiembre de 2022. Conoce los mejores Pokémon para derrotarlos.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756502/celesteela-y-kartana-llegan-hoy-a-pokemon-go-por-el-nuevo-evento-prueba-tu-valia/" title="Celesteela y Kartana llegan hoy a Pokémon GO por el nuevo evento Prueba tu valía"><h2 class="titulocaja">Celesteela y Kartana llegan hoy a Pokémon GO por el nuevo evento Prueba tu valía</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/2022913826680_1.jpg"  alt="Pokémon GO: Nuevo evento Prueba tu valía, todos los detalles y novedades y Pokémon que debutan" /></div></a><div class="restocaja">
+<!--Daniel González-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Daniel González</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">0</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1663050540">8:29 13/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Te enseñamos la información oficial del próximo evento Prueba tu valía de Pokémon GO para España y todo el mundo. Descubre aquí los Pokémon destacados, recompensas, fechas, horas y más.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756500/free-fire-codigos-de-hoy-martes-13-de-septiembre-de-2022-recompensas-gratis/" title="FREE FIRE | Códigos de hoy martes 13 de septiembre de 2022 - Recompensas gratis"><h2 class="titulocaja">FREE FIRE | Códigos de hoy martes 13 de septiembre de 2022 - Recompensas gratis</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/2022913803390_1.jpg"  alt="Free Fire: portada de códigos de recompensa para el 13 de septiembre de 2022" /></div></a><div class="restocaja">
+<!--César Rebolledo-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">César Rebolledo</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">0</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1663048920">8:02 13/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Estos son todos los códigos gratis de Garena Free Fire que podrás canjear hoy, martes 13 de septiembre de 2022. Consigue recompensas como skins, diamantes y mucho más.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756499/wordle-en-espanol-tildes-y-cientifico-hoy-13-de-septiembre-pistas-y-solucion-a-la-palabra-oculta/" title="Wordle en español, tildes y científico hoy 13 de septiembre: Pistas y solución a la palabra oculta"><h2 class="titulocaja">Wordle en español, tildes y científico hoy 13 de septiembre: Pistas y solución a la palabra oculta</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229137512728_1.jpg"  alt="Wordle: portada de la noticia con las pistas y soluciones para el 13 de septiembre del Wordle en español, con tildes y científico" /></div></a><div class="restocaja">
+<!--César Rebolledo-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">César Rebolledo</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">0</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1663048320">7:52 13/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">¿Quieres jugar a Wordle en español normal, con tildes y científico hoy martes 13 de septiembre de 2022 y no sabes cuál es la palabra del día? Te mostramos las pistas para adivinarla y la solución del reto.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756498/forspoken-tres-motivos-por-los-que-solo-es-posible-en-la-ultima-generacion/" title="Forspoken: Tres motivos por los que solo es posible en la última generación"><h2 class="titulocaja">Forspoken: Tres motivos por los que solo es posible en la última generación</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/2022912928577_1.jpg"  alt="Fospoken: ¿Por qué es exclusivo de PlayStation 5 y PC?" /></div></a><div class="restocaja">
+<!--Fran G. Matas-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Fran G. Matas</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">45</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1663005180">19:53 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">¿Por qué el RPG de acción de Square Enix es exclusivo de PlayStation 5 y PC? Preguntamos al codirector, Takefumi Terada, sobre los tres motivos que les llevaron a tomar esta decisión.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756497/dan-houser-cofundador-de-rockstar-invierte-13-millones-en-un-estudio-de-juegos-blockchain/" title="Dan Houser, cofundador de Rockstar, invierte 13 millones en un estudio de juegos blockchain"><h2 class="titulocaja">Dan Houser, cofundador de Rockstar, invierte 13 millones en un estudio de juegos blockchain</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291218581282_1.jpg"  alt="Dan Houser, cofundador de Rockstar, invierte 13 millones en un estudio de juegos blockchain" /></div></a><div class="restocaja">
+<!--Manu Delgado-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Manu Delgado</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">5</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1663002060">19:01 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Tras abandonar Rockstar Games en 2020, el cofundador de la compañía ha invertido 13,2 millones de dólares en Revolving Games, estudio de juegos con blockchain.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756496/fall-guys-viajara-al-espacio-en-su-temporada-2-que-comienza-el-15-de-septiembre/" title="Fall Guys viajará al espacio en su Temporada 2, que comienza el 15 de septiembre"><h2 class="titulocaja">Fall Guys viajará al espacio en su Temporada 2, que comienza el 15 de septiembre</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229121811385_1.jpg"  alt="Fall Guys anuncia su Temporada 2 para el 15 de septiembre." /></div></a><div class="restocaja">
+<!--Manu Delgado-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Manu Delgado</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">5</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662999120">18:12 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Siete nuevas pruebas, un evento inaugural y dos pases de batalla con disfraces de Spock de Star Trek, el Xenomorfo de Alien y Hatsune Miku: esas son las principales novedades de Fall Guys.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756495/la-nueva-interfaz-de-xbox-series-xs-y-xbox-one-se-deja-ver-en-este-video/" title="La nueva interfaz de Xbox Series X/S y Xbox One se deja ver en este vídeo"><h2 class="titulocaja">La nueva interfaz de Xbox Series X/S y Xbox One se deja ver en este vídeo</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291217391917_1.jpg"  alt="Vídeo del nuevo menú de Xbox." /></div></a><div class="restocaja">
+<!--Manu Delgado-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Manu Delgado</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">19</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662997200">17:40 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Un usuario ha publicado un recorrido por el nuevo menú rediseñado de Xbox. Todavía está en fase de pruebas con la intención de llegar a todos los jugadores en 2023.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756494/la-nueva-moda-de-los-juegos-nft-es-pagar-a-personas-para-que-actuen-como-npc/" title="La nueva moda de los juegos NFT es pagar a personas para que actúen como NPC"><h2 class="titulocaja">La nueva moda de los juegos NFT es pagar a personas para que actúen como NPC</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229121715645_1.jpg"  alt="Jugadores de criptojuegos quieren contratar a personas reales como NPC." /></div></a><div class="restocaja">
+<!--Manu Delgado-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Manu Delgado</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">22</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662995700">17:15 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Un jugador de Critterz NFT, un servidor de Minecraft basado en la blockchain, admite tener a niños de Filipinas trabajando para él. Otro 'experto' confía en contratar a personas reales como NPC.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756493/fifa-23-estos-seran-los-23-mejores-jugadores-y-sus-valoraciones/" title="FIFA 23: Estos serán los 23 mejores jugadores y sus valoraciones"><h2 class="titulocaja">FIFA 23: Estos serán los 23 mejores jugadores y sus valoraciones</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229121754249_1.jpg"  alt="Los mejores jugadores de FIFA 23" /></div></a><div class="restocaja">
+<!--Saúl González-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Saúl González</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">4</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662994800">17:00 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">EA Sports ha descubierto los futbolistas que tendrán las mejores puntuaciones en su simulador de fútbol que llegará a España y el resto del mundo el 30 de septiembre.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756492/nintendo-anuncia-un-direct-de-40-minutos-para-manana-13-de-septiembre-a-las-1600h/" title="Nintendo anuncia un Direct de 40 minutos para mañana 13 de septiembre a las 16:00h"><h2 class="titulocaja">Nintendo anuncia un Direct de 40 minutos para mañana 13 de septiembre a las 16:00h</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291216201343_1.jpg"  alt="Oficial: Nintendo celebrará un Direct el 13 de septiembre." /></div></a><div class="restocaja">
+<!--Manu Delgado-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Manu Delgado</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">97</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662992040">16:14 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Mañana, 13 de septiembre, tendrá lugar un Nintendo Direct con novedades centradas en los lanzamientos de este invierno para Switch.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756491/the-last-of-us-parte-i-esconde-una-replica-exacta-de-la-oficina-de-the-office/" title="The Last of Us Parte I esconde una réplica exacta de la oficina de The Office"><h2 class="titulocaja">The Last of Us Parte I esconde una réplica exacta de la oficina de The Office</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291215544418_1.jpg"  alt="Encuentran un easter egg de The Office en The Last of Us Parte I." /></div></a><div class="restocaja">
+<!--Manu Delgado-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Manu Delgado</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">12</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662990960">15:56 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">La oficina de la popular serie de humor se cuela en el remake del primer The Last of Us con una versión apocalíptica. Un easter egg de The Office que la comunidad acaba de encontrar.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756490/la-saga-assassins-creed-ya-ha-vendido-mas-de-200-millones-de-unidades/" title="La saga Assassin's Creed ya ha vendido más de 200 millones de unidades"><h2 class="titulocaja">La saga Assassin's Creed ya ha vendido más de 200 millones de unidades</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291215235864_1.jpg"  alt="Assassin's Creed supera los 200 millones de unidades vendidas en 15 años." /></div></a><div class="restocaja">
+<!--Manu Delgado-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Manu Delgado</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">2</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662989040">15:24 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Ubisoft ha notificado que la saga Assassin's Creed ha superado los 200 millones de unidades vendidas desde el lanzamiento del primer juego en 2007.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756489/la-historia-de-forspoken-sera-muy-humana-aunque-tambien-tendra-gatitos/" title="La historia de Forspoken será 'muy humana', aunque también tendrá gatitos"><h2 class="titulocaja">La historia de Forspoken será 'muy humana', aunque también tendrá gatitos</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229129393872_1.jpg"  alt="Forspoken: Detalles de la historia y el argumento" /></div></a><div class="restocaja">
+<!--Fran G. Matas-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Fran G. Matas</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">11</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662988200">15:10 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">El equipo de desarrollo del RPG de acción en mundo abierto para PS5 y PC nos ofrece pinceladas sobre los temas de una trama donde se enfrentarán las sensibilidades de Frey y el mundo mágico.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756488/snk-sigue-interesada-en-conseguir-a-aragon-para-samurai-shodown/" title="SNK sigue interesada en conseguir a Aragorn para Samurai Shodown"><h2 class="titulocaja">SNK sigue interesada en conseguir a Aragorn para Samurai Shodown</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291213325915_1.jpg"  alt="SNK quiere a Aragorn en Samurai Shodown" /></div></a><div class="restocaja">
+<!--Ramón Varela-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Ramón Varela</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">17</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662982440">13:34 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Uno de sus productores ya había mencionado anteriormente que le encantaría añadir al héroe de El Señor de los Anillos en su juego de lucha, pero es difícil por los problemas legales.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756487/el-estudio-de-stalker-2-asegura-que-no-se-retrasara-pese-a-los-reembolsos-de-xbox/" title="El estudio de STALKER 2 asegura que no se retrasará pese a los reembolsos de Xbox"><h2 class="titulocaja">El estudio de STALKER 2 asegura que no se retrasará pese a los reembolsos de Xbox</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229121248578_1.jpg"  alt="El lanzamiento de STALKER 2 sigue previsto para 2023" /></div></a><div class="restocaja">
+<!--Gerard Martí-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Gerard Martí</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">10</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662980220">12:57 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">GSC Game World afirma que, a pesar de que Microsoft ha realizado devoluciones por la reserva del juego y ha desactivado su opción de reserva en la Microsoft Store, este llegará en 2023.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756486/sonic-frontiers-tiene-un-minijuego-de-pesca-y-se-muestra-en-video/" title="Sonic Frontiers tiene un minijuego de pesca y se muestra en vídeo"><h2 class="titulocaja">Sonic Frontiers tiene un minijuego de pesca y se muestra en vídeo</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291212301885_1.jpg"  alt="Sonic Frontiers muestra el minijuego de pesca" /></div></a><div class="restocaja">
+<!--Ramón Varela-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Ramón Varela</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">14</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662978780">12:33 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">El plataformas de mundo abierto de Sonic nos permitirá participar en un minijuego y conseguir ayudas para el resto de la aventura.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756485/los-desarrolladores-de-the-callisto-protocol-estan-siendo-afectados-por-el-crunch/" title="Los desarrolladores de The Callisto Protocol están siendo afectados por el 'crunch'"><h2 class="titulocaja">Los desarrolladores de The Callisto Protocol están siendo afectados por el 'crunch'</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229121223505_1.jpg"  alt="El director de The Callisto Protocol presume de crunch durante el desarrollo" /></div></a><div class="restocaja">
+<!--Gerard Martí-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Gerard Martí</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">61</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662978420">12:27 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Glen A. Schofield, director de The Callisto Protocol, se disculpa tras la publicación de un 'tweet' en el que presumía de que sus trabajadores estaban haciendo horas extra para terminar el juego.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756484/snk-asegura-que-la-venta-a-arabia-saudi-no-afectara-en-terminos-creativos-a-sus-juegos/" title="SNK asegura que la venta a Arabia Saudí no afectará en términos creativos a sus juegos"><h2 class="titulocaja">SNK asegura que la venta a Arabia Saudí no afectará en términos creativos a sus juegos</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291211445972_1.jpg"  alt="La creatividad de SNK no se verá afectada por la compra de Arabia Saudí" /></div></a><div class="restocaja">
+<!--Gerard Martí-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Gerard Martí</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">21</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662976440">11:54 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Yasuyuki Oda calma a los jugadores en una reciente entrevista asegurando que la compra del 96 % de SNK por parte de Arabia Saudí no tendrá ningún efecto en la producción creativa de sus videojuegos.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756483/asi-era-el-pc-de-los-jugadores-de-steam-en-agosto-larga-vida-a-la-1060/" title="Así era el PC de los jugadores de Steam en agosto: larga vida a la 1060"><h2 class="titulocaja">Así era el PC de los jugadores de Steam en agosto: larga vida a la 1060</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291211512720_1.jpg"  alt="PC de Steam agosto 2022" /></div></a><div class="restocaja">
+<!--Saúl González-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Saúl González</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">32</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662976320">11:52 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">La veterana gráfica de NVIDIA cae en uso pero sigue siendo la GPU más utilizada mientras que Windows 11 sigue abriéndose paso de forma lenta pero segura.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756482/splatoon-3-es-el-juego-mas-vendido-durante-la-ultima-semana-en-reino-unido/" title="Splatoon 3 es el juego más vendido durante la última semana en Reino Unido"><h2 class="titulocaja">Splatoon 3 es el juego más vendido durante la última semana en Reino Unido</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291211424973_1.jpg"  alt="Splatoon 3 fue el más vendido de la semana en Reino Unido" /></div></a><div class="restocaja">
+<!--Ramón Varela-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Ramón Varela</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">25</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662975960">11:46 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">El juego de acción online debuta en el primer puesto de ventas físicas, aunque la cifra es algo menor que lo conseguido por Splatoon 2.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756481/valve-estrena-los-centros-de-reparaciones-para-steam-deck/" title="Valve estrena los centros de reparaciones para Steam Deck"><h2 class="titulocaja">Valve estrena los centros de reparaciones para Steam Deck</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229121114152_1.jpg"  alt="Steam Deck recibe por fin su centro de reparaciones personalizado" /></div></a><div class="restocaja">
+<!--Gerard Martí-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Gerard Martí</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">9</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662974340">11:19 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Los centros de reparaciones para Steam Deck realizarán reparaciones gratuitas en caso de que estas estén cubiertas por la garantía y ofrecerán reparaciones de pago opcionales en el caso contrario.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756480/reserva-pga-tour-2k23-en-game-con-edicion-deluxe-exclusiva-y-dlc-de-regalo/" title="Reserva PGA TOUR 2K23 en GAME, con Edición Deluxe exclusiva y DLC de regalo"><h2 class="titulocaja">Reserva PGA TOUR 2K23 en GAME, con Edición Deluxe exclusiva y DLC de regalo</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/2022912112279_1.jpg"  alt="Reserva PGA TOUR 2K23 en GAME con DLC exclusivo" /></div></a><div class="restocaja">
+<!--Redacción-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Redacción</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">1</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662974280">11:18 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Conviértete en el mejor golfista de la temporada con PGA TOUR 2K23 de 2K Games, cuya Edición Deluxe es exclusiva de tiendas GAME.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756479/assassins-creed-red-tendra-un-mundo-mas-dinamico-y-recibira-soporte-durante-muchos-anos/" title="Assassin's Creed RED tendrá un mundo más dinámico y recibirá soporte durante muchos años"><h2 class="titulocaja">Assassin's Creed RED tendrá un mundo más dinámico y recibirá soporte durante muchos años</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229121036246_1.jpg"  alt="Assassin's Creed Codename RED tendrá un mundo abierto más rico y recibirá DLC tras su lanzamiento" /></div></a><div class="restocaja">
+<!--Gerard Martí-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Gerard Martí</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">26</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662973080">10:58 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Marc-Alexis Côté, vicepresidente y productor ejecutivo de Assassin's Creed, asegura que el título contará con DLC tras su estreno y aborda cómo será su mundo gracias a las nuevas tecnologías.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756478/assassins-creed-infinity-diferenciara-el-periodo-historico-y-la-epoca-moderna/" title="Assassin's Creed Infinity diferenciará el periodo histórico y la época moderna"><h2 class="titulocaja">Assassin's Creed Infinity diferenciará el periodo histórico y la época moderna</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291210414019_1.jpg"  alt="Assassin's Creed Infinity no necesitarás jugar a la época moderna" /></div></a><div class="restocaja">
+<!--Ramón Varela-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Ramón Varela</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">9</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662972240">10:44 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Los jugadores podrán evitar las secciones del Animus y las tramas ambientadas en la actualidad para centrarse en la inmersión del pasado.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756477/ubisoft-descarta-que-un-remake-del-primer-assassins-creed-este-en-desarrollo/" title="Ubisoft descarta que un remake del primer Assassin's Creed esté en desarrollo"><h2 class="titulocaja">Ubisoft descarta que un remake del primer Assassin's Creed esté en desarrollo</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229121033444_1.jpg"  alt="Assassin's Creed 1 Remake no está en desarrollo en Ubisoft" /></div></a><div class="restocaja">
+<!--Gerard Martí-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Gerard Martí</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">10</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662970980">10:23 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Jean-Luc Sala, director de arte en Ubisoft, aborda los comentarios de los fans sobre un posible remake de Assassin's Creed y descarta por completo su desarrollo, al menos en el corto plazo.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756476/assassins-creed-mirage-rondara-las-20-horas-inspirado-por-los-primeros-juegos-de-la-saga/" title="Assassin's Creed Mirage durará unas 20 horas, inspirado por los primeros juegos de la saga"><h2 class="titulocaja">Assassin's Creed Mirage durará unas 20 horas, inspirado por los primeros juegos de la saga</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/2022912102730_1.jpg"  alt="Assassin's Creed Mirage no será un RPG y durará unas 20 horas" /></div></a><div class="restocaja">
+<!--Ramón Varela-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Ramón Varela</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">33</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662969960">10:06 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Su precio también será menor al habitual, 49,99 euros, porque se alejará del rol y las 100 horas de los últimos juegos, Odyssey o Valhalla.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756475/ubisoft-confirma-que-assassins-creed-codename-hexe-no-sera-un-rpg/" title="Ubisoft confirma que Assassin's Creed Codename HEXE no será un RPG"><h2 class="titulocaja">Ubisoft confirma que Assassin's Creed Codename HEXE no será un RPG</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229129335353_1.jpg"  alt="Assassin's Creed Codename HEXE no se tratará de un RPG" /></div></a><div class="restocaja">
+<!--Gerard Martí-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Gerard Martí</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">13</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662969240">9:54 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Marc-Alexis Côté, vicepresidente y productor ejecutivo de Assassin's Creed, reitera que HEXE se lanzará respués de RED y que será una experiencia diferente en cuanto a jugabilidad y estructura.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756474/reiteran-que-el-nintendo-direct-de-septiembre-se-anunciaria-esta-misma-semana/" title="Reiteran que el Nintendo Direct de septiembre se celebrará esta semana"><h2 class="titulocaja">Reiteran que el Nintendo Direct de septiembre se celebrará esta semana</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/202291294180_1.jpg"  alt="Jeff Grubb reitera que el Nintendo Direct se celebrará esta semana" /></div></a><div class="restocaja">
+<!--Gerard Martí-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Gerard Martí</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">28</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662967500">9:25 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Jeff Grubb insiste en que el próximo Nintendo Direct se emitirá esta semana y que incluirá anuncios como Zelda: The Wind Waker y Twilight Princess HD, además del remaster de Metroid Prime.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620">
+	<a href="https://vandal.elespanol.com/noticia/1350756473/splatoon-3-ha-vendido-345-millones-de-copias-en-japon-en-sus-tres-primeros-dias/" title="Splatoon 3 ha vendido 3,45 millones de copias en Japón en sus tres primeros días"><h2 class="titulocaja">Splatoon 3 ha vendido 3,45 millones de copias en Japón en sus tres primeros días</h2><div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/9-2022/20229129172320_1.jpg"  alt="Splatoon 3 ha vendido 3,45 millones de copias en Japón nuevo récord" /></div></a><div class="restocaja">
+<!--Ramón Varela-->
+<div class="subtitulocaja"><div class="fleft"><span class="platscaja">Ramón Varela</span></div><div class="fechacaja"><div class="fleft afterclearer mr05"><div class="fleft mr05">143</div><div class="icono_comentarios fleft"></div></div> <span class="timestamp_fecha" data-timestamp="1662967140">9:19 12/9/2022</span></div><div class="clearer"></div></div>
+<div class="desccaja">Desde su lanzamiento el 9 de septiembre ha logrado unas ventas récord que no había conseguido ningún otro lanzamiento en Japón.</div>
+</div>
+</div></div><!--span8--><div id="puntodefuga"></div></div></div><!--pestana--><div id="pestana_guias"><div class="subtitulo"><h2 class="h2">Últimas entradas de guías</h2></div><div class="row">
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-multiversus-trucos-consejos-y-secretos/gleamium" title="MultiVersus: ¿Cómo conseguir Gleamium? - TODOS los métodos"><div class="titulocaja">MultiVersus: ¿Cómo conseguir Gleamium? - TODOS los métodos</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/20227221217122_1.jpg"  alt="MultiVersus: ¿Cómo conseguir Gleamium? - TODOS los métodos" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658844016">2022-07-26 16:00:16</div><div class="clearer"></div></div>
+<div class="desccaja">Te mostramos cómo obtener Gleamium en MultiVersus, la moneda premium del juego que por desgracia no se puede conseguir gratis de ningún modo.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-multiversus-trucos-consejos-y-secretos/monedas-de-oro" title="MultiVersus: ¿Cómo ganar monedas de oro rápido y fácil?"><div class="titulocaja">MultiVersus: ¿Cómo ganar monedas de oro rápido y fácil?</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/202272212261392_1.jpg"  alt="MultiVersus: ¿Cómo ganar monedas de oro rápido y fácil?" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658843619">2022-07-26 15:53:39</div><div class="clearer"></div></div>
+<div class="desccaja">Te mostramos cómo conseguir monedas de oro de la manera más rápida posible en MultiVersus. ¡Acumula la divisa gratuita para desbloquear personajes y muchas más recompensas!</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-multiversus-trucos-consejos-y-secretos/como-jugar-con-amigos" title="MultiVersus: Cómo jugar con amigos (local, coop, online) y crear salas privadas"><div class="titulocaja">MultiVersus: Cómo jugar con amigos (local, coop, online) y crear salas privadas</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/202272613454882_1.jpg"  alt="MultiVersus: Cómo jugar con amigos (local, coop, online) y crear salas privadas" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658839510">2022-07-26 14:45:10</div><div class="clearer"></div></div>
+<div class="desccaja">Si quieres jugar con tus amigos a MultiVersus es muy fácil. Aquí te mostramos cómo invitarlos a tus partidas privadas, jugar online o crear una sala local para hasta 4 jugadores.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-multiversus-trucos-consejos-y-secretos/como-subir-niveles" title="MultiVersus: Cómo ganar experiencia y subir niveles de cuenta y personajes"><div class="titulocaja">MultiVersus: Cómo ganar experiencia y subir niveles de cuenta y personajes</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/202272613193256_1.jpg"  alt="MultiVersus: Cómo ganar experiencia y subir niveles de cuenta y personajes" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658847698">2022-07-26 17:01:38</div><div class="clearer"></div></div>
+<div class="desccaja">Te mostramos los métodos que puedes poner en práctica en MultiVersus para conseguir puntos de experiencia y aumentar tus niveles de cuenta y de maestría de personajes lo más rápido posible.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-stray-trucos-consejos-y-secretos/cuadernos-de-forasteros" title="Stray: Dónde conseguir los cuadernos de Zbaltazar, Doc y Clementine (Localización)"><div class="titulocaja">Stray: Dónde conseguir los cuadernos de Zbaltazar, Doc y Clementine (Localización)</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/20227261244225_1.jpg"  alt="Stray: Dónde conseguir los cuadernos de Zbaltazar, Doc y Clementine (Localización)" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658834139">2022-07-26 13:15:39</div><div class="clearer"></div></div>
+<div class="desccaja">Estas son las ubicaciones en las que puedes encontrar los tres cuadernos de los forasteros Zbaltazar, Doc y Clementine durante el capítulo 4 de Stray, cuando visitas los Suburbios.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-stray-trucos-consejos-y-secretos/puzzle-ropa-de-trabajador" title="Stray: Cómo conseguir el casco y la chaqueta de trabajador (Localización)"><div class="titulocaja">Stray: Cómo conseguir el casco y la chaqueta de trabajador (Localización)</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/20227229423952_1.jpg"  alt="Stray: Cómo conseguir el casco y la chaqueta de trabajador (Localización)" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658830883">2022-07-26 12:21:23</div><div class="clearer"></div></div>
+<div class="desccaja">Estos son todos los pasos que debes seguir para obtener el casco y la chaqueta del trabajador en el centro. Te mostramos la ubicación de ambas prendas para llevárselas a Blazer en Stray.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/articuno-zapdos-y-moltres-de-galar" title="Pokémon GO: Cómo conseguir a Articuno, Zapdos y Moltres de Galar"><div class="titulocaja">Pokémon GO: Cómo conseguir a Articuno, Zapdos y Moltres de Galar</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/20227261137618_1.jpg"  alt="Pokémon GO: Cómo conseguir a Articuno, Zapdos y Moltres de Galar" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658831836">2022-07-26 12:37:16</div><div class="clearer"></div></div>
+<div class="desccaja">Esto es lo que tienes que hacer para poder conseguir las formas regionales de Articuno, Zapdos y Moltres de Galar en Pokémon GO. ¡Hazte con el trío legendario más especial del juego!</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/pokemon-de-galar" title="Pokémon Go: TODOS los Pokémon de Galar (8ª GEN) y cómo conseguirlos"><div class="titulocaja">Pokémon Go: TODOS los Pokémon de Galar (8ª GEN) y cómo conseguirlos</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/6-2020/20206314162914_1.jpg"  alt="Pokémon Go: TODOS los Pokémon de Galar (8ª GEN) y cómo conseguirlos" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658825917">2022-07-26 10:58:37</div><div class="clearer"></div></div>
+<div class="desccaja">Descubre todos los Pokémon de Galar de la octava generación que están disponibles para capturar en Pokémon GO. Te enseñamos sus métodos de obtención para que puedas hacerte con ellos.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/conseguir-pokeballs" title="Cómo conseguir Poké Balls fácilmente en Pokémon GO: Todos los métodos"><div class="titulocaja">Cómo conseguir Poké Balls fácilmente en Pokémon GO: Todos los métodos</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/5-2020/202052116401328_1.jpg"  alt="Cómo conseguir Poké Balls fácilmente en Pokémon GO: Todos los métodos" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658825441">2022-07-26 10:50:41</div><div class="clearer"></div></div>
+<div class="desccaja">Te mostramos todos los tipos de Poké Balls que hay en Pokémon GO y los métodos que existen para conseguir muchas Poké Balls fácilmente.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/objetos" title="TODOS los Objetos de Pokémon GO: ¿Cómo conseguirlos y para qué sirven?"><div class="titulocaja">TODOS los Objetos de Pokémon GO: ¿Cómo conseguirlos y para qué sirven?</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/6-2020/20206121141651_1.jpg"  alt="TODOS los Objetos de Pokémon GO: ¿Cómo conseguirlos y para qué sirven?" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658824702">2022-07-26 10:38:22</div><div class="clearer"></div></div>
+<div class="desccaja">(¡ACTUALIZADO!) Te traemos una guía completa con todos los objetos que existen en Pokémon GO, para qué sirven y cómo desbloquearlos y conseguirlos en tu Bolsa.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/como-conseguir-y-usar-el-incienso" title="Inciensos de Pokémon GO: Cómo conseguirlos, usos y efectos"><div class="titulocaja">Inciensos de Pokémon GO: Cómo conseguirlos, usos y efectos</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/4-2020/20204281383648_1.jpg"  alt="Inciensos de Pokémon GO: Cómo conseguirlos, usos y efectos" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658823831">2022-07-26 10:23:51</div><div class="clearer"></div></div>
+<div class="desccaja">Te contamos cómo conseguir inciensos en Pokémon GO y para qué sirven este tipo de objetos. Con ellos podrás hacerte rápidamente con muchos Pokémon si sigues nuestros consejos.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/pokemon-de-hisui" title="Pokémon GO: TODOS los Pokémon de Hisui y cómo conseguirlos"><div class="titulocaja">Pokémon GO: TODOS los Pokémon de Hisui y cómo conseguirlos</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/2-2022/20222161159648_1.jpg"  alt="Pokémon GO: TODOS los Pokémon de Hisui y cómo conseguirlos" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658820882">2022-07-26 09:34:42</div><div class="clearer"></div></div>
+<div class="desccaja">Estos son todos los Pokémon con forma regional de Hisui que están disponibles para conseguir en Pokémon GO. Descubre sus características y cómo conseguirlos para ampliar tu colección.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-pokemon-go/un-incienso-misterioso" title="Un Incienso misterioso en Pokémon GO: Tareas y recompensas"><div class="titulocaja">Un Incienso misterioso en Pokémon GO: Tareas y recompensas</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/2022726914678_1.jpg"  alt="Un Incienso misterioso en Pokémon GO: Tareas y recompensas" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658823903">2022-07-26 10:25:03</div><div class="clearer"></div></div>
+<div class="desccaja">Te enseñamos cómo activar la investigación especial Un Incienso misterioso en Pokémon GO y todas sus fases de tareas que puedes completar, además de las recompensas que ganarás por ello.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-multiversus-trucos-consejos-y-secretos/pase-de-batalla" title="Pase de batalla de MultiVersus: Cómo desbloquearlo, subir niveles y recompensas"><div class="titulocaja">Pase de batalla de MultiVersus: Cómo desbloquearlo, subir niveles y recompensas</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/202272212515355_1.jpg"  alt="Pase de batalla de MultiVersus: Cómo desbloquearlo, subir niveles y recompensas" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658493185">2022-07-22 14:33:05</div><div class="clearer"></div></div>
+<div class="desccaja">Te enseñamos todos los detalles del pase de batalla de MultiVersus. Conoce sus modelos, cómo se suben sus niveles, qué premios puedes ganar, cuánto cuesta la versión de pago y mucho más.</div>
+</div>
+</div></div><!--span8-->
+	<div class="span8"><div class="caja620"><a href="https://vandal.elespanol.com/guias/guia-multiversus-trucos-consejos-y-secretos/conseguir-tostadas" title="MultiVersus: Cómo conseguir Tostadas y enviar brindis a otros jugadores"><div class="titulocaja">MultiVersus: Cómo conseguir Tostadas y enviar brindis a otros jugadores</div>
+<div class="imagencaja"><img class="lazy_portada" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandal.net/i/150x100/7-2022/20227221329973_1.jpg"  alt="MultiVersus: Cómo conseguir Tostadas y enviar brindis a otros jugadores" /></div></a>
+<div class="restocaja">
+<div class="subtitulocaja"><div class="fleft">Artículo de guía</div><div class="fechacaja timestamp_fecha" data-timestamp="1658493220">2022-07-22 14:33:40</div><div class="clearer"></div></div>
+<div class="desccaja">Así funciona el sistema de brindis de MultiVersus y los métodos por los que puedes acumular Tostadas en tu cuenta para enviarlas a otros jugadores.</div>
+</div>
+</div></div><!--span8--></div><!--row--></div><div class="clearer"></div><div class="acenter clearer"><div class="bloquepildoras afterclearer"><div class="pildora"><div style="float:left" class="tn14b"><a href="/noticias/videojuegos/inicio/450">Anteriores noticias</a></div></div><div class="pildora"><div style="float:right" class="tn14b"><a id="siguientelink" href="/noticias/videojuegos/inicio/510" data-siguiente="510">Siguientes noticias</a></div></div></div></div>
+<script>
+	var feeder_url="https:" + "/" + "" + "/" + "vandal.elespanol.com" + "/" + "ilheudeferro" + "/"+"0/noticias/";
+	var feeder_offset="t1662967140";
+	
+</script></div><!--span8--><div class="span4"><div style="margin-left:25px; width:300px;"><div id='div-gpt-ad-1586434333906-0' data-revenuemaker-ads></div></div>
+<div class="zona_ware mt15">
+<div class="cintillo_ware tcenter"><div class="fblanco pl1 pr1 iblock"><a href="https://vandal.elespanol.com/ware" title="Vandal Ware" target="_blank"><img class="lazy_portada" style="width:138px;height:34px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.vandalimg.com/vandalware/logo_ware.png" width="138" height="34" alt="Vandal Ware"/></a></div></div>
+<div class="modulo_sindicado row">
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/reportaje/ware-analisis-razer-basilisk-v3-pro-el-mejor-raton-de-la-compania-de-la-serpiente" title="Análisis Razer Basilisk V3 Pro, el mejor ratón de la compañía de la serpiente"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/202292910547_1.jpg" width="100" height="66" alt="Análisis Razer Basilisk V3 Pro, el mejor ratón de la compañía de la serpiente"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/reportaje/ware-analisis-razer-basilisk-v3-pro-el-mejor-raton-de-la-compania-de-la-serpiente" title="Análisis Razer Basilisk V3 Pro, el mejor ratón de la compañía de la serpiente">Análisis Razer Basilisk V3 Pro, el mejor ratón de la compañía de la serpiente</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664438750"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/w5803/elgato-wave-dx-un-nuevo-microfono-de-alta-calidad-con-conectividad-canon" title="Elgato Wave DX, un nuevo micrófono de alta calidad con conectividad canon"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022929152823_1.jpg" width="100" height="66" alt="Elgato Wave DX, un nuevo micrófono de alta calidad con conectividad canon"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/w5803/elgato-wave-dx-un-nuevo-microfono-de-alta-calidad-con-conectividad-canon" title="Elgato Wave DX, un nuevo micrófono de alta calidad con conectividad canon">Elgato Wave DX, un nuevo micrófono de alta calidad con conectividad canon</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664458106"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/w5802/creative-presenta-la-barra-de-sonido-para-jugar-sound-blaster-katana-v2x" title="Creative presenta la barra de sonido para jugar Sound Blaster Katana V2X"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022929151020_1.jpg" width="100" height="66" alt="Creative presenta la barra de sonido para jugar Sound Blaster Katana V2X"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/w5802/creative-presenta-la-barra-de-sonido-para-jugar-sound-blaster-katana-v2x" title="Creative presenta la barra de sonido para jugar Sound Blaster Katana V2X">Creative presenta la barra de sonido para jugar Sound Blaster Katana V2X</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664457023"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/w5800/alienware-aw3423dwf-es-un-nuevo-monitor-de-la-marca-con-panel-oled-curvo-de-34-pulgadas" title="Alienware AW3423DWF es un nuevo monitor de la marca con panel OLED curvo de 34 pulgadas"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/202292814326_1.jpg" width="100" height="66" alt="Alienware AW3423DWF es un nuevo monitor de la marca con panel OLED curvo de 34 pulgadas"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/w5800/alienware-aw3423dwf-es-un-nuevo-monitor-de-la-marca-con-panel-oled-curvo-de-34-pulgadas" title="Alienware AW3423DWF es un nuevo monitor de la marca con panel OLED curvo de 34 pulgadas">Alienware AW3423DWF es un nuevo monitor de la marca con panel OLED curvo de 34 pulgadas</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664380286"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/w5799/apple-retira-las-app-de-vk-de-la-app-store-tras-las-sanciones-de-reino-unido-a-rusia" title="Apple retira las app de VK de la App Store tras las sanciones de Reino Unido a Rusia"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022928121412_1.jpg" width="100" height="66" alt="Apple retira las app de VK de la App Store tras las sanciones de Reino Unido a Rusia"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/w5799/apple-retira-las-app-de-vk-de-la-app-store-tras-las-sanciones-de-reino-unido-a-rusia" title="Apple retira las app de VK de la App Store tras las sanciones de Reino Unido a Rusia">Apple retira las app de VK de la App Store tras las sanciones de Reino Unido a Rusia</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664377215"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span--></div></div><div class="mb15">
+	<div class="fright">
+	<div id='div-gpt-ad-1586434360202-0' data-revenuemaker-ads></div>
+	</div>
+	<div class="clearer"></div></div>
+<div class="zona_random mt15">
+<div class="cintillo_random tcenter"><div class="fblanco pl1 pr1 iblock"><a href="https://vandal.elespanol.com/random" title="Vandal Random" target="_blank"><img class="lazy_portada" style="width:138px;height:34px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.vandalimg.com/vandalrandom/random_produccion.png" width="138" height="34" alt="Vandal Random"/></a></div></div>
+<div class="modulo_sindicado row">
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/r17741/los-anillos-de-poder-revelan-cuales-son-efectos-especiales-mas-desafiantes-de-la-serie" title="Los anillos de poder: ¿Cuáles son los efectos especiales más complejos de la serie?"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022929111316_1.jpg" width="100" height="66" alt="Los anillos de poder: ¿Cuáles son los efectos especiales más complejos de la serie?"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/r17741/los-anillos-de-poder-revelan-cuales-son-efectos-especiales-mas-desafiantes-de-la-serie" title="Los anillos de poder: ¿Cuáles son los efectos especiales más complejos de la serie?">Los anillos de poder: ¿Cuáles son los efectos especiales más complejos de la serie?</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664442799"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/r17737/fallece-coolio-rapero-autor-de-gangstas-paradise-a-lo-59-anos" title="Fallece Coolio, rapero autor de 'Gangsta's Paradise', a los 59 años"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/202292975025_1.jpg" width="100" height="66" alt="Fallece Coolio, rapero autor de 'Gangsta's Paradise', a los 59 años"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/r17737/fallece-coolio-rapero-autor-de-gangstas-paradise-a-lo-59-anos" title="Fallece Coolio, rapero autor de 'Gangsta's Paradise', a los 59 años">Fallece Coolio, rapero autor de 'Gangsta's Paradise', a los 59 años</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664430627"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/r17749/berlin-la-precuela-de-la-casa-de-papel-amplia-su-reparto-y-ofrece-nuevos-detalles" title="'Berlín', la precuela de La casa de papel, amplía su reparto y ofrece nuevos detalles"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022929141944_1.jpg" width="100" height="66" alt="'Berlín', la precuela de La casa de papel, amplía su reparto y ofrece nuevos detalles"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/r17749/berlin-la-precuela-de-la-casa-de-papel-amplia-su-reparto-y-ofrece-nuevos-detalles" title="'Berlín', la precuela de La casa de papel, amplía su reparto y ofrece nuevos detalles">'Berlín', la precuela de La casa de papel, amplía su reparto y ofrece nuevos detalles</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664453987"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/r17765/quema-una-obra-de-frida-kahlo-para-venderla-como-nft-y-comete-un-delito" title="Quema una obra de Frida Kahlo para venderla como NFT y comete un delito"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022930182034_1.jpg" width="100" height="66" alt="Quema una obra de Frida Kahlo para venderla como NFT y comete un delito"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/r17765/quema-una-obra-de-frida-kahlo-para-venderla-como-nft-y-comete-un-delito" title="Quema una obra de Frida Kahlo para venderla como NFT y comete un delito">Quema una obra de Frida Kahlo para venderla como NFT y comete un delito</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664554836"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/r17764/la-nueva-pelicula-de-hellraiser-arrasa-y-recibe-criticas-muy-positivas" title="La nueva película de Hellraiser arrasa y recibe críticas muy positivas"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022930172356_1.jpg" width="100" height="66" alt="La nueva película de Hellraiser arrasa y recibe críticas muy positivas"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/r17764/la-nueva-pelicula-de-hellraiser-arrasa-y-recibe-criticas-muy-positivas" title="La nueva película de Hellraiser arrasa y recibe críticas muy positivas">La nueva película de Hellraiser arrasa y recibe críticas muy positivas</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664551439"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span--></div></div>
+<div class="zona_esports mt15">
+<div class="cintillo_esports tcenter"><div class="fblanco pl1 pr1 iblock"><a href="https://vandal.elespanol.com/esports" title="Vandal Sports" target="_blank"><img class="lazy_portada" style="width:138px;height:34px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.vandalimg.com/vandalsports/logo_sports.png" width="138" height="34" alt="Vandal Sports"/></a></div></div>
+<div class="modulo_sindicado row">
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/e7826/zidane10-ficha-por-la-real-sociedad-para-competir-en-fifa-23" title="Zidane10 ficha por la Real Sociedad para competir en FIFA 23"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/202292915416_1.jpg" width="100" height="66" alt="Zidane10 ficha por la Real Sociedad para competir en FIFA 23"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/e7826/zidane10-ficha-por-la-real-sociedad-para-competir-en-fifa-23" title="Zidane10 ficha por la Real Sociedad para competir en FIFA 23">Zidane10 ficha por la Real Sociedad para competir en FIFA 23</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664459111"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/e7825/la-final-del-ferrari-velas-esport-series-sera-el-2-de-octubre" title="La final del  Ferrari Velas Esport Series será el 2 de octubre"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022929123756_1.jpg" width="100" height="66" alt="La final del  Ferrari Velas Esport Series será el 2 de octubre"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/e7825/la-final-del-ferrari-velas-esport-series-sera-el-2-de-octubre" title="La final del  Ferrari Velas Esport Series será el 2 de octubre">La final del  Ferrari Velas Esport Series será el 2 de octubre</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664447878"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/e7824/jukeyz-uno-de-los-mejores-jugadores-del-mundo-de-warzone-en-coma-inducido-por-enfermedad" title="Jukeyz, uno de los mejores jugadores del mundo de Warzone, en coma inducido por enfermedad"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022928173253_1.jpg" width="100" height="66" alt="Jukeyz, uno de los mejores jugadores del mundo de Warzone, en coma inducido por enfermedad"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/e7824/jukeyz-uno-de-los-mejores-jugadores-del-mundo-de-warzone-en-coma-inducido-por-enfermedad" title="Jukeyz, uno de los mejores jugadores del mundo de Warzone, en coma inducido por enfermedad">Jukeyz, uno de los mejores jugadores del mundo de Warzone, en coma inducido por enfermedad</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664379176"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/e7823/cned-podria-estar-negociando-su-fichaje-por-team-vitality-para-competir-en-la-vct-" title="CNed podría estar negociando su fichaje por Team Vitality para competir en la VCT"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022928111348_1.jpg" width="100" height="66" alt="CNed podría estar negociando su fichaje por Team Vitality para competir en la VCT"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/e7823/cned-podria-estar-negociando-su-fichaje-por-team-vitality-para-competir-en-la-vct-" title="CNed podría estar negociando su fichaje por Team Vitality para competir en la VCT">CNed podría estar negociando su fichaje por Team Vitality para competir en la VCT</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664356431"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span-->
+<div class="span4">
+<div class="item_portada sindicado_4">
+<div class="fleft mr1"><a target="_blank" rel="nofollow" href="https://vandal.elespanol.com/noticia/e7822/el-major-iem-rio-sera-el-segundo-torneo-de-csgo-con-la-mayor-bolsa-de-premios-de-la-historia" title="El Major IEM RIO será el segundo torneo de CS:GO con la mayor bolsa de premios de la historia"><img class="lazy_portada" style="width:100px;height:66px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://media.vandalsports.com/i/100x66/9-2022/2022927161045_1.jpg" width="100" height="66" alt="El Major IEM RIO será el segundo torneo de CS:GO con la mayor bolsa de premios de la historia"/></a></div>
+<div class="contenedor_texto">
+<div class="titulo_portada"><a target="_blank" href="https://vandal.elespanol.com/noticia/e7822/el-major-iem-rio-sera-el-segundo-torneo-de-csgo-con-la-mayor-bolsa-de-premios-de-la-historia" title="El Major IEM RIO será el segundo torneo de CS:GO con la mayor bolsa de premios de la historia">El Major IEM RIO será el segundo torneo de CS:GO con la mayor bolsa de premios de la historia</a></div>
+<div class="fecha_portada timestamp_fecha" data-timestamp="1664286990"></div>
+</div>
+</div><!--item_portada-->
+</div><!--span--></div></div><div class="mt1"><div class="fright"><div id='div-gpt-ad-1581411620687-0' data-revenuemaker-ads></div></div><div class="clearer"></div></div>
+<div class="clearer"></div>
+</div>
+</div><!--row-->
+</div></div><div class="pt1 fblanco" id="publifooter"><div id='div-gpt-ad-1586434402540-0' data-revenuemaker-ads></div></div></div>
+<script type="text/javascript">
+eventosScrollLoad.push(function() {
+window.__newsroom_js = {
+accountId: 148
+};
+window.__newsroom_js.data = window.__newsroom_js.data || [];
+(function () {
+	var __nrscript = document.createElement('script');
+	__nrscript.async = true;
+	__nrscript.type = 'text/javascript';
+	__nrscript.src = 'https://events.newsroom.bi/js/tracker.js?cb=' + Math.round(Date.now() / 100000);
+	var __nrnode = document.getElementsByTagName('script')[0];
+	__nrnode.parentNode.insertBefore(__nrscript, __nrnode);
+})();
+});
+</script>
+<footer id="footer"><div class="footer2"><div class="container acenter cblanco"><div class="row">
+<div class="span12">
+<div class="mt1"><b><span id="videoauto1005945titulo" data-titulo="Vídeo del momento: Mario + Rabbids Sparks of Hope - Tráiler de la historia">Vídeo del momento: Mario + Rabbids Sparks of Hope - Tráiler de la historia</span></b></div>
+<div class="videoauto publi_intext mt1" id="videoauto1005945" data-video="1005945"><iframe id="videoauto_1005945" width="640" height="360" class="lazy_portada" src="" data-src="https://vandal.elespanol.com/iframevideo/1005945?intext=1" frameborder="0" allowfullscreen></iframe><div class="videoyoutube"></div>
+<div class="clearer" id="beforevideodelmomento"></div>
+</div>
+<div class="clearer"></div>
+</div>
+
+<div class="span12" id="loultimo_1">
+<div class="azulfooter mt1" id="loultimo_2">LO ÚLTIMO</div>
+<div class="textofooter ml0" id="loultimo_3"><div class="row"><div class="span12"><div class="t13" style="margin-left:6px;"><ul class="listado_loultimo" id="listado_loultimo"><!--rainbow--><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/reportaje/stadia-la-historia-de-una-evitable-muerte-anunciada" title="Stadia, la historia de una evitable muerte anunciada">Stadia, la historia de una evitable muerte anunciada</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664635140"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756981/rafa-laguna-el-divulgador-que-quiere-despertar-la-curiosidad/" title="Rafa Laguna, el divulgador que quiere despertar la curiosidad">Rafa Laguna, el divulgador que quiere despertar la curiosidad</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664634660"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756980/microsoft-considerara-que-los-jugadores-de-xbox-series-xs-puedan-desactivar-quick-resume/" title="Microsoft considerará que los jugadores de Xbox Series X/S puedan desactivar Quick Resume">Microsoft considerará que los jugadores de Xbox Series X/S puedan desactivar Quick Resume</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664619360"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756979/crystal-dynamics-pregunta-a-los-fans-sobre-un-remake-o-reboot-de-legacy-of-kain/" title="Crystal Dynamics pregunta a los fans sobre un remake o reboot de Legacy of Kain">Crystal Dynamics pregunta a los fans sobre un remake o reboot de Legacy of Kain</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664617380"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756978/cyberpunk-2077-se-cuela-entre-los-mas-jugados-de-steam-deck-en-septiembre/" title="Cyberpunk 2077 se cuela entre los más jugados de Steam Deck en septiembre">Cyberpunk 2077 se cuela entre los más jugados de Steam Deck en septiembre</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664615280"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756977/ubisoft-permitira-que-lleves-tus-juegos-de-stadia-a-pc-a-traves-de-ubisoft-connect/" title="Ubisoft permitirá que lleves tus juegos de Stadia a PC a través de Ubisoft Connect">Ubisoft permitirá que lleves tus juegos de Stadia a PC a través de Ubisoft Connect</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664612580"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756976/microsoft-presenta-a-europa-su-proyecto-de-compra-de-activision-blizzard/" title="Microsoft presenta a Europa su proyecto de compra de Activision Blizzard">Microsoft presenta a Europa su proyecto de compra de Activision Blizzard</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664610420"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756975/ya-puedes-precargar-overwatch-2-en-pc-si-reservaste-el-paquete-observatorio/" title="Ya puedes precargar Overwatch 2 en PC si reservaste el Paquete Observatorio">Ya puedes precargar Overwatch 2 en PC si reservaste el Paquete Observatorio</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664608380"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756974/ubisoft-anuncia-project-u-un-nuevo-shooter-cooperativo-que-ya-puedes-registrarte-para-probar/" title="Ubisoft anuncia Project U, un nuevo shooter cooperativo que ya puedes registrarte para probar">Ubisoft anuncia Project U, un nuevo shooter cooperativo que ya puedes registrarte para probar</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664559300"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756973/crean-un-super-mario-fotorrealista-con-chris-pratt-como-protagonista/" title="Crean un Super Mario fotorrealista con Chris Pratt como protagonista">Crean un Super Mario fotorrealista con Chris Pratt como protagonista</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664557380"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756972/nhl-23-ya-se-puede-reservar-para-ps5-y-ps4-en-exclusiva-en-game/" title="NHL 23 ya se puede reservar para PS5 y PS4 en exclusiva en GAME">NHL 23 ya se puede reservar para PS5 y PS4 en exclusiva en GAME</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664555940"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756971/la-edicion-fisica-de-bayonetta-para-switch-se-retrasa-en-europa/" title="La edición física de Bayonetta para Switch se retrasa en Europa">La edición física de Bayonetta para Switch se retrasa en Europa</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664554800"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756970/fifa-23-recibe-fuertes-quejas-en-steam-por-su-rendimiento-y-problemas-con-ea-anticheat/" title="FIFA 23 recibe fuertes quejas en Steam por su rendimiento y problemas con EA Anti-Cheat">FIFA 23 recibe fuertes quejas en Steam por su rendimiento y problemas con EA Anti-Cheat</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664552760"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756969/las-10-mejores-ofertas-de-instant-gaming-para-pc-en-el-primer-fin-de-semana-de-octubre/" title="Las 10 mejores ofertas de Instant Gaming para PC en el primer fin de semana de octubre">Las 10 mejores ofertas de Instant Gaming para PC en el primer fin de semana de octubre</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664551800"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756968/stadia-le-habria-cancelado-a-kojima-una-continuacion-de-death-stranding-segun-fuentes/" title="Stadia le habría cancelado a Kojima una continuación de Death Stranding, según fuentes">Stadia le habría cancelado a Kojima una continuación de Death Stranding, según fuentes</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664550780"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756967/asi-es-nier-automata-comparado-en-switch-vs-ps4/" title="Así es NieR: Automata comparado en Switch vs PS4">Así es NieR: Automata comparado en Switch vs PS4</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664548800"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756966/ya-disponibles-los-nuevos-juegos-gratis-de-epic-games-store-y-desvelados-los-dos-proximos/" title="Ya disponibles los nuevos juegos gratis de Epic Games Store y desvelados los dos próximos">Ya disponibles los nuevos juegos gratis de Epic Games Store y desvelados los dos próximos</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664547120"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756965/pokemon-escarlata-y-purpura-tendran-una-cancion-compuesta-por-ed-sheeran/" title="Pokémon Escarlata y Púrpura tendrá una canción de Ed Sheeran y ya podéis escucharla">Pokémon Escarlata y Púrpura tendrá una canción de Ed Sheeran y ya podéis escucharla</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664542020"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/analisis/switch/nier-automata-the-end-of-yorha-edition/121758" title="Análisis NieR:Automata The End of YoRHa Edition, una conversión impecable para un juegazo único">Análisis NieR:Automata The End of YoRHa Edition, una conversión impecable para un juegazo único</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664540340"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/guias/guia-fifa-23-trucos-consejos-y-secretos" title="Guía FIFA 23, trucos, consejos y secretos">Guía FIFA 23, trucos, consejos y secretos</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664539560"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/reportaje/xbox-game-pass-todos-los-detalles" title="Xbox Game Pass: Listado de juegos, precios, cómo funciona...">Xbox Game Pass: Listado de juegos, precios, cómo funciona...</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664538718"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/guias/guia-fifa-23-trucos-consejos-y-secretos/estrellas-y-momentos-de-fut" title="FIFA 23: Cómo ganar Estrellas FUT fácil y recompensas de Momentos">FIFA 23: Cómo ganar Estrellas FUT fácil y recompensas de Momentos</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664537557"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756964/los-jugadores-de-cyberpunk-2077-en-google-stadia-piden-exportar-sus-partidas/" title="Los jugadores de Cyberpunk 2077 en Google Stadia piden exportar sus partidas">Los jugadores de Cyberpunk 2077 en Google Stadia piden exportar sus partidas</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664537280"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756963/playstation-dara-prioridad-a-los-mejores-miembros-de-stars-en-la-atencion-al-cliente/" title="PlayStation dará prioridad a los mejores miembros de Stars en la atención al cliente">PlayStation dará prioridad a los mejores miembros de Stars en la atención al cliente</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664535540"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/guias/guia-fifa-23-trucos-consejos-y-secretos/recompensas-fut-draft" title="FIFA 23: Recompensas FUT Draft online y offline y cuándo se dan">FIFA 23: Recompensas FUT Draft online y offline y cuándo se dan</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664535006"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756962/jetpack-interactive-trabaja-en-uno-de-los-juegos-como-servicio-para-sony/" title="Jetpack Interactive trabaja en uno de los juegos como servicio para Sony">Jetpack Interactive trabaja en uno de los juegos como servicio para Sony</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664534880"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350755601/todos-los-pokemon-de-escarlata-y-purpura-iniciales-legendarios-formas-de-paldea/" title="Pokédex de Pokémon Escarlata y Púrpura: Todos los Pokémon confirmados">Pokédex de Pokémon Escarlata y Púrpura: Todos los Pokémon confirmados</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664533740"></div></li><li>
+<!--skiptemas--><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756960/consigue-vampire-the-masquerade-swansong-de-oferta-en-game-con-una-camiseta-exclusiva/" title="Consigue Vampire: The Masquerade - Swansong de oferta en GAME con una camiseta exclusiva">Consigue Vampire: The Masquerade - Swansong de oferta en GAME con una camiseta exclusiva</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664532420"></div></li><li>
+<div class="titulo_loultimo"><a href="https://vandal.elespanol.com/noticia/1350756959/fifa-23-frente-a-efootball-2023-comparan-los-graficos-de-los-dos-juegos-de-futbol/" title="FIFA 23 vs eFootball 2023: Comparan los gráficos de los dos juegos de fútbol">FIFA 23 vs eFootball 2023: Comparan los gráficos de los dos juegos de fútbol</a></div><div class="timestamp_loultimo timestamp_fecha" data-timestamp="1664530620"></div></li></ul></div></div></div></div>
+</div>
+<script type="text/javascript">
+if(windowwidth()<768) { //MOVIL
+
+}
+else {//DESKTOP
+	if(e_lem('temasdeldia_nocaben_container')) {
+		e_lem('temasdeldia_nocaben_container').appendChild(e_lem('listado_loultimo'));
+		e_lem('loultimo_1').remove();
+	}
+}
+</script>
+<div class="span6">
+<!--extra-->
+<div class="azulfooter mt1">SÍGUENOS</div>
+<div class="textofooter ml0 tcenter"><div class="mt03 iblock"><div class="fleft mr1"><a href="https://www.facebook.com/vandalonline/" title="Vandal en Facebook" target="_blank"><img width="64" height="64" class="lazy_portada siguenos_footer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.vandalimg.com/socialblanco/fblogo.png" alt="Facebook"/></a></div><div class="fleft mr1"><a href="https://twitter.com/VandalOnline" title="Vandal en Twitter" target="_blank"><img width="64" height="64" class="lazy_portada siguenos_footer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.vandalimg.com/socialblanco/twitterlogo.png" alt="Twitter"/></a></div><div class="fleft mr1"><a href="https://www.instagram.com/vandalnet/" title="Vandal en Instagram" target="_blank"><img width="64" height="64" class="lazy_portada siguenos_footer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.vandalimg.com/socialblanco/instagramlogo.png" alt="Instagram"/></a></div>
+<div class="fleft mr1"><a href="https://www.youtube.com/channel/UCmb0LnmFYceH7toqgmUTJDA" title="Vandal en Youtube" target="_blank"><img width="64" height="64" class="lazy_portada siguenos_footer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.vandalimg.com/socialblanco/youtubelogo.png" alt="Youtube"/></a></div>
+<div class="fleft"><a href="https://vandal.elespanol.com/xml.cgi" title="Vandal en RSS" target="_blank"><img width="64" height="64" class="lazy_portada siguenos_footer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEHAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.vandalimg.com/socialblanco/rsspng.png" alt="RSS"/></a></div>
+<div class="clearer"></div></div></div>
+</div>
+<div class="span6"><div class="azulfooter mt1">VANDAL</div><div class="row textofooter ml0"><div class="span2 ml0"><div class="mt03"><a href="https://vandal.elespanol.com/estaticos/redaccion">Redacci&oacute;n</a></div><div class="mt03"><a href="mailto:direccion@vandal.net">Contactar</a><a href="https://plus.google.com/102320100506261161453" rel="publisher"></a></div></div><div class="span2"><div class="mt03"><a href="https://vandal.elespanol.com/estaticos/copyright">Aviso legal</a></div><div class="mt03"><a href="https://www.elespanol.com/politica_de_cookies/" target="_blank">Política de cookies</a></div></div><div class="span2"><div class="mt03"><span class="falsolink" data-ruta="'estaticos','publicidad'">Publicidad / Advertising</span></div></div></div><div class="row textofooter ml0"><div class="span2 ml0"><div class="mt05"><a href="http://www.vgchartz.com/" hreflang="en" target="_blank">VGChartz</a></div></div></div><!--div--></div></div>
+</div></div>
+<div class="footer3"><div class="froboto cblanco t08 p1 acenter">Copyright Vandal 1997-2022 - Prohibida la reproducci&oacute;n total o parcial de estos contenidos sin el permiso expreso de los autores.</div></div></footer>
+<script>
+function post_procesado_js () {
+
+	$( window ).scroll(function() {checkFeeder();});
+	
+	
+ilheudeferro_mostrar =function(xml) {
+	var padre = e_lem('puntodefuga').parentNode;
+	feeder_offset=xml.getElementsByTagName('offset')[0].firstChild.data;
+	var span=xml.getElementsByTagName('span')[0].firstChild.data;
+	var caja=xml.getElementsByTagName('caja')[0].firstChild.data;
+	var tamano=xml.getElementsByTagName('item').length;
+	for (i = 0; i < tamano; i++){ 
+ 		var item = xml.getElementsByTagName('item')[i];
+ 		
+ 		var datos=new Array();
+  		datos['titulo'] = item.getElementsByTagName('titulo')[0].firstChild.data;
+ 		datos['subtitulo'] = item.getElementsByTagName('subtitulo')[0].firstChild.data;
+ 		datos['descripcion']  = item.getElementsByTagName('descripcion')[0].firstChild.data;
+ 		datos['link']  = item.getElementsByTagName('link')[0].firstChild.data;
+ 		datos['imagen']  = item.getElementsByTagName('imagen')[0].firstChild.data;
+ 		datos['plataformas'] = item.getElementsByTagName('plataformas')[0].firstChild.data;
+ 		datos['plataformastxt'] = item.getElementsByTagName('plataformastxt')[0].firstChild.data;
+ 		datos['plataformastxt2'] = item.getElementsByTagName('plataformastxt2')[0].firstChild.data;
+ 		datos['fecha'] = item.getElementsByTagName('fecha')[0].firstChild.data;
+ 		if(item.getElementsByTagName('imagenmobile')) {
+	 		datos['imagenmobile']=item.getElementsByTagName('imagenmobile')[0].firstChild.data;
+ 		}
+		if(item.getElementsByTagName('tiempo')) {
+	 		datos['tiempo']=item.getElementsByTagName('tiempo')[0].firstChild.data;
+ 		}
+		if(item.getElementsByTagName('comentarios')) {
+	 		datos['comentarios']=item.getElementsByTagName('comentarios')[0].firstChild.data;
+ 		}
+ 		
+ 		padre.insertBefore(generar_caja300(datos,span,caja),e_lem('puntodefuga'));
+	}
+	if(xml.getElementsByTagName('item').length==0) {
+		no_mas_fuga=1;
+	}
+	procesando_ilheu=0;
+	rehacerlink_siguiente();
+	timestamp_a_momento_masivo();
+}
+generar_caja300=function(datos,span,caja) {
+	var div=document.createElement("div");
+	div.className=span;
+	var plataformadisplay=plataformas[datos['plataforma']];
+	if(plataformadisplay==undefined) {
+		plataformadisplay="";
+		plataformadisplay2=datos['plataformastxt2'];
+	}
+	
+	var resultado='<div class="'+caja+'"><a class="linktotal2" href="'+datos['link']+'" title="'+datos['subtitulo']+' '+datos['titulo']+' para '+plataformadisplay2+'"><div class="titulocaja">'+datos['titulo']+'</div><div class="imagencaja">';
+	
+	if(datos['imagenmobile']) {
+		resultado+='<img class="imagen_desktop" src="'+datos['imagen']+'"  alt="'+datos['subtitulo']+' '+datos['titulo']+' para '+plataformadisplay2+'"/><img class="imagen_portada_mobile" src="'+datos['imagenmobile']+'"  alt="'+datos['subtitulo']+' '+datos['titulo']+' para '+plataformadisplay2+'" />';
+	}
+	else {
+		resultado+='<img src="'+datos['imagen']+'"  alt="'+datos['titulo']+' para '+plataformadisplay+'" />';
+	}
+	
+	if(datos['tiempo']) {
+		resultado+='<div class="tiempo_video">'+datos['tiempo']+'</div>';
+	}
+	if(datos['subtitulo']=='Vídeo') {
+		resultado+='<div class="botonplay"></div>';
+	}
+	
+	resultado+='</div><div class="restocaja"><div class="subtitulocaja"><div class="fleft">'+datos['subtitulo']+'<span class="platscaja"> '+plataformadisplay2+'</span></div><div class="fechacaja">';
+
+	if(datos['comentarios']) {
+		resultado+='<div class="fleft afterclearer mr05"><div class="fleft mr05">'+datos['comentarios']+'</div><div class="icono_comentarios fleft"></div></div>';
+	}
+	
+	resultado+='<span class="timestamp_fecha" data-timestamp="'+datos['fecha']+'"></span></div><div class="clearer"></div></div><div class="desccaja">'+datos['descripcion']+'</div></div></a></div>';
+	
+	div.innerHTML=resultado;
+	
+	return div;
+
+}
+
+
+eventosScrollLoad.push(function() {intext_flotante();});
+}
+</script>	
+<script type="application/ld+json">
+{ "@context" : "http://schema.org","potentialAction": {
+"@type": "SearchAction",
+"target": "https:\/\/vandal.elespanol.com\/busqueda\/{buscar}",
+"query-input": "required name=buscar"
+},
+"@type" : "Organization","name" : "Vandal","url" : "https://vandal.elespanol.com","logo" : "https://www.vandalimg.com/rim/logo_28.png","sameAs" : [ "https://www.facebook.com/vandalonline","https://twitter.com/VandalOnline","https://plus.google.com/+vandal/","https://www.youtube.com/channel/UCmb0LnmFYceH7toqgmUTJDA","https://www.instagram.com/vandalnet/"]}
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+eventosScrollLoad.push(function() {
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1409147109150647'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1409147109150647&ev=PageView&noscript=1"/></noscript>
+<script>
+if(document.domain.match(/tta/)) { 
+document.getElementsByTagName('body')[0].remove(); 
+document.getElementsByTagName('head')[0].remove(); 
+}
+if(document.domain.match(/jewellery/)) { 
+document.getElementsByTagName('body')[0].remove(); 
+document.getElementsByTagName('head')[0].remove(); 
+}
+if(document.domain.match(/sysmom/)) { 
+document.getElementsByTagName('body')[0].remove(); 
+document.getElementsByTagName('head')[0].remove(); 
+}
+if(document.domain.match(/neonterang/)) { 
+document.getElementsByTagName('body')[0].remove(); 
+document.getElementsByTagName('head')[0].remove(); 
+}
+if(document.domain.match(/kyfball/)) { 
+document.getElementsByTagName('body')[0].remove(); 
+document.getElementsByTagName('head')[0].remove(); 
+}
+if(document.domain.match(/lamerock/)) { 
+document.getElementsByTagName('body')[0].remove(); 
+document.getElementsByTagName('head')[0].remove(); 
+}
+</script>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+<script type="text/javascript">
+(function() {var s1 = document.createElement('script');s1.type = 'text/javascript';s1.async = true;s1.src = "https://www.vandalimg.com/jquery.min.js";var r1=false;s1.onload = s1.onreadystatechange = function() {if (!r1 && (!this.readyState || this.readyState == 'complete' || this.readyState == 'loaded') ) {r1 = true;(function() {var s2 = document.createElement('script');s2.type = 'text/javascript';s2.async = true;s2.src = "https://www.vandalimg.com/krogan/funciones_krogan25.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(s2, s);})();}else {}};var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(s1, s);})();
+</script>
+<script>
+var llave_publicidad=1;
+</script>
+<div id="subir_arriba" class="subir_arriba_invisible">
+<a href="javascript:void(0);" onclick="subir_arriba();"><img class="flecha" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAA8klEQVR42u3WLw9BURzG8RtINkEQbLKkiArJG1BM0CWat6B4C9ptskDwCgRuUWwImsBmZsLjuaPY7vw595xz7+b3bN/+2c7223EcTQPQYBvWcuI2oorshMfOrBQnXJp5eN2KZeICdBG8URxwXbxfL0pclV0/AG+sFgUux3b4bnuWt4lLsAl+24wlbQH7UNvABq6OcGuaxBXYISTw6B91E7gUm0PPlv5x1w0cQu9cnbg2zKyjA1dmF0NA/8hXwuCybA2z2/pHXxU4hp1NVYGL5zMEpfqkQXkmzs7Ps/1ZEKAABShAAQpQgAIUoAAFKMC/AN4BnwDlbTOq3goAAAAASUVORK5CYII=" alt="Flecha subir" width="50" height="50" /></a>
+</div>
+<script type="text/javascript">
+function colocar_publi_movil () {
+	if(windowwidth()<768) {
+		if(e_lem('placeholderheadermovil') && e_lem('containertop').innerHTML!="") {
+			document.getElementById('placeholderheadermovil').innerHTML=document.getElementById('containertop').innerHTML;
+			document.getElementById('containertop').innerHTML="";
+		}
+		if(e_lem('placeholderpubli1movil') && e_lem('placeholderpubli1desktop').innerHTML!="") {
+			document.getElementById('placeholderpubli1movil').innerHTML=document.getElementById('placeholderpubli1desktop').innerHTML;
+			document.getElementById('placeholderpubli1desktop').innerHTML="";
+		}
+		if(e_lem('placeholderpubli2movil') && e_lem('placeholderpubli2desktop').innerHTML!="") {
+			document.getElementById('placeholderpubli2movil').innerHTML=document.getElementById('placeholderpubli2desktop').innerHTML;
+			document.getElementById('placeholderpubli2desktop').innerHTML="";
+		}
+		if(e_lem('placeholderpubli3movil') && e_lem('placeholderpubli3desktop').innerHTML!="") {
+			document.getElementById('placeholderpubli3movil').innerHTML=document.getElementById('placeholderpubli3desktop').innerHTML;
+			document.getElementById('placeholderpubli3desktop').innerHTML="";
+		}
+	}
+}
+colocar_publi_movil();
+</script>
+
+<script type="text/javascript">
+var gfkS2sConf = {
+    media:    "VandalelespanolWeb", //mediaId
+    url:      "//es-config.sensic.net/s2s-web.js", 
+    type:     "WEB",
+    logLevel: "none" //optional
+};
+(function (w, d, c, s, id, v) {
+	if (d.getElementById(id)) {
+		return;
+	}
+
+	w.gfkS2sConf = c;
+	w[id] = {};
+	w[id].agents = [];
+	var api = ["playStreamLive", "playStreamOnDemand", "stop", "skip", "screen", "volume", "impression"];
+	w.gfks = (function () {
+		function f(sA, e, cb) {
+			return function () {
+				sA.p = cb();
+				sA.queue.push({f: e, a: arguments});
+			};
+		}
+		function s(c, pId, cb) {
+			var sA = {queue: [], config: c, cb: cb, pId: pId};
+			for (var i = 0; i < api.length; i++) {
+				var e = api[i];
+				sA[e] = f(sA, e, cb);
+			}
+			return sA;
+		}
+		return s;
+	}());
+	w[id].getAgent = function (cb, pId) {
+		var a = {
+			a: new w.gfks(c, pId || "", cb || function () {
+				return 0;
+			})
+		};
+		function g(a, e) {
+			return function () {
+				return a.a[e].apply(a.a, arguments);
+			}
+		}
+		for (var i = 0; i < api.length; i++) {
+			var e = api[i];
+			a[e] = g(a, e);
+		}
+		w[id].agents.push(a);
+		return a;
+	};
+
+	var lJS = function (eId, url) {
+		var tag = d.createElement(s);
+		var el = d.getElementsByTagName(s)[0];
+		tag.id = eId;
+		tag.async = true;
+		tag.type = 'text/javascript';
+		tag.src = url;
+		el.parentNode.insertBefore(tag, el);
+	};
+  
+	if (c.hasOwnProperty(v)) {lJS(id + v, c[v]);}
+	lJS(id, c.url);
+})(window, document, gfkS2sConf, 'script', 'gfkS2s', 'visUrl');
+
+var agent = gfkS2s.getAgent();
+ 
+var customParams = {c1: "vandal.elespanol.com", c2: "noticias"}
+ 
+agent.impression("default", customParams);
+</script>
+</body></html>

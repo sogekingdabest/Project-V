@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <title>Project V</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='aparience.css') }}"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="./service.js"></script>
+    </head>
+
+    <body>
+
+        <header> <!-- Titulo -->
+            <div class="buttonInside">
+                <form onSubmit="onSearchPressed(event)">
+                    <input id="inputPokBox" type="search" placeholder="Enter a Pokename or PokeID" tabindex="1"/>
+                    <button id="searchPokemonButton" class="search-button" aria-label="Press to Pokesearch">
+                        <i class="material-icons" aria-hidden="true" tabindex="2">search</i>
+                    </button>
+                </form>
+            </div>
+        </header>
+
+        <div id=errorContainter class="message message-error">
+            <h2 id="error">Prueba de error</h2>
+        </div>
+
+        <div id="cardCont">
+            <div id="card" tabindex="3">
+                <h1 id="name" class="cardText">Pokename</h1>
+                <div id="imgDiv"><img id="image" src="./assets/defaultImg.png" alt="pokemon image" width="150" height="150"></div>
+                <p id="type" class="cardText" aria-label="">Tipo:</p>
+                <p id="H/W" class="cardText" aria-label="">Altura/Peso:</p>
+
+                <div class="stats">
+                    <div class="iconWrapper"><img src="./assets/htmlAttack.png" alt="attack" width="20" height="20" id="attack" class="statIcon"></div>
+                    <div id="divBarAtt" class="progress">
+                        <div id="attBar" class="bars" aria-label=""></div>
+                    </div>
+                    <p class="cardText attName">Att</p>
+                </div>
+
+                <div class="stats">
+                    <div class="iconWrapper"><img src="./assets/htmlHp.png" alt="health" width="20" height="20" id="health" class="statIcon"></div>
+                    <div id="divBarHealth" class="progress">
+                        <div id="healthBar" class="bars" aria-label=""></div>
+                    </div>
+                    <p class="cardText attName">Hp</p>
+                </div>
+                
+                <div class="stats">
+                    <div class="iconWrapper"><img src="./assets/htmlDef.png" alt="defense" width="20" height="20" id="defense" class="statIcon"></div>
+                    <div id="divBarDef" class="progress">
+                        <div id="DefBar" class="bars" aria-label=""></div>
+                    </div>
+                    <p class="cardText attName">Def</p>
+                </div>
+
+                <div class="stats">
+                    <div class="iconWrapper"><img src="./assets/htmlVel.png" alt="speed" width="20" height="20" id="speed" class="statIcon"></div>
+                    <div id="divBarSpeed" class="progress">
+                        <div id="speedBar" class="bars" aria-label=""></div>
+                    </div>
+                    <p class="cardText attName">Speed</p>
+                </div>
+
+                <div class="stats">
+                    <div class="iconWrapper"><img src="./assets/htmlSp.png" alt="special attack" width="20" height="20" id="specialAtt" class="statIcon"></div>
+                    <div id="divBarspAtt" class="progress">
+                        <div id="spAttBar" class="bars" aria-label=""></div>
+                    </div>
+                    <p class="cardText attName">SpAtt</p>
+                </div>
+
+                <div class="stats">
+                    <div class="iconWrapper"><img src="./assets/htmlSpDef.png" alt="special defense" width="20" height="20" id="specialDef" class="statIcon"></div>
+                    <div id="divBarspDef" class="progress">
+                        <div id="spDefBar" class="bars" aria-label=""></div>
+                    </div>
+                    <p class="cardText attName">SpDef</p>
+                </div>
+                
+                <p id="evolutions" class="cardText">Evoluciones:</p>
+                <p id="route" class="cardText">Route:</p>
+            </div>
+            <div id="photo">
+                
+            </div>
+        </div>
+
+    </body>
+
+</html>
