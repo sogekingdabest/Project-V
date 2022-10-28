@@ -1,0 +1,203 @@
+@font-face {
+    font-family: font;
+    src: url("assets/Contrail_One/ContrailOne-Regular.ttf") format("truetype");
+}
+
+html {
+    font-family: font;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url("assets/fondoTitulo.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 200px;
+    }
+}
+
+input#inputPokBox {
+    height: 45px;
+    width: 25%;
+}
+
+@media (max-width: 600px) {
+    input#inputPokBox {
+        height: 25px;
+        width: 100%;
+    }
+}
+
+button#searchPokemonButton {
+    background-position: center;
+    background-color: white;
+    color: black;
+    border: black;
+    position: relative;
+    height: 45px;
+    width: 45px;
+    right: 0px;
+    text-align:center;
+    font-weight:bold;
+    outline: auto;
+    outline-color: black;
+}
+
+button#searchPokemonButton:hover {
+    background-color: rgb(197, 197, 194);
+}
+
+@media (max-width: 600px) {
+    button#searchPokemonButton {
+        height: 25px;
+    }
+}
+
+.buttonInside {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 0px;
+    height: 45px;
+    width: 100%;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 0px;
+    height: 45px;
+    width: 100%;
+    padding: 0;
+}
+
+h2#error {
+    text-align: center;
+    display: none;
+}
+
+h1 { /*Tamaño nombres de pokemon*/
+    font-size: 30px;
+}
+
+.cardText {
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+}
+
+div#cardCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+div#card {
+    position: relative;
+    visibility: hidden;
+    top: 30px;
+    display: 1 1 flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    padding: 10px;
+    height: 40%;
+    width: 20%;
+    background-color: #BD290A;
+    box-shadow: 0 6px 18px 0 black;
+    border-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+    div#card {
+        width: 60%;
+    }
+}
+
+.statIcon {
+    position: relative;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.iconWrapper {
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 30px;
+}
+
+div#divBarAtt {
+    height: 20px;
+    width:200px;
+}
+
+div#divBarHealth {
+    height: 20px;
+    width:200px;
+}
+
+div#divBarDef {
+    height: 20px;
+    width:200px;
+}
+
+div#divBarSpeed {
+    height: 20px;
+    width:200px;
+}
+
+div#divBarspAtt {
+    height: 20px;
+    width:200px;
+}
+
+div#divBarspDef {
+    height: 20px;
+    width:200px;
+}
+
+div#imgDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.attName {
+    position: absolute;
+    left: 76%;
+    margin-top: 10px;
+}
+
+.bars {
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 4px;
+    text-align: right; 
+    color: black; 
+    border-radius: 8px;
+}
