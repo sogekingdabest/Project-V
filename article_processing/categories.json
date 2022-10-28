@@ -1,0 +1,48 @@
+{
+    "consoles" : {
+        "Switch" : ["Switch"],
+        "Wii"    : ["Wii"],
+        "3DS"    : ["3DS"],
+        "DS"     : ["DS"],
+        "PC"     : ["PC"],
+        "PS5"    : ["Playstation 5", "PS5"],
+        "PS4"    : ["Playstation 4", "PS4"],
+        "PS3"    : ["Playstation 3", "PS3"],
+        "PS2"    : ["Playstation 2", "PS2"],
+        "PS1"    : ["Playstation", "Playstation 1", "PS1", "PSX"],
+        "Xbox"   : ["Xbox"]
+    },
+
+    "companies" : {
+        "Nintendo"   : ["Nintendo"],
+        "Sony"       : ["Sony"],
+        "Microsoft"  : ["Microsoft"],
+        "Ubisoft"    : ["Ubisoft"],
+        "EA"         : ["Electronic Arts", "EA"],
+        "Blizzard"   : ["Blizzard"],
+        "Epic Games" : ["Epic Games"],
+        "Valve"      : ["Valve"],
+        "Rockstar"   : ["Rockstar"],
+        "Sega"       : ["Sega"],
+        "Capcom"     : ["Capcom"],
+        "Mojang"     : ["Mojang"]
+    },
+    
+    "games" : {
+        "GTA"          : ["GTA", "Grand Theft Auto"],
+        "Mario"        : ["Mario Bros", "Super Mario"],
+        "Zelda"        : ["Zelda"],
+        "Smash"        : ["Smash Bros"],
+        "Minecraft"    : ["Minecraft"],
+        "Fortnite"     : ["Fortnite"],
+        "CS"           : ["CS: GO", "Counter-Strike"],
+        "Apex"         : ["Apex Legends"],
+        "LOL"          : ["League of Legends"],
+        "RocketLeague" : ["Rocket League"],
+        "FallGuys"     : ["FallGuys"],
+        "Overwatch"    : ["Overwatch"],
+        "FIFA"         : ["FIFA"],
+        "FreeFire"     : ["Free Fire"]
+    }
+
+}
