@@ -1,32 +1,41 @@
-from flask import Flask
-from flask import render_template
-from flask import request
+from unittest import result
+from flask import Flask, flash, render_template, request, redirect
+
+
+from forms import QuerySearchForm
 
 app = Flask(__name__)
+app.secret_key = 'super secret key'
 
+@app.route('/', methods=['GET', 'POST'])
+def index():
 
-@app.route("/")
-def loadMain():
-    return render_template('main.html')
-
-@app.route("/auth/register", methods=['POST', 'GET'])
-def register():
-    error = None
+    #cargar el "feed" (hacer una query ultimas noticias)
+    search = QuerySearchForm(request.form)
     if request.method == 'POST':
-        user = request.form['username'],
-        password = request.form['password']
-        print(user, password)
-        return render_template('/auth/login.html', error=error)
-
-    # the code below is executed if the request method
-    # was GET or the credentials were invalid
+        return search_results(search)
     
+    return render_template('index.html', form=search, results="Pagina Principal")
 
-    return render_template("./auth/register.html")
+
+
+@app.route('/results')
+def search_results(search):
     
-@app.route("/auth/login", methods=['POST', 'GET'])
-def login():
-    if request.method == 'POST':
+    search_string = search.data['search']
+    results = [search_string]
+    if search.data['search'] == '':
+        #lanzar la query
         pass
-    return render_template("./auth/login.html")
 
+    if not results:
+        flash('No results found!')
+        print(search_string)
+        return redirect('/')
+    else:
+        # display results
+        search = QuerySearchForm(request.form)
+        return render_template('index.html',form=search,  results=results)
+
+if __name__ == '__main__':
+    app.run()

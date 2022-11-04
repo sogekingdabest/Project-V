@@ -1,0 +1,45 @@
+header {
+    height: 100px;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div.buscador {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 0px;
+    height: 45px;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+}
+
+input {
+    background-position: center;
+    background-color: white;
+    color: black;
+    border: black;
+    position: relative;
+    height: 45px;
+    right: 0px;
+    text-align:center;
+    font-weight:bold;
+    outline: auto;
+    outline-color: black;
+}
+
+form {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 0px;
+    height: 45px;
+    width: 100%;
+    padding: 0;
+}
