@@ -78,13 +78,14 @@ def results():
 
     next_url = ""
     prev_url = ""
-    if (_from + size < articulos["total"]["value"]):
+    total_noticias = articulos["total"]["value"]
+    if (_from + size < total_noticias):
         next_url = url_for('results', page=page+1, search_input=search_input, console=console, videogame=videogame, company=company, date_ini=date_ini, author=author, date_end=date_end)
     
     if page != 1:
         prev_url = url_for('results', page=page-1, search_input=search_input, console=console, videogame=videogame, company=company, date_ini=date_ini, author=author, date_end=date_end)
 
-    return render_template('index.html', next_url=next_url, prev_url=prev_url, noticias=articulos["hits"])
+    return render_template('index.html', next_url=next_url, prev_url=prev_url, noticias=articulos["hits"], total_noticias=total_noticias)
 
 if __name__ == '__main__':
     app.run()

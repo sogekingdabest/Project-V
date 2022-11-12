@@ -20,7 +20,10 @@ h1 {
     color: #000000;
 }
 
-
+#feed h2 {
+  text-align: center;
+  font-size: 1.25em;
+}
 
 
 .noticia {
