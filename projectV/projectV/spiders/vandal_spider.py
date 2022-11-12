@@ -23,12 +23,16 @@ class VandalSpider(CrawlSpider):
 
     def parseArticle(self, response):
         jsonText = response.xpath('//div[contains(@id,"globalwrap")]/script/text()').get()
-
+        
         jsonData = json.loads(jsonText, strict=False)
         
+        date = jsonData["datePublished"].split("T")[0]
+
         yield {
                 'description': jsonData["description"],
                 'articleBody': jsonData["articleBody"],
                 'title': jsonData["headline"],
                 'author': jsonData["author"]["name"],
+                'date': date,
+                'url': response.url
         }

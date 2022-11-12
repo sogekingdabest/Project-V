@@ -1,24 +1,183 @@
-<doctype html="es">
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
-        <title>Flask Music Database</title>
-    </head>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
+    <link href='https://css.gg/search.css' rel='stylesheet'>
+    <link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+    <link href='https://css.gg/chevron-up.css' rel='stylesheet'>
+</head>
 
-    <body>
+<body>
+    <script>
+        function filterOpen() {
+            console.log("OPEN");
+            document.getElementById("filter-button-open").style.display = "none";
+            document.getElementById("filter-button-close").style.display = "inline-block";
+            document.getElementById("filters").style.display = "table";
+        }
+        function filterClose() {
+            console.log("CLOSE");
+            document.getElementById("filter-button-close").style.display = "none";
+            document.getElementById("filter-button-open").style.display = "inline-block";
+            document.getElementById("filters").style.display = "none";
+        }
+    </script>
+
+    <div id="page-container">
         <header>
-            <h2>Project V</h2>
-            <div class="buscador">
-                {% from "_formhelpers.html" import render_field %}
-                <form method="post">
-                    {{ render_field(form.search) }}
-                    <input type="submit" value="Search">
-                </form>
+            <div id="header-title">
+                <a href="index.html" style="text-decoration:none">
+                    <h1>PROJECT-V</h1>
+                </a>
             </div>
-            
         </header>
-            
+        <main id="main-page">
+            <form id="search-form" method="post" action="{{ url_for('results') }}">
+                <div id="search-area" role="search">
+                    <label>Buscar noticias:</label>
+                    <div id="input-area">
+                        <input type="text" name="search-input" id="search-input" placeholder="...">
+                        <button id="search-button" title="Buscar">
+                            <i class="gg-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="filter-area">
+                    <label>Búsqueda avanzada:</label>
+                    <button id="filter-button-open" onclick="filterOpen()" title="Expandir" type="button">
+                        <i class="gg-chevron-down"></i>
+                    </button>
+                    <button id="filter-button-close" onclick="filterClose()" style="display: none;" title="Contraer" type="button">
+                        <i class="gg-chevron-up"></i>
+                    </button>
+                    <div id="filters" style="display: none;">
+                        <div class="filter-field">
+                            <label>Consola</label>
+                            <select name="input-console">
+                                <option value="ANY">Cualquiera</option>
+                                <option value="PC">PC</option>
+                                <option value="PS5">PS5</option>
+                                <option value="PS4">PS4</option>
+                                <option value="Switch">Switch</option>
+                                <option value="Wii">Wii</option>
+                                <option value="3DS">3DS</option>
+                                <option value="DS">DS</option>
+                                <option value="PS3">PS3</option>
+                                <option value="PS2">PS2</option>
+                                <option value="PS1">PS1</option>
+                                <option value="Xbox">Xbox</option>
+                            </select>
+                        </div>
+                        <div class="filter-field">
+                            <label>Videojuego</label>
+                            <select name="input-videogame">
+                                <option value="ANY">Cualquiera</option>
+                                <option value="GTA">GTA</option>
+                                <option value="Mario">Mario</option>
+                                <option value="Zelda">Zelda</option>
+                                <option value="Smash">Smash Bros</option>
+                                <option value="Minecraft">Minecraft</option>
+                                <option value="Fortnite">Fortnite</option>
+                                <option value="CS">Counter-Strike</option>
+                                <option value="Apex">Apex Legends</option>
+                                <option value="LOL">League of Legends</option>
+                                <option value="RocketLeague">Rocket League</option>
+                                <option value="FallGuys">FallGuys</option>
+                                <option value="Overwatch">Overwatch</option>
+                                <option value="FIFA">FIFA</option>
+                                <option value="FreeFire">FreeFire</option>
+                            </select>
+                        </div>
+                        <div class="filter-field">
+                            <label>Compañía</label>
+                            <select name="input-company">
+                                <option value="ANY">Cualquiera</option>
+                                <option value="Nintendo">Nintendo</option>
+                                <option value="Sony">Sony</option>
+                                <option value="Microsoft">Microsoft</option>
+                                <option value="Ubisoft">Ubisoft</option>
+                                <option value="EA">EA</option>
+                                <option value="Blizzard">Blizzard</option>
+                                <option value="EpicGames">Epic Games</option>
+                                <option value="Valve">Valve</option>
+                                <option value="Rockstar">Rockstar</option>
+                                <option value="Sega">Sega</option>
+                                <option value="Capcom">Capcom</option>
+                                <option value="Mojang">Mojang</option>
+                            </select>
+                        </div>
+                        <div class="filter-field">
+                            <label>Fecha</label>
+                            <input name="input-date" type="date">
+                        </div>
+                        <div class="filter-field">
+                            <label>Autor</label>
+                            <input name="input-author" type="text">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="feed" name="noticias">
 
-            <p>{{ results }}</p>
-    </body>
-</doctype>
+                {% for noticia in noticias %}
+                    <div class="noticia">
+                        <h3>
+                            {{ noticia.title }}
+                        </h3>
+                        <h4>
+                            {{ noticia.description }}
+                        </h4>
+                        <a
+                            href="{{ noticia.url }}">
+                            LEER MÁS...
+                        </a>
+                    </div>
+                {% endfor %}
+
+                <!--
+                <div class="noticia">
+                    <h3>
+                        Comparan los gráficos de Sonic Frontiers en sus versiones de Nintendo Switch y PS5
+                    </h3>
+                    <h4>
+                        Ambas versiones cuentan con problemas notorios de popping y la versión de PS5 es claramente
+                        superior en cuanto a resolución y tasa de FPS, pero en Switch también es perfectamente jugable.
+                    </h4>
+                    <a
+                        href="https://vandal.elespanol.com/noticia/1350757891/comparan-los-graficos-de-sonic-frontiers-en-sus-versiones-de-nintendo-switch-y-ps5/">
+                        LEER MÁS...
+                    </a>
+                </div>
+                <div class="noticia" name="noticias">
+                    <h3>
+                        EA predice que Argentina ganará la Copa Mundial de Fútbol de 2022
+                    </h3>
+                    <h4>
+                        El editor de videojuegos afirma que Argentina vencerá a Brasil con un resultado de 1-0. Para
+                        llegar a ello, EA dice que Argentina vencerá a Francia en las semifinales.
+                    </h4>
+                    <a
+                        href="https://vandal.elespanol.com/noticia/1350757911/ea-predice-que-argentina-ganara-la-copa-mundial-de-futbol-de-2022/">
+                        LEER MÁS...
+                    </a>
+                </div>
+                <div class="noticia">
+                    <h3>
+                        Cyberpunk 2077 se actualiza para mejorar su tasa de FPS y añadir nuevas opciones
+                    </h3>
+                    <h4>El parche v1.61 liberado por CD Projekt RED arregla problemas con la tasa de FPS y con el
+                        cross-save, mientras que añade paraguas para los NPC y AMD FSR 2.1 en PC, PS5 y XSX/S.
+                    </h4>
+                    <a
+                        href="https://vandal.elespanol.com/noticia/1350757887/cyberpunk-2077-se-actualiza-para-mejorar-su-tasa-de-fps-y-anadir-nuevas-opciones/">
+                        LEER MÁS...
+                    </a>
+                </div>
+                -->
+            </div>
+        </main>
+
+</body>
+
+</html>
