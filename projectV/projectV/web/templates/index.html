@@ -27,7 +27,7 @@
     <div id="page-container">
         <header>
             <div id="header-title">
-                <a href="index.html" style="text-decoration:none">
+                <a style="text-decoration:none">
                     <h1>PROJECT-V</h1>
                 </a>
             </div>
@@ -108,8 +108,12 @@
                             </select>
                         </div>
                         <div class="filter-field">
-                            <label>Fecha</label>
-                            <input name="input-date" type="date">
+                            <label>Fecha inicial</label>
+                            <input name="input-date-ini" type="date">
+                        </div>
+                        <div class="filter-field">
+                            <label>Fecha final</label>
+                            <input name="input-date-end" type="date">
                         </div>
                         <div class="filter-field">
                             <label>Autor</label>
@@ -123,13 +127,13 @@
                 {% for noticia in noticias %}
                     <div class="noticia">
                         <h3>
-                            {{ noticia.title }}
+                            {{ noticia._source.title }}
                         </h3>
                         <h4>
-                            {{ noticia.description }}
+                            {{ noticia._source.description }}
                         </h4>
                         <a
-                            href="{{ noticia.url }}">
+                            href="{{ noticia._source.url }}">
                             LEER MÁS...
                         </a>
                     </div>
