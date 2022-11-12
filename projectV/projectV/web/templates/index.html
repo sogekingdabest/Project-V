@@ -22,6 +22,20 @@
             document.getElementById("filter-button-open").style.display = "inline-block";
             document.getElementById("filters").style.display = "none";
         }
+        function search() {
+            let search_input = document.getElementById("search-input").value
+            let console_input = document.getElementById("input-console").value
+            let videogame = document.getElementById("input-videogame").value
+            let company = document.getElementById("input-company").value
+            let date_ini = document.getElementById("input-date-ini").value
+            let date_end = document.getElementById("input-date-end").value
+            let author = document.getElementById("input-author").value
+
+            console.log(search_input, console_input, videogame, company, date_ini, date_end, author)
+
+            const url = `/results?page=1&search_input=${search_input}&console=${console_input}&videogame=${videogame}&company=${company}&date_ini=${date_ini}&date_end=${date_end}&author=${author}`
+            location.href = url
+        }
     </script>
 
     <div id="page-container">
@@ -33,12 +47,13 @@
             </div>
         </header>
         <main id="main-page">
-            <form id="search-form" method="post" action="{{ url_for('results') }}">
+            <!-- <form id="search-form" method="post" action="{{ url_for('results') }}"> -->
+            <form id="search-form">
                 <div id="search-area" role="search">
                     <label>Buscar noticias:</label>
                     <div id="input-area">
                         <input type="text" name="search-input" id="search-input" placeholder="...">
-                        <button id="search-button" title="Buscar">
+                        <button id="search-button" type='button' title="Buscar" onclick="search()">
                             <i class="gg-search"></i>
                         </button>
                     </div>
@@ -54,7 +69,7 @@
                     <div id="filters" style="display: none;">
                         <div class="filter-field">
                             <label>Consola</label>
-                            <select name="input-console">
+                            <select id="input-console" name="input-console">
                                 <option value="ANY">Cualquiera</option>
                                 <option value="PC">PC</option>
                                 <option value="PS5">PS5</option>
@@ -71,7 +86,7 @@
                         </div>
                         <div class="filter-field">
                             <label>Videojuego</label>
-                            <select name="input-videogame">
+                            <select id="input-videogame" name="input-videogame">
                                 <option value="ANY">Cualquiera</option>
                                 <option value="GTA">GTA</option>
                                 <option value="Mario">Mario</option>
@@ -91,7 +106,7 @@
                         </div>
                         <div class="filter-field">
                             <label>Compañía</label>
-                            <select name="input-company">
+                            <select id="input-company" name="input-company">
                                 <option value="ANY">Cualquiera</option>
                                 <option value="Nintendo">Nintendo</option>
                                 <option value="Sony">Sony</option>
@@ -109,15 +124,15 @@
                         </div>
                         <div class="filter-field">
                             <label>Fecha inicial</label>
-                            <input name="input-date-ini" type="date">
+                            <input id="input-date-ini" name="input-date-ini" type="date">
                         </div>
                         <div class="filter-field">
                             <label>Fecha final</label>
-                            <input name="input-date-end" type="date">
+                            <input id="input-date-end" name="input-date-end" type="date">
                         </div>
                         <div class="filter-field">
                             <label>Autor</label>
-                            <input name="input-author" type="text">
+                            <input id="input-author" name="input-author" type="text">
                         </div>
                     </div>
                 </div>
