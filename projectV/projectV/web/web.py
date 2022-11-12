@@ -1,9 +1,9 @@
 from unittest import result
-from flask import Flask, flash, render_template, request, redirect
+from flask import Flask, flash, render_template, request, redirect, url_for
 from elasticsearch import Elasticsearch
 es = Elasticsearch('http://localhost:9200')
 
-DEFAULT_SIZE = 25
+DEFAULT_SIZE = 10
 
 app = Flask(__name__)
 app.secret_key = 'super secret key'
@@ -21,15 +21,27 @@ def index():
 @app.route('/results', methods=['GET','POST'])
 def results():
 
-    search_input = request.form['search-input']
-    console      = request.form['input-console']
-    videogame    = request.form['input-videogame']
-    company      = request.form['input-company']
-    date_ini     = request.form['input-date-ini']
-    date_end     = request.form['input-date-end']
-    author       = request.form['input-author']
+    if request.method == 'POST':
+        search_input = request.form['search-input']
+        console      = request.form['input-console']
+        videogame    = request.form['input-videogame']
+        company      = request.form['input-company']
+        date_ini     = request.form['input-date-ini']
+        date_end     = request.form['input-date-end']
+        author       = request.form['input-author']
+    else:
+        search_input = request.args.get('search_input')
+        console      = request.args.get('console')
+        videogame    = request.args.get('videogame')
+        company      = request.args.get('company')
+        date_ini     = request.args.get('date_ini')
+        date_end     = request.args.get('date-end')
+        author       = request.args.get('author')
 
+
+    page = request.args.get('page', 1, type=int)
     size = DEFAULT_SIZE
+    _from = (page-1)*size
     
     filters = []
     if console != "ANY":
@@ -46,7 +58,9 @@ def results():
         filters.append({"range" : {"date": {"lte": date_end}}})
 
     #peticiones a elastic
+
     body_query = {
+        "from": _from,
         "size" : size,
         "query" : {
             "bool": {
@@ -60,12 +74,18 @@ def results():
             }
         }
     }
+        
+    articulos = es.search(index="articulos", body=body_query)["hits"]
 
-    articulos = es.search(index="articulos", body=body_query)["hits"]["hits"]
-    print(len(articulos))
+    next_url = ""
+    prev_url = ""
+    if (_from + size < articulos["total"]["value"]):
+        next_url = url_for('results', page=page+1, search_input=search_input, console=console, videogame=videogame, company=company, date_ini=date_ini, date_end=date_end, author=author)
+    
+    if page != 1:
+        prev_url = url_for('results', page=page-1, search_input=search_input, console=console, videogame=videogame, company=company, date_ini=date_ini, date_end=date_end, author=author)
 
-
-    return render_template('index.html',  noticias=articulos)
+    return render_template('index.html', next_url=next_url, prev_url=prev_url, noticias=articulos["hits"])
 
 if __name__ == '__main__':
     app.run()

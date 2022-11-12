@@ -138,48 +138,22 @@
                         </a>
                     </div>
                 {% endfor %}
-
-                <!--
-                <div class="noticia">
-                    <h3>
-                        Comparan los gráficos de Sonic Frontiers en sus versiones de Nintendo Switch y PS5
-                    </h3>
-                    <h4>
-                        Ambas versiones cuentan con problemas notorios de popping y la versión de PS5 es claramente
-                        superior en cuanto a resolución y tasa de FPS, pero en Switch también es perfectamente jugable.
-                    </h4>
-                    <a
-                        href="https://vandal.elespanol.com/noticia/1350757891/comparan-los-graficos-de-sonic-frontiers-en-sus-versiones-de-nintendo-switch-y-ps5/">
-                        LEER MÁS...
-                    </a>
-                </div>
-                <div class="noticia" name="noticias">
-                    <h3>
-                        EA predice que Argentina ganará la Copa Mundial de Fútbol de 2022
-                    </h3>
-                    <h4>
-                        El editor de videojuegos afirma que Argentina vencerá a Brasil con un resultado de 1-0. Para
-                        llegar a ello, EA dice que Argentina vencerá a Francia en las semifinales.
-                    </h4>
-                    <a
-                        href="https://vandal.elespanol.com/noticia/1350757911/ea-predice-que-argentina-ganara-la-copa-mundial-de-futbol-de-2022/">
-                        LEER MÁS...
-                    </a>
-                </div>
-                <div class="noticia">
-                    <h3>
-                        Cyberpunk 2077 se actualiza para mejorar su tasa de FPS y añadir nuevas opciones
-                    </h3>
-                    <h4>El parche v1.61 liberado por CD Projekt RED arregla problemas con la tasa de FPS y con el
-                        cross-save, mientras que añade paraguas para los NPC y AMD FSR 2.1 en PC, PS5 y XSX/S.
-                    </h4>
-                    <a
-                        href="https://vandal.elespanol.com/noticia/1350757887/cyberpunk-2077-se-actualiza-para-mejorar-su-tasa-de-fps-y-anadir-nuevas-opciones/">
-                        LEER MÁS...
-                    </a>
-                </div>
-                -->
             </div>
+            {% if noticias %}
+            <div id="navigation">
+                {% if prev_url != "" %}
+                <a href="{{prev_url}}">
+                    <button>Anterior</button>
+                </a>
+                {% endif %}
+                {% if next_url != "" %}
+                 <a href="{{next_url}}">
+                    <button>Siguiente</button>
+                 </a>
+                {% endif %}
+            </div>
+            {% endif %}
+                
         </main>
 
 </body>
