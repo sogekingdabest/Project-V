@@ -1,5 +1,4 @@
-from unittest import result
-from flask import Flask, flash, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, url_for
 from elasticsearch import Elasticsearch
 es = Elasticsearch('http://localhost:9200')
 
@@ -74,7 +73,7 @@ def results():
         }
     }
         
-    articulos = es.search(index="articulos", body=body_query)["hits"]
+    articulos = es.search(index="articulosprueba", body=body_query)["hits"]
 
     next_url = ""
     prev_url = ""
